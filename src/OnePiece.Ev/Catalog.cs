@@ -22,7 +22,8 @@ public static class Catalog
             Parse<Group>(File.ReadAllText(Path.Combine(directory, "groups.json"))),
             groups.Select(id => new SourceGroup(id,
                 Parse<Product>(File.ReadAllText(Path.Combine(directory, id.ToString(), "products.json"))),
-                Parse<Price>(File.ReadAllText(Path.Combine(directory, id.ToString(), "prices.json"))))).ToArray()) { PricingSchemaVersion = 1 };
+                Parse<Price>(File.ReadAllText(Path.Combine(directory, id.ToString(), "prices.json"))))).ToArray())
+        { PricingSchemaVersion = 1 };
     }
 
     public static async Task<CatalogSnapshot> Load(AppSettings settings, int[] groups, bool offline)

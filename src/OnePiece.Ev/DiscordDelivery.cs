@@ -25,40 +25,40 @@ public static class DiscordDelivery
             var chunks = Reporting.Split(content, 1700);
             // An invisible character preserves a blank final line when Discord trims trailing whitespace.
             chunks[^1] += "\n\n\u200b";
-            parts = chunks.Select((s,i) => new DeliveryPart($"{batch}:{i:D4}", i == 0 ? s : title + $" (continued {i+1}/{chunks.Length})\n" + s,"pending",null,DateTimeOffset.UtcNow)).ToArray();
+            parts = chunks.Select((s, i) => new DeliveryPart($"{batch}:{i:D4}", i == 0 ? s : title + $" (continued {i + 1}/{chunks.Length})\n" + s, "pending", null, DateTimeOffset.UtcNow)).ToArray();
             parts[^1] = parts[^1] with { Attachment = attachment };
-            foreach (var p in parts) ledger.Parts.Add(p.Key,p);
-            JsonFiles.Write(path,ledger);
+            foreach (var p in parts) ledger.Parts.Add(p.Key, p);
+            JsonFiles.Write(path, ledger);
         }
         foreach (var part in parts)
         {
             if (part.Status == "sent") continue;
             if (part.Status is "inflight" or "uncertain") throw new InvalidDataException("Uncertain Discord delivery: inspect channel and reconcile deliveries.json before retrying.");
-            void Save(string status,string? id=null) { ledger.Parts[part.Key]=part with {Status=status,MessageId=id,UpdatedAt=DateTimeOffset.UtcNow}; JsonFiles.Write(path,ledger); }
-            for (int attempt=0;;attempt++)
+            void Save(string status, string? id = null) { ledger.Parts[part.Key] = part with { Status = status, MessageId = id, UpdatedAt = DateTimeOffset.UtcNow }; JsonFiles.Write(path, ledger); }
+            for (int attempt = 0; ; attempt++)
             {
                 Save("inflight");
                 try
                 {
                     using var requestBody = BuildBody(part);
-                    using var response=await http.PostAsync(endpoint,requestBody);
-                    if ((int)response.StatusCode==429)
+                    using var response = await http.PostAsync(endpoint, requestBody);
+                    if ((int)response.StatusCode == 429)
                     {
                         Save("pending");
-                        using var body=JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-                        var seconds=body.RootElement.GetProperty("retry_after").GetDouble();
-                        if (attempt>=3 || seconds<0 || seconds>60) throw new InvalidDataException("Discord rate limit; retry later.");
-                        await Task.Delay(TimeSpan.FromSeconds(seconds+.1)); continue;
+                        using var body = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+                        var seconds = body.RootElement.GetProperty("retry_after").GetDouble();
+                        if (attempt >= 3 || seconds < 0 || seconds > 60) throw new InvalidDataException("Discord rate limit; retry later.");
+                        await Task.Delay(TimeSpan.FromSeconds(seconds + .1)); continue;
                     }
                     if (!response.IsSuccessStatusCode)
                     {
-                        Save((int)response.StatusCode>=500 ? "uncertain":"pending");
+                        Save((int)response.StatusCode >= 500 ? "uncertain" : "pending");
                         throw new InvalidDataException($"Discord returned HTTP {(int)response.StatusCode}.");
                     }
-                    using var result=JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-                    Save("sent",result.RootElement.GetProperty("id").GetString() ?? throw new InvalidDataException("Missing message ID.")); break;
+                    using var result = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+                    Save("sent", result.RootElement.GetProperty("id").GetString() ?? throw new InvalidDataException("Missing message ID.")); break;
                 }
-                catch(Exception ex) when(ex is HttpRequestException or TaskCanceledException or JsonException or KeyNotFoundException)
+                catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException or JsonException or KeyNotFoundException)
                 { Save("uncertain"); throw new InvalidDataException("Discord outcome uncertain; inspect channel before retrying."); }
             }
         }
@@ -66,7 +66,7 @@ public static class DiscordDelivery
 
     private static HttpContent BuildBody(DeliveryPart part)
     {
-        var payload = new {content=part.Content,allowed_mentions=new {parse=Array.Empty<string>()}};
+        var payload = new { content = part.Content, allowed_mentions = new { parse = Array.Empty<string>() } };
         if (part.Attachment is null) return JsonContent.Create(payload);
         var body = new MultipartFormDataContent();
         body.Add(new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"), "payload_json");
