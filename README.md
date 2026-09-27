@@ -98,6 +98,8 @@ Primary references: [Bandai OP-08](https://en.onepiece-cardgame.com/products/boo
 
 ## Changes, movers and delivery
 
+Discord delivery failures print the exception message, set code, and destination ID to the console and exit with code 1 without advancing report history.
+
 Every set report ends with a concise warning about its weaker assumptions. The final Discord message part carries a downloadable `<set>-pull-rate-assumptions.md` file, generated directly from the same profile used for EV. It includes the expected-cards-per-box table AFTER all replacements and special-pack adjustments, physical contents, profile version/hash, weighting, assumptions and source links. Dry runs also write these files alongside `out/latest.md`. Markdown is uploaded as a file, not hosted as a webpage; Discord clients may offer a preview or download rather than render it as a formatted document.
 
 Files use Discord's multipart webhook upload (`payload_json` plus `files[0]`). Their contents are frozen in the delivery ledger with the report, so retrying cannot substitute changed assumptions into an earlier report. Previously delivered batches are not resent merely to add attachments. See [Discord webhook upload documentation](https://docs.discord.com/developers/resources/webhook#execute-webhook).

@@ -225,13 +225,21 @@ public static class Program
                 }
 
                 var key = $"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:{report.Code}";
-                await DiscordDelivery.Send(
-                    http,
-                    Path.Combine(settings.StateDirectory, "deliveries.json"),
-                    key,
-                    endpoint,
-                    texts[report.Code],
-                    attachments[report.Code]);
+                try
+                {
+                    await DiscordDelivery.Send(
+                        http,
+                        Path.Combine(settings.StateDirectory, "deliveries.json"),
+                        key,
+                        endpoint,
+                        texts[report.Code],
+                        attachments[report.Code]);
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"Discord delivery failed for {report.Code} to {d.Id}: {ex.Message}");
+                    return 1;
+                }
             }
         }
 
