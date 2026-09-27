@@ -1,0 +1,290 @@
+{
+  "files": {
+    "last-updated.txt": {
+      "url": "https://tcgcsv.com/last-updated.txt",
+      "retrievedAtUtc": "2026-09-27T02:12:39.026360+00:00",
+      "sha256": "e9a932d6ff3409a0fece45565705f197fff64eeb22e04612aea5ac8d6e2b94eb"
+    },
+    "groups.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/groups",
+      "retrievedAtUtc": "2026-09-27T02:12:39.224909+00:00",
+      "sha256": "f1a7fa9258afa7df363fa0c2ff7ba3f4100e29594b07cea230495d9ac3b903b4"
+    },
+    "3188/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3188/products",
+      "retrievedAtUtc": "2026-09-27T02:12:39.453852+00:00",
+      "sha256": "04f2349ac85385b89fe3a32772a3b750f25f11f5cf85dc0717cbe2b90b34c8ec"
+    },
+    "17675/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/17675/products",
+      "retrievedAtUtc": "2026-09-27T02:12:39.745263+00:00",
+      "sha256": "07099d5d7c84b3c3297deca2fa4c7e194d7712ce8af641dc84d42d6318c2d0a5"
+    },
+    "17698/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/17698/products",
+      "retrievedAtUtc": "2026-09-27T02:12:40.004457+00:00",
+      "sha256": "e1c86e2fa1449231d752f7edf96d9bdea0614fcdd1284bafc53726c809259038"
+    },
+    "22890/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22890/products",
+      "retrievedAtUtc": "2026-09-27T02:12:40.272428+00:00",
+      "sha256": "b0fdd9e84fea440d7f282b7ac72a91eeff99e86f68f01f23c8b9ca8183f769c7"
+    },
+    "23024/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23024/products",
+      "retrievedAtUtc": "2026-09-27T02:12:40.528448+00:00",
+      "sha256": "973ffee27b7d58fe59f361ab7d317aea90f28284f7f70085e55f6e12d563b50a"
+    },
+    "23213/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23213/products",
+      "retrievedAtUtc": "2026-09-27T02:12:40.781002+00:00",
+      "sha256": "6b959cfe407216fb536cb94ab4f4b3e6ea5bd4749e69320eb8b9849b75f44812"
+    },
+    "23272/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23272/products",
+      "retrievedAtUtc": "2026-09-27T02:12:41.015060+00:00",
+      "sha256": "d42c17d47dba15521f681bc1880401dd2207c56b2e4dc63fdd235f1df2a3bab4"
+    },
+    "23304/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23304/products",
+      "retrievedAtUtc": "2026-09-27T02:12:41.230255+00:00",
+      "sha256": "c19fa88ec54e08d1a6ea229f19b5937412bedecd186d15a5b4ccbabf65729f76"
+    },
+    "23333/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23333/products",
+      "retrievedAtUtc": "2026-09-27T02:12:41.454080+00:00",
+      "sha256": "c30590fe2447dd101097642637a32da446b32f48bcfd26ed11ec5188a75443c4"
+    },
+    "23333/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23333/prices",
+      "retrievedAtUtc": "2026-09-27T02:12:41.676852+00:00",
+      "sha256": "9125c8ee251d20fdf6cda2eaa8d525edc19cd2798f3f33b90e2e4059323521b9"
+    },
+    "23387/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23387/products",
+      "retrievedAtUtc": "2026-09-27T02:12:41.927420+00:00",
+      "sha256": "a6ac3921431921f73007c475eb7973a733ef337bcb3377531ce3f55cda9f6fbd"
+    },
+    "23462/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23462/products",
+      "retrievedAtUtc": "2026-09-27T02:12:42.183976+00:00",
+      "sha256": "6c31542d674e024c48392c02758e8484dd4eef9fb6ecbc8da711f6afb3027be8"
+    },
+    "23462/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23462/prices",
+      "retrievedAtUtc": "2026-09-27T02:12:42.406933+00:00",
+      "sha256": "0fbfcf38e326756ef03920215294a8834b4e8e361f25928cee294de6502ab3fd"
+    },
+    "23496/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23496/products",
+      "retrievedAtUtc": "2026-09-27T02:12:42.664381+00:00",
+      "sha256": "f7bc9a4bbd6459a3b033f07e1a397c39c93f96f9d531a0863933d838debb9c3e"
+    },
+    "23496/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23496/prices",
+      "retrievedAtUtc": "2026-09-27T02:12:42.908181+00:00",
+      "sha256": "fc9456ec419c7322497b579a0d033202b050255a001e5b4e5a3ab8d47490c506"
+    },
+    "23589/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23589/products",
+      "retrievedAtUtc": "2026-09-27T02:12:43.141147+00:00",
+      "sha256": "1bce6bc1362d2dd39b2e617ef4704d19af87b4dab66f7bf7cfa416d55db35346"
+    },
+    "23766/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23766/products",
+      "retrievedAtUtc": "2026-09-27T02:12:43.391155+00:00",
+      "sha256": "5a7b4cec94210ac813f327bd11d62fc344a3dfce3c735110b08da2635cf9f6d8"
+    },
+    "23834/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23834/products",
+      "retrievedAtUtc": "2026-09-27T02:12:43.619305+00:00",
+      "sha256": "27d717edaf06119468dbc778ed027777bf41638c825387d486dbb0f8a384f6ac"
+    },
+    "24241/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24241/products",
+      "retrievedAtUtc": "2026-09-27T02:12:43.891483+00:00",
+      "sha256": "cef314fd6b3419355a07a041bc4fde0f38d08a73a08a7d8892c6aefd80ca4409"
+    },
+    "24302/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24302/products",
+      "retrievedAtUtc": "2026-09-27T02:12:44.324174+00:00",
+      "sha256": "66d49fec047d9a70aa0d95e4451e166a5d5f21497144e7a303a7fa3d79ce6b56"
+    },
+    "24303/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24303/products",
+      "retrievedAtUtc": "2026-09-27T02:12:44.563199+00:00",
+      "sha256": "090e19d859d1baf883d82896fd9b23a292fd82235fb87c3d7a5dc7acf58e1377"
+    },
+    "24305/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24305/products",
+      "retrievedAtUtc": "2026-09-27T02:12:44.822521+00:00",
+      "sha256": "f4113c4889166c01e017064fe4bdc36b75831f3ab3f0525cefc10b472af914d7"
+    },
+    "24537/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24537/products",
+      "retrievedAtUtc": "2026-09-27T02:12:45.107330+00:00",
+      "sha256": "d1f1c23be6a2b43a9500eb88c37b13e0228d1e9e5872b35d95bd7ba0aa91f92f"
+    },
+    "24545/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24545/products",
+      "retrievedAtUtc": "2026-09-27T02:12:45.335144+00:00",
+      "sha256": "af20451166a323b5ce6f56f41d6d9751fe186220b2de49bfea33db8e97373469"
+    },
+    "24637/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24637/products",
+      "retrievedAtUtc": "2026-09-27T02:12:45.577874+00:00",
+      "sha256": "9d622c66b5f531b8ca71f8842e0a1fde3817a421d22c5b5b94a89be39e556ca3"
+    },
+    "24664/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24664/products",
+      "retrievedAtUtc": "2026-09-27T02:12:45.813561+00:00",
+      "sha256": "6e54e6fdaab11a6d52261d7b04da468914b4f700d4748fbed673d4926d1d92c4"
+    },
+    "24736/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24736/products",
+      "retrievedAtUtc": "2026-09-27T02:12:46.049814+00:00",
+      "sha256": "d5f340a0e69d25d592450815667dfb89a5321ab60de56c4239abe7cf2d060854"
+    },
+    "24820/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24820/products",
+      "retrievedAtUtc": "2026-09-27T02:12:46.260885+00:00",
+      "sha256": "61396ef5bacb4e15bdac5a99fb635fb3567495912a66313f9f3e74faccd7fb7c"
+    },
+    "24833/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/24833/products",
+      "retrievedAtUtc": "2026-09-27T02:12:46.465012+00:00",
+      "sha256": "251a890ba0d66ce875376bd4d1a49cb60ba742d72a5b691a2dae9656649369b5"
+    },
+    "3188/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3188/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:54.896361+00:00",
+      "sha256": "97308a2d5110b2c4403c354cd631129deb90f093110f59bb27fe89b125fee3ae"
+    },
+    "3189/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3189/products",
+      "retrievedAtUtc": "2026-09-27T02:16:55.102011+00:00",
+      "sha256": "67a1679cbed365487d11c828dc944cdcb5085822f2da20e13e9c7a3f05c87180"
+    },
+    "3189/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3189/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:55.319414+00:00",
+      "sha256": "8b6f59124c404dc0f4d8aceb06b85d38a1884e4e3ef6b9cf3c102cb8cefe2a58"
+    },
+    "3190/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3190/products",
+      "retrievedAtUtc": "2026-09-27T02:16:55.563155+00:00",
+      "sha256": "52e141f1e6aed6048df30139d798ad80c0240a267c5a0134125b0a4c8ef9c941"
+    },
+    "3190/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3190/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:55.777046+00:00",
+      "sha256": "45dcdbfb6eb904bd326cb80aae4db8164be7a8565920ffdc6fafd9ac9a8af34f"
+    },
+    "3191/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3191/products",
+      "retrievedAtUtc": "2026-09-27T02:16:55.993224+00:00",
+      "sha256": "adf84e2466cb706eaac38252a3daa3560a17e20858a5dc7d0362a34ec09da9dc"
+    },
+    "3191/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3191/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:56.195400+00:00",
+      "sha256": "6dd24f351c0bdcad231a0efdd44cc39d33cc966ad230217a2309c4bd318871f9"
+    },
+    "3192/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3192/products",
+      "retrievedAtUtc": "2026-09-27T02:16:56.414915+00:00",
+      "sha256": "1d980cd7834beac064263f554b2e3e1677587d9b64fa2d5da400741184959867"
+    },
+    "3192/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/3192/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:56.629561+00:00",
+      "sha256": "b5e69db7f1e7d52bdcecfdb0b819f2a13f2eae16e0466ad28a087df8d85497d7"
+    },
+    "17698/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/17698/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:56.878973+00:00",
+      "sha256": "cc41147b44ce8cdec3a98b9ee213caba18afb4e049f9ff1c3336383551b57c53"
+    },
+    "17699/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/17699/products",
+      "retrievedAtUtc": "2026-09-27T02:16:57.153374+00:00",
+      "sha256": "0ad763fb06deb5ce5652f9d81fa535043fe30e2c0bc03fefe0bd4fd01cfd7154"
+    },
+    "17699/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/17699/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:57.351082+00:00",
+      "sha256": "87e274299641d12c6145b74c059a58094f13619b26b7bf8ee5219bc42c440daa"
+    },
+    "22890/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22890/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:57.555265+00:00",
+      "sha256": "35cc06b0326bdd32547329d9a415e28e42f98c7b8a11203ef8010c3293a1f511"
+    },
+    "22930/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22930/products",
+      "retrievedAtUtc": "2026-09-27T02:16:57.757608+00:00",
+      "sha256": "9157885f1dccc92a2a91a8fc8dc5fcca8aa8d435ff230f1cf4b3288962ef67e3"
+    },
+    "22930/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22930/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:57.959113+00:00",
+      "sha256": "c6731a9e651bcd9d6546d291f93c6315e79b727c586720bb620933754d65782a"
+    },
+    "22957/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22957/products",
+      "retrievedAtUtc": "2026-09-27T02:16:58.159319+00:00",
+      "sha256": "573dced0a91f5894929a986326b4ca64761ad520d30c64bb6fe8ea8a03aee7f2"
+    },
+    "22957/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/22957/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:58.375237+00:00",
+      "sha256": "975a8ebabd1fd9c9f3818cade232874a51c2f67a354ef70ca249a3b6d56c931c"
+    },
+    "23024/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23024/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:58.589352+00:00",
+      "sha256": "b1bf69a0b93a6ac9c9b18334b5739161f986d0c47a1e87316623be0c54defa79"
+    },
+    "23213/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23213/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:58.807572+00:00",
+      "sha256": "69419353a14ed2330a28de1620f29eef09667fc40ba04e67edab44783c5e364e"
+    },
+    "23272/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23272/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:59.049362+00:00",
+      "sha256": "7d1472b7c0d364ed7a7fed889bb3f18bd7c801a11e4fb385175486b90304ec7c"
+    },
+    "23348/products.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23348/products",
+      "retrievedAtUtc": "2026-09-27T02:16:59.255459+00:00",
+      "sha256": "61911934c875d74f1781ad5c0a7fc103c92e194cbbaa81c799449262edcdd278"
+    },
+    "23348/prices.json": {
+      "url": "https://tcgcsv.com/tcgplayer/68/23348/prices",
+      "retrievedAtUtc": "2026-09-27T02:16:59.477360+00:00",
+      "sha256": "18c617760471edb1ab7ee20189f469e1030c0abda3eb29dba5f4a500b38e24e3"
+    },
+    "official/op08.html": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569108",
+      "retrievedAtUtc": "2026-09-27T02:13:58.869160+00:00",
+      "sha256": "89217631b905dbe3503f3c63a3fd069de96642835232e447646eae424cc43c82",
+      "note": "Registered from an existing research cache file; time is its filesystem modification time."
+    },
+    "official/eb01.html": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569201",
+      "retrievedAtUtc": "2026-09-27T02:14:01.062965+00:00",
+      "sha256": "7eca3fc407c1833796993134403be092b82a8ce0a20897ccb5ee7b00fa6546fd",
+      "note": "Registered from an existing research cache file; time is its filesystem modification time."
+    },
+    "official/prb01.html": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569301",
+      "retrievedAtUtc": "2026-09-27T02:14:00.059515+00:00",
+      "sha256": "4fb94341ba597e31c34918c45350838ca6928ead96eefaeeab5a4242e4b4421c",
+      "note": "Registered from an existing research cache file; time is its filesystem modification time."
+    }
+  },
+  "sourceUpdatedAt": "2026-09-26T20:05:16+0000",
+  "endSourceUpdatedAt": "2026-09-26T20:05:16+0000",
+  "consistentSourceTimestamp": true
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "officialId": "EB01-001",
+    "number": "EB01-001",
+    "rarity": "L",
+    "name": "Kouzuki Oden"
+  },
+  {
+    "officialId": "EB01-001_p1",
+    "number": "EB01-001",
+    "rarity": "L",
+    "name": "Kouzuki Oden"
+  },
+  {
+    "officialId": "EB01-002",
+    "number": "EB01-002",
+    "rarity": "R",
+    "name": "Izo"
+  },
+  {
+    "officialId": "EB01-003",
+    "number": "EB01-003",
+    "rarity": "R",
+    "name": "Kid & Killer"
+  },
+  {
+    "officialId": "EB01-003_p1",
+    "number": "EB01-003",
+    "rarity": "R",
+    "name": "Kid & Killer"
+  },
+  {
+    "officialId": "EB01-004",
+    "number": "EB01-004",
+    "rarity": "C",
+    "name": "Koza"
+  },
+  {
+    "officialId": "EB01-005",
+    "number": "EB01-005",
+    "rarity": "C",
+    "name": "Doma"
+  },
+  {
+    "officialId": "EB01-006",
+    "number": "EB01-006",
+    "rarity": "SR",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "officialId": "EB01-006_p1",
+    "number": "EB01-006",
+    "rarity": "SR",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "officialId": "EB01-006_p2",
+    "number": "EB01-006",
+    "rarity": "SR",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "officialId": "EB01-007",
+    "number": "EB01-007",
+    "rarity": "C",
+    "name": "Yamato"
+  },
+  {
+    "officialId": "EB01-008",
+    "number": "EB01-008",
+    "rarity": "R",
+    "name": "LittleOars Jr."
+  },
+  {
+    "officialId": "EB01-009",
+    "number": "EB01-009",
+    "rarity": "C",
+    "name": "Just Shut Up and Come with Us!!!!"
+  },
+  {
+    "officialId": "EB01-010",
+    "number": "EB01-010",
+    "rarity": "R",
+    "name": "There's No Way You Could Defeat Me!!"
+  },
+  {
+    "officialId": "EB01-011",
+    "number": "EB01-011",
+    "rarity": "C",
+    "name": "Mini-Merry"
+  },
+  {
+    "officialId": "EB01-012",
+    "number": "EB01-012",
+    "rarity": "SR",
+    "name": "Cavendish"
+  },
+  {
+    "officialId": "EB01-012_p1",
+    "number": "EB01-012",
+    "rarity": "SR",
+    "name": "Cavendish"
+  },
+  {
+    "officialId": "EB01-013",
+    "number": "EB01-013",
+    "rarity": "R",
+    "name": "Kouzuki Hiyori"
+  },
+  {
+    "officialId": "EB01-013_p1",
+    "number": "EB01-013",
+    "rarity": "R",
+    "name": "Kouzuki Hiyori"
+  },
+  {
+    "officialId": "EB01-014",
+    "number": "EB01-014",
+    "rarity": "R",
+    "name": "Sanji"
+  },
+  {
+    "officialId": "EB01-015",
+    "number": "EB01-015",
+    "rarity": "R",
+    "name": "Scratchmen Apoo"
+  },
+  {
+    "officialId": "EB01-016",
+    "number": "EB01-016",
+    "rarity": "C",
+    "name": "Bingoh"
+  },
+  {
+    "officialId": "EB01-017",
+    "number": "EB01-017",
+    "rarity": "C",
+    "name": "Blueno"
+  },
+  {
+    "officialId": "EB01-018",
+    "number": "EB01-018",
+    "rarity": "C",
+    "name": "Mountain God"
+  },
+  {
+    "officialId": "EB01-019",
+    "number": "EB01-019",
+    "rarity": "R",
+    "name": "Off-White"
+  },
+  {
+    "officialId": "EB01-020",
+    "number": "EB01-020",
+    "rarity": "C",
+    "name": "Chambres"
+  },
+  {
+    "officialId": "EB01-021",
+    "number": "EB01-021",
+    "rarity": "L",
+    "name": "Hannyabal"
+  },
+  {
+    "officialId": "EB01-021_p1",
+    "number": "EB01-021",
+    "rarity": "L",
+    "name": "Hannyabal"
+  },
+  {
+    "officialId": "EB01-022",
+    "number": "EB01-022",
+    "rarity": "SR",
+    "name": "Inazuma"
+  },
+  {
+    "officialId": "EB01-022_p1",
+    "number": "EB01-022",
+    "rarity": "SR",
+    "name": "Inazuma"
+  },
+  {
+    "officialId": "EB01-023",
+    "number": "EB01-023",
+    "rarity": "R",
+    "name": "Edward Weevil"
+  },
+  {
+    "officialId": "EB01-024",
+    "number": "EB01-024",
+    "rarity": "C",
+    "name": "Hamlet"
+  },
+  {
+    "officialId": "EB01-025",
+    "number": "EB01-025",
+    "rarity": "C",
+    "name": "Fourtricks"
+  },
+  {
+    "officialId": "EB01-026",
+    "number": "EB01-026",
+    "rarity": "C",
+    "name": "Prince Bellett"
+  },
+  {
+    "officialId": "EB01-027",
+    "number": "EB01-027",
+    "rarity": "R",
+    "name": "Mr.1(Daz.Bonez)"
+  },
+  {
+    "officialId": "EB01-027_p1",
+    "number": "EB01-027",
+    "rarity": "R",
+    "name": "Mr.1(Daz.Bonez)"
+  },
+  {
+    "officialId": "EB01-028",
+    "number": "EB01-028",
+    "rarity": "R",
+    "name": "Gum-Gum Champion Rifle"
+  },
+  {
+    "officialId": "EB01-029",
+    "number": "EB01-029",
+    "rarity": "C",
+    "name": "Sorry. I'm a Goner."
+  },
+  {
+    "officialId": "EB01-030",
+    "number": "EB01-030",
+    "rarity": "C",
+    "name": "Loguetown"
+  },
+  {
+    "officialId": "EB01-031",
+    "number": "EB01-031",
+    "rarity": "R",
+    "name": "Kalifa"
+  },
+  {
+    "officialId": "EB01-031_p1",
+    "number": "EB01-031",
+    "rarity": "R",
+    "name": "Kalifa"
+  },
+  {
+    "officialId": "EB01-032",
+    "number": "EB01-032",
+    "rarity": "C",
+    "name": "Army Wolves"
+  },
+  {
+    "officialId": "EB01-033",
+    "number": "EB01-033",
+    "rarity": "R",
+    "name": "Blueno"
+  },
+  {
+    "officialId": "EB01-034",
+    "number": "EB01-034",
+    "rarity": "SR",
+    "name": "Ms. Wednesday"
+  },
+  {
+    "officialId": "EB01-034_p1",
+    "number": "EB01-034",
+    "rarity": "SR",
+    "name": "Ms. Wednesday"
+  },
+  {
+    "officialId": "EB01-035",
+    "number": "EB01-035",
+    "rarity": "C",
+    "name": "Ms. Monday"
+  },
+  {
+    "officialId": "EB01-036",
+    "number": "EB01-036",
+    "rarity": "C",
+    "name": "Minochihuahua"
+  },
+  {
+    "officialId": "EB01-037",
+    "number": "EB01-037",
+    "rarity": "C",
+    "name": "Mr. 9"
+  },
+  {
+    "officialId": "EB01-038",
+    "number": "EB01-038",
+    "rarity": "C",
+    "name": "Oh Come My Way"
+  },
+  {
+    "officialId": "EB01-039",
+    "number": "EB01-039",
+    "rarity": "R",
+    "name": "Conquerer of Three Worlds Ragnaraku"
+  },
+  {
+    "officialId": "EB01-040",
+    "number": "EB01-040",
+    "rarity": "L",
+    "name": "Kyros"
+  },
+  {
+    "officialId": "EB01-040_p1",
+    "number": "EB01-040",
+    "rarity": "L",
+    "name": "Kyros"
+  },
+  {
+    "officialId": "EB01-041",
+    "number": "EB01-041",
+    "rarity": "C",
+    "name": "Crocus"
+  },
+  {
+    "officialId": "EB01-042",
+    "number": "EB01-042",
+    "rarity": "R",
+    "name": "Scarlet"
+  },
+  {
+    "officialId": "EB01-043",
+    "number": "EB01-043",
+    "rarity": "R",
+    "name": "Spandine"
+  },
+  {
+    "officialId": "EB01-044",
+    "number": "EB01-044",
+    "rarity": "C",
+    "name": "Funkfreed"
+  },
+  {
+    "officialId": "EB01-045",
+    "number": "EB01-045",
+    "rarity": "C",
+    "name": "Brook"
+  },
+  {
+    "officialId": "EB01-046",
+    "number": "EB01-046",
+    "rarity": "SR",
+    "name": "Brook"
+  },
+  {
+    "officialId": "EB01-046_p1",
+    "number": "EB01-046",
+    "rarity": "SR",
+    "name": "Brook"
+  },
+  {
+    "officialId": "EB01-047",
+    "number": "EB01-047",
+    "rarity": "C",
+    "name": "Laboon"
+  },
+  {
+    "officialId": "EB01-048",
+    "number": "EB01-048",
+    "rarity": "SR",
+    "name": "Laboon"
+  },
+  {
+    "officialId": "EB01-048_p1",
+    "number": "EB01-048",
+    "rarity": "SR",
+    "name": "Laboon"
+  },
+  {
+    "officialId": "EB01-049",
+    "number": "EB01-049",
+    "rarity": "R",
+    "name": "T-Bone"
+  },
+  {
+    "officialId": "EB01-049_p1",
+    "number": "EB01-049",
+    "rarity": "R",
+    "name": "T-Bone"
+  },
+  {
+    "officialId": "EB01-050",
+    "number": "EB01-050",
+    "rarity": "C",
+    "name": "...I Want to Live!!"
+  },
+  {
+    "officialId": "EB01-051",
+    "number": "EB01-051",
+    "rarity": "R",
+    "name": "Finger Pistol"
+  },
+  {
+    "officialId": "EB01-052",
+    "number": "EB01-052",
+    "rarity": "SR",
+    "name": "Viola"
+  },
+  {
+    "officialId": "EB01-052_p1",
+    "number": "EB01-052",
+    "rarity": "SR",
+    "name": "Viola"
+  },
+  {
+    "officialId": "EB01-053",
+    "number": "EB01-053",
+    "rarity": "C",
+    "name": "Gastino"
+  },
+  {
+    "officialId": "EB01-054",
+    "number": "EB01-054",
+    "rarity": "R",
+    "name": "Gan.Fall"
+  },
+  {
+    "officialId": "EB01-055",
+    "number": "EB01-055",
+    "rarity": "C",
+    "name": "Charlotte Compote"
+  },
+  {
+    "officialId": "EB01-056",
+    "number": "EB01-056",
+    "rarity": "R",
+    "name": "Charlotte Flampe"
+  },
+  {
+    "officialId": "EB01-056_p1",
+    "number": "EB01-056",
+    "rarity": "R",
+    "name": "Charlotte Flampe"
+  },
+  {
+    "officialId": "EB01-057",
+    "number": "EB01-057",
+    "rarity": "SR",
+    "name": "Shirahoshi"
+  },
+  {
+    "officialId": "EB01-057_p1",
+    "number": "EB01-057",
+    "rarity": "SR",
+    "name": "Shirahoshi"
+  },
+  {
+    "officialId": "EB01-058",
+    "number": "EB01-058",
+    "rarity": "C",
+    "name": "Mont Blanc Cricket"
+  },
+  {
+    "officialId": "EB01-059",
+    "number": "EB01-059",
+    "rarity": "R",
+    "name": "Kingdom Come"
+  },
+  {
+    "officialId": "EB01-060",
+    "number": "EB01-060",
+    "rarity": "C",
+    "name": "Did Someone Say...Kami?"
+  },
+  {
+    "officialId": "EB01-061",
+    "number": "EB01-061",
+    "rarity": "SEC",
+    "name": "Mr.2.Bon.Kurei(Bentham)"
+  },
+  {
+    "officialId": "EB01-061_p1",
+    "number": "EB01-061",
+    "rarity": "SEC",
+    "name": "Mr.2.Bon.Kurei(Bentham)"
+  }
+]

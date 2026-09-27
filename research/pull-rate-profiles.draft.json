@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-27",
+  "snapshotSourceUpdatedAt": "2026-09-26T20:05:16+0000",
+  "purpose": "Research evidence and candidate profiles; not executable production configuration. Null is unresolved, not zero.",
+  "sources": {
+    "tcgcsv": {
+      "url": "https://tcgcsv.com/docs",
+      "kind": "provider-documentation"
+    },
+    "op08-official": {
+      "url": "https://en.onepiece-cardgame.com/products/boosters/op08.php",
+      "kind": "publisher-contents"
+    },
+    "eb01-official": {
+      "url": "https://en.onepiece-cardgame.com/products/boosters/eb01.php",
+      "kind": "publisher-contents"
+    },
+    "prb01-official": {
+      "url": "https://en.onepiece-cardgame.com/products/boosters/prb01.php",
+      "kind": "publisher-contents"
+    },
+    "op08-checklist": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569108",
+      "kind": "publisher-checklist"
+    },
+    "eb01-checklist": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569201",
+      "kind": "publisher-checklist"
+    },
+    "prb01-checklist": {
+      "url": "https://en.onepiece-cardgame.com/cardlist/?series=569301",
+      "kind": "publisher-checklist"
+    },
+    "dp05-official": {
+      "url": "https://en.onepiece-cardgame.com/products/other/dp05.php",
+      "kind": "publisher-separate-product"
+    },
+    "op01-topper": {
+      "url": "https://en.onepiece-cardgame.com/products/boosters/op01.php",
+      "kind": "publisher-bonus"
+    },
+    "prb01-retailer": {
+      "url": "https://phantomich.com/products/premium-booster-box-prb-01-english",
+      "kind": "retailer-physical-configuration"
+    },
+    "prb01-gamestop": {
+      "url": "https://www.gamestop.com/toys-games/trading-cards/products/one-piece-card-game-premium-booster-box-prb-01-20-boosters/419165.html",
+      "kind": "retailer-physical-configuration"
+    },
+    "english-observations": {
+      "url": "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+      "kind": "community-observations-and-comments",
+      "limitation": "OP reports 20+ boxes across sets, not a per-set ledger. A commenter reports 15+ OP06/07/08 cases together; no exact OP08 denominator. Comments dispute guarantees."
+    },
+    "eb01-manga": {
+      "url": "https://www.reddit.com/r/OnePieceTCG/comments/1cjbyiz/so_4hit_boxes_are_definitely_a_thing_with_eb01/",
+      "kind": "community-first-hand-selected-pulls",
+      "limitation": "Selected-hit reports, conflicting descriptions of the displaced rarity; no full pack ledger or frequency sample."
+    },
+    "eb01-sec-comment": {
+      "url": "https://www.reddit.com/r/OnePieceTCG/comments/1kjni2b/",
+      "kind": "community-case-rate-claim",
+      "limitation": "Comment asserts eight EB01 base SEC per case; no attributable full-case ledger."
+    },
+    "prb01-observations": {
+      "url": "https://www.reddit.com/r/OnePieceTCG/comments/1gjy045/english_prb01/",
+      "kind": "community-first-hand-selected-pulls-and-recipe",
+      "limitation": "Two-box and one-box selected-hit observations. Full pack recipe and chase rates are another commenter's claims, not a controlled ledger."
+    },
+    "user-guide": {
+      "url": "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+      "kind": "community-general-guide",
+      "limitation": "Broad estimates, no set-specific denominator; do not use as verified per-set probabilities."
+    },
+    "brannew-finish": {
+      "url": "https://www.reddit.com/r/OnePieceTCG/comments/1gotcp3/",
+      "kind": "community-finish-discussion",
+      "limitation": "Supports investigating a nonfoil deck printing; insufficient to prove the catalog Normal SKU is booster-pullable."
+    },
+    "independent-prb01-audit": {
+      "url": "https://theexpectedvalue.com/one-piece/ev/prb-01",
+      "kind": "independent-model-author-methodology",
+      "limitation": "Corroborates independently computed 54 shared-listing gaps. Its Japanese proxy, no-chase policy and Low-price model are NOT adopted."
+    }
+  },
+  "profiles": [
+    {
+      "setCode": "OP-08",
+      "groupId": 23462,
+      "boosterBoxProductId": 542504,
+      "boosterCaseProductId": 542505,
+      "physical": {
+        "packsPerBox": 24,
+        "cardsPerPack": 12,
+        "boxesPerCase": 12,
+        "caseSizeBasis": "User-specified standard-case assumption; consistent with community case descriptions.",
+        "sourceIds": [
+          "op08-official",
+          "english-observations"
+        ]
+      },
+      "variantMapping": "op-08-variant-mapping.json",
+      "catalogMappedVariants": 152,
+      "exclusions": [
+        {
+          "productId": 576484,
+          "subTypeName": "Foil",
+          "reason": "DP-05 bonus, not OP08 booster contents",
+          "sourceIds": [
+            "dp05-official"
+          ]
+        },
+        {
+          "productId": 576485,
+          "subTypeName": "Foil",
+          "reason": "DP-05 bonus, not OP08 booster contents",
+          "sourceIds": [
+            "dp05-official"
+          ]
+        }
+      ],
+      "packagedBonuses": {
+        "status": "none-identified",
+        "items": [],
+        "note": "Do not add an OP01-style topper or DP05 bonus by analogy."
+      },
+      "observations": [
+        {
+          "pool": "base-sr",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 7,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Ordinary SR only."
+        },
+        {
+          "pool": "base-l",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 8,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Reported mean-like box count, not a guaranteed one-of-each checklist."
+        },
+        {
+          "pool": "don-foil",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 2,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Only product 577568; exact displaced slot requires confirmation."
+        },
+        {
+          "pool": "base-sec",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 8,
+            "denominator": 12
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Candidate 12-box recipe; conditional on adopting that recipe."
+        },
+        {
+          "pool": "aa",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 16,
+            "denominator": 12
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Before any Manga/TR replacement adjustment; excludes AA Leaders and SP."
+        },
+        {
+          "pool": "aa-leader",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 4,
+            "denominator": 12
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Community cases vary."
+        },
+        {
+          "pool": "sp",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 2,
+            "denominator": 12
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Community cases vary."
+        }
+      ],
+      "candidateCaseRecipe": {
+        "status": "unverified-comment-recipe",
+        "sourceIds": [
+          "english-observations"
+        ],
+        "boxes": [
+          {
+            "count": 2,
+            "hits": {
+              "aa": 2
+            }
+          },
+          {
+            "count": 4,
+            "hits": {
+              "aa": 1,
+              "base-sec": 1
+            }
+          },
+          {
+            "count": 2,
+            "hits": {
+              "aa": 1,
+              "base-sec": 1,
+              "sp": 1
+            }
+          },
+          {
+            "count": 2,
+            "hits": {
+              "aa": 1,
+              "base-sec": 1,
+              "aa-leader": 1
+            }
+          },
+          {
+            "count": 2,
+            "hits": {
+              "aa": 2,
+              "aa-leader": 1
+            }
+          }
+        ]
+      },
+      "unresolved": [
+        "C/UC ordinary allocation and which slots Leaders and DON!! replace.",
+        "TR frequency and displaced pool; do not default to one per case.",
+        "Manga frequency and displaced pool; generic two-to-four-case guide is not an OP08 measurement.",
+        "Whether the proposed case recipe is applicable across English print waves.",
+        "Within-pool weights, including regular AA SEC versus AA R/SR."
+      ],
+      "profileVersion": "0.1-research",
+      "status": "draft-needs-resolution",
+      "enabledForEv": false,
+      "expectedCopiesPerBox": null,
+      "withinPoolWeights": "Equal weighting is a proposed modeling assumption, not established evidence."
+    },
+    {
+      "setCode": "EB-01",
+      "groupId": 23333,
+      "boosterBoxProductId": 521161,
+      "boosterCaseProductId": 521162,
+      "physical": {
+        "packsPerBox": 24,
+        "cardsPerPack": 12,
+        "boxesPerCase": 12,
+        "caseSizeBasis": "User-specified standard-case assumption.",
+        "sourceIds": [
+          "eb01-official"
+        ]
+      },
+      "variantMapping": "eb-01-variant-mapping.json",
+      "catalogMappedVariants": 80,
+      "exclusions": [],
+      "packagedBonuses": {
+        "status": "none-identified",
+        "items": [],
+        "note": "No custom DON!! or separate bonus identified in the audited checklist and opening reports."
+      },
+      "observations": [
+        {
+          "pool": "base-sr",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 6,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "Some other selected-hit reports differ; not a box guarantee."
+        },
+        {
+          "pool": "base-l",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 6,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "english-observations"
+          ],
+          "note": "No UC pool exists in this release."
+        },
+        {
+          "pool": "aa",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 2,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "eb01-manga"
+          ],
+          "note": "Ordinary two-AA reports; excludes third SEC/AA-Leader slot and Manga."
+        },
+        {
+          "pool": "base-sec",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 8,
+            "denominator": 12
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "eb01-sec-comment"
+          ],
+          "note": "Low-confidence community claim, not a measured rate."
+        }
+      ],
+      "candidateConstraints": [
+        {
+          "pools": [
+            "base-sec",
+            "aa-leader"
+          ],
+          "combinedExpectedCopiesPerBox": 1,
+          "evidenceStatus": "inferred-three-hit-model-not-adopted",
+          "sourceIds": [
+            "eb01-manga"
+          ],
+          "note": "With two ordinary AAs, third hit is proposed SEC/AA Leader; exceptions and exact mixture need review."
+        }
+      ],
+      "absentPools": [
+        "base-uc",
+        "sp",
+        "tr",
+        "don-normal",
+        "don-foil",
+        "don-gold"
+      ],
+      "unresolved": [
+        "C/R slot allocation and ordinary Leader replacement.",
+        "SEC/AA Leader mixture and per-card weights.",
+        "Manga frequency; reports dispute SR displacement and show Manga alongside three ordinary hits.",
+        "Whether any additional packaged bonus exists for a specific print wave."
+      ],
+      "profileVersion": "0.1-research",
+      "status": "draft-needs-resolution",
+      "enabledForEv": false,
+      "expectedCopiesPerBox": null,
+      "withinPoolWeights": "Equal weighting is a proposed modeling assumption, not established evidence."
+    },
+    {
+      "setCode": "PRB-01",
+      "groupId": 23496,
+      "boosterBoxProductId": 545399,
+      "boosterCaseProductId": 545400,
+      "physical": {
+        "packsPerBox": 20,
+        "cardsPerPack": 10,
+        "boxesPerCase": 10,
+        "caseSizeBasis": "English retailer configuration, corroborated by community 20-SEC case / two-SEC box description.",
+        "sourceIds": [
+          "prb01-retailer",
+          "prb01-gamestop",
+          "prb01-observations"
+        ]
+      },
+      "variantMapping": "prb-01-variant-mapping.json",
+      "catalogMappedVariants": 409,
+      "sharedPriceMapping": "prb-01-shared-reprints.json",
+      "sharedMappingStatus": "proposed-requires-artwork-equivalence-review",
+      "exclusions": [
+        {
+          "productId": 594331,
+          "subTypeName": "Normal",
+          "reason": "Quarantined pending evidence this nonfoil Brannew is in PRB01; Foil retained.",
+          "sourceIds": [
+            "prb01-checklist",
+            "brannew-finish"
+          ]
+        }
+      ],
+      "packagedBonuses": {
+        "status": "none-identified",
+        "items": [],
+        "note": "Special/god packs are in-box pack configurations, not extra cards appended to 200."
+      },
+      "observations": [
+        {
+          "pool": "base-sec",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 2,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "First-hand selected-hit observations."
+        },
+        {
+          "pool": "base-sr",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 18,
+            "denominator": 1
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Recipe claim; no full English ledger."
+        },
+        {
+          "pool": "don-gold",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 2,
+            "denominator": 10
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Two per ten-box case claimed; replaces ordinary Foil DON!!."
+        },
+        {
+          "pool": "aa-leader",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 1,
+            "denominator": 30
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Sanji estimate of one per three cases; alleged AA replacement, low confidence."
+        },
+        {
+          "pool": "manga-nami",
+          "proposedExpectedCopiesPerBox": {
+            "numerator": 1,
+            "denominator": 30
+          },
+          "evidenceStatus": "community-estimate-not-adopted",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Standalone Nami estimate only; god-pack inclusion must be accounted for separately."
+        }
+      ],
+      "candidateConstraints": [
+        {
+          "pools": [
+            "don-normal",
+            "don-foil",
+            "don-gold"
+          ],
+          "combinedExpectedCopiesPerBox": 20,
+          "evidenceStatus": "community-pack-recipe",
+          "sourceIds": [
+            "prb01-observations"
+          ]
+        },
+        {
+          "pools": [
+            "don-foil",
+            "don-gold"
+          ],
+          "combinedExpectedCopiesPerBox": 2,
+          "evidenceStatus": "selected-box-observations",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Do not add two gold on top of two foil."
+        },
+        {
+          "pools": [
+            "aa",
+            "aa-leader",
+            "manga-nami"
+          ],
+          "combinedExpectedCopiesPerBox": 2,
+          "evidenceStatus": "community-replacement-claim",
+          "sourceIds": [
+            "prb01-observations"
+          ],
+          "note": "Ordinary-pack path only; special pack is a separate replacement branch."
+        },
+        {
+          "pools": [
+            "full-art",
+            "textured-event-stage"
+          ],
+          "combinedExpectedCopiesPerBox": 2,
+          "evidenceStatus": "selected-box-observations",
+          "sourceIds": [
+            "prb01-observations"
+          ]
+        },
+        {
+          "pools": [
+            "base-c",
+            "base-uc",
+            "base-pr"
+          ],
+          "combinedExpectedCopiesPerBox": 100,
+          "evidenceStatus": "community-pack-recipe-needs-promo-allocation-review",
+          "sourceIds": [
+            "prb01-observations",
+            "prb01-checklist"
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact artwork/artist-credit equivalence for 54 proposed shared original listings.",
+        "Normal Brannew subtype distribution; quarantine until resolved.",
+        "Manga Ace 587709:Foil has null marketPrice in this snapshot.",
+        "Ordinary C/UC/Promo relative weights and Leader/Jolly Roger split.",
+        "Split of two Full Art/Textured slots and whether all variants in each pool are equally likely.",
+        "Standalone Manga Nami versus ten-card god-pack frequency, roster, and replacement; do not treat nine reprint Mangas as independent ordinary pulls.",
+        "Sanji AA frequency and purported mutual exclusion with standalone Nami are unverified.",
+        "Precise English printing-wave applicability."
+      ],
+      "profileVersion": "0.1-research",
+      "status": "draft-needs-resolution",
+      "enabledForEv": false,
+      "expectedCopiesPerBox": null,
+      "withinPoolWeights": "Equal weighting is a proposed modeling assumption, not established evidence."
+    }
+  ],
+  "bonusReference": {
+    "setCode": "OP-01",
+    "sourceIds": [
+      "op01-topper"
+    ],
+    "expectedCardsPerBox": 1,
+    "eligibleProductIds": [
+      453507,
+      453513,
+      453516,
+      453518,
+      453520,
+      453522
+    ],
+    "selectionWeights": null,
+    "note": "Publisher states one random card from six designs. Uniform 1/6 remains a modeling assumption; this is a bonus reference, not a full OP01 profile."
+  }
+}

@@ -1,0 +1,830 @@
+[
+  {
+    "number": "OP01-024",
+    "officialIds": [
+      "OP01-024_p3",
+      "OP01-024_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Monkey.D.Luffy (OP01-024) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP01-029",
+    "officialIds": [
+      "OP01-029_p2",
+      "OP01-029_p3",
+      "OP01-029_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Radical Beam!! (Jolly Roger Foil)",
+      "Radical Beam!! (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP01-033",
+    "officialIds": [
+      "OP01-033_p3",
+      "OP01-033_p4",
+      "OP01-033_p5",
+      "OP01-033_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Izo (OP01-033) (Jolly Roger Foil)",
+      "Izo (OP01-033) (Full Art)",
+      "Izo (OP01-033) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP01-041",
+    "officialIds": [
+      "OP01-041_p3",
+      "OP01-041_p4",
+      "OP01-041_p5",
+      "OP01-041_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Kouzuki Momonosuke (Jolly Roger Foil)",
+      "Kouzuki Momonosuke (Alternate Art)",
+      "Kouzuki Momonosuke (Full Art)"
+    ]
+  },
+  {
+    "number": "OP01-047",
+    "officialIds": [
+      "OP01-047_p4",
+      "OP01-047_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Trafalgar Law (OP01-047) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP01-051",
+    "officialIds": [
+      "OP01-051_p4",
+      "OP01-051_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Eustass\"Captain\"Kid (OP01-051) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP02-015",
+    "officialIds": [
+      "OP02-015_p3",
+      "OP02-015_p4",
+      "OP02-015_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Makino (Jolly Roger Foil)",
+      "Makino (Full Art)"
+    ]
+  },
+  {
+    "number": "OP02-089",
+    "officialIds": [
+      "OP02-089_p2",
+      "OP02-089_p3",
+      "OP02-089_p4",
+      "OP02-089_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Judgment of Hell (Alternate Art)",
+      "Judgment of Hell (Jolly Roger Foil)",
+      "Judgment of Hell (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP02-117",
+    "officialIds": [
+      "OP02-117_p5",
+      "OP02-117_p6",
+      "OP02-117_r2"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Ice Age (Jolly Roger Foil)",
+      "Ice Age (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP03-055",
+    "officialIds": [
+      "OP03-055_p2",
+      "OP03-055_p3",
+      "OP03-055_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Gum-Gum Giant Gavel (Jolly Roger Foil)",
+      "Gum-Gum Giant Gavel (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP03-056",
+    "officialIds": [
+      "OP03-056_p2",
+      "OP03-056_p3",
+      "OP03-056_p4",
+      "OP03-056_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Sanji's Pilaf (Jolly Roger Foil)",
+      "Sanji's Pilaf (Alternate Art)",
+      "Sanji's Pilaf (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP03-057",
+    "officialIds": [
+      "OP03-057_p2",
+      "OP03-057_p3",
+      "OP03-057_p4",
+      "OP03-057_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Three Thousand Worlds (Alternate Art)",
+      "Three Thousand Worlds (Jolly Roger Foil)",
+      "Three Thousand Worlds (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP03-094",
+    "officialIds": [
+      "OP03-094_p2",
+      "OP03-094_p3",
+      "OP03-094_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Air Door (Jolly Roger Foil)",
+      "Air Door (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP03-121",
+    "officialIds": [
+      "OP03-121_p3",
+      "OP03-121_p4",
+      "OP03-121_r2"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Thunder Bolt (Jolly Roger Foil)",
+      "Thunder Bolt (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP04-036",
+    "officialIds": [
+      "OP04-036_p2",
+      "OP04-036_p3",
+      "OP04-036_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Donquixote Family (Jolly Roger Foil)",
+      "Donquixote Family (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP04-056",
+    "officialIds": [
+      "OP04-056_p2",
+      "OP04-056_p3",
+      "OP04-056_p4",
+      "OP04-056_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Gum-Gum Red Roc (Alternate Art)",
+      "Gum-Gum Red Roc (Jolly Roger Foil)",
+      "Gum-Gum Red Roc (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP04-095",
+    "officialIds": [
+      "OP04-095_p2",
+      "OP04-095_p3",
+      "OP04-095_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Barrier!! (Jolly Roger Foil)",
+      "Barrier!! (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP05-057",
+    "officialIds": [
+      "OP05-057_p2",
+      "OP05-057_p3",
+      "OP05-057_p4",
+      "OP05-057_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Hound Blaze (Alternate Art)",
+      "Hound Blaze (Jolly Roger Foil)",
+      "Hound Blaze (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP05-114",
+    "officialIds": [
+      "OP05-114_p2",
+      "OP05-114_p3",
+      "OP05-114_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "El Thor (Jolly Roger Foil)",
+      "El Thor (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP05-115",
+    "officialIds": [
+      "OP05-115_p2",
+      "OP05-115_p3",
+      "OP05-115_p4",
+      "OP05-115_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Two-Hundred Million Volts Amaru (Alternate Art)",
+      "Two-Hundred Million Volts Amaru (Jolly Roger Foil)",
+      "Two-Hundred Million Volts Amaru (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP05-117",
+    "officialIds": [
+      "OP05-117_p2",
+      "OP05-117_p3",
+      "OP05-117_p4",
+      "OP05-117_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Upper Yard (Jolly Roger Foil)",
+      "Upper Yard (Alternate Art)",
+      "Upper Yard (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP06-003",
+    "officialIds": [
+      "OP06-003_p2",
+      "OP06-003_p3",
+      "OP06-003_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Emporio.Ivankov (Jolly Roger Foil)",
+      "Emporio.Ivankov (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-023",
+    "officialIds": [
+      "OP06-023_p2",
+      "OP06-023_p3",
+      "OP06-023_p4",
+      "OP06-023_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Arlong (Jolly Roger Foil)",
+      "Arlong (Full Art)",
+      "Arlong (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-035",
+    "officialIds": [
+      "OP06-035_p3",
+      "OP06-035_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Hody Jones (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-036",
+    "officialIds": [
+      "OP06-036_p2",
+      "OP06-036_p3",
+      "OP06-036_p4",
+      "OP06-036_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Ryuma (Jolly Roger Foil)",
+      "Ryuma (Full Art)",
+      "Ryuma (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-038",
+    "officialIds": [
+      "OP06-038_p2",
+      "OP06-038_p3",
+      "OP06-038_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "The Billion-fold World Trichiliocosm (Jolly Roger Foil)",
+      "The Billion-fold World Trichiliocosm (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP06-056",
+    "officialIds": [
+      "OP06-056_p2",
+      "OP06-056_p3",
+      "OP06-056_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Ama no Murakumo Sword (Jolly Roger Foil)",
+      "Ama no Murakumo Sword (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP06-060",
+    "officialIds": [
+      "OP06-060_p2",
+      "OP06-060_p3",
+      "OP06-060_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Vinsmoke Ichiji (OP06-060) (Jolly Roger Foil)",
+      "Vinsmoke Ichiji (OP06-060) (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-064",
+    "officialIds": [
+      "OP06-064_p2",
+      "OP06-064_p3",
+      "OP06-064_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Vinsmoke Niji (OP06-064) (Jolly Roger Foil)",
+      "Vinsmoke Niji (OP06-064) (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-065",
+    "officialIds": [
+      "OP06-065_p2",
+      "OP06-065_p3",
+      "OP06-065_p4",
+      "OP06-065_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Vinsmoke Niji (OP06-065) (Jolly Roger Foil)",
+      "Vinsmoke Niji (OP06-065) (Full Art)",
+      "Vinsmoke Niji (OP06-065) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-066",
+    "officialIds": [
+      "OP06-066_p2",
+      "OP06-066_p3",
+      "OP06-066_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Vinsmoke Yonji (OP06-066) (Jolly Roger Foil)",
+      "Vinsmoke Yonji (OP06-066) (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-067",
+    "officialIds": [
+      "OP06-067_p2",
+      "OP06-067_p3",
+      "OP06-067_p4",
+      "OP06-067_r1"
+    ],
+    "rarity": "R",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Vinsmoke Yonji (OP06-067) (Jolly Roger Foil)",
+      "Vinsmoke Yonji (OP06-067) (Alternate Art)",
+      "Vinsmoke Yonji (OP06-067) (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-068",
+    "officialIds": [
+      "OP06-068_p2",
+      "OP06-068_p3",
+      "OP06-068_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Vinsmoke Reiju (OP06-068) (Jolly Roger Foil)",
+      "Vinsmoke Reiju (OP06-068) (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-069",
+    "officialIds": [
+      "OP06-069_p4",
+      "OP06-069_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Vinsmoke Reiju (OP06-069) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-079",
+    "officialIds": [
+      "OP06-079_p2",
+      "OP06-079_p3",
+      "OP06-079_p4",
+      "OP06-079_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Kingdom of GERMA (Jolly Roger Foil)",
+      "Kingdom of GERMA (Alternate Art)",
+      "Kingdom of GERMA (Textured Foil)"
+    ]
+  },
+  {
+    "number": "OP06-086",
+    "officialIds": [
+      "OP06-086_p3",
+      "OP06-086_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Gecko Moria (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-091",
+    "officialIds": [
+      "OP06-091_p2",
+      "OP06-091_p3",
+      "OP06-091_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Victoria Cindry (Jolly Roger Foil)",
+      "Victoria Cindry (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-100",
+    "officialIds": [
+      "OP06-100_p2",
+      "OP06-100_p3",
+      "OP06-100_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Inuarashi (Jolly Roger Foil)",
+      "Inuarashi (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-106",
+    "officialIds": [
+      "OP06-106_p3",
+      "OP06-106_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Kouzuki Hiyori (Alternate Art)"
+    ]
+  },
+  {
+    "number": "OP06-110",
+    "officialIds": [
+      "OP06-110_p3",
+      "OP06-110_p4",
+      "OP06-110_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Nekomamushi (Jolly Roger Foil)",
+      "Nekomamushi (Full Art)"
+    ]
+  },
+  {
+    "number": "OP06-114",
+    "officialIds": [
+      "OP06-114_p2",
+      "OP06-114_p3",
+      "OP06-114_r1"
+    ],
+    "rarity": "UC",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Wyper (Jolly Roger Foil)",
+      "Wyper (Full Art)"
+    ]
+  },
+  {
+    "number": "ST01-006",
+    "officialIds": [
+      "ST01-006_p6",
+      "ST01-006_p7",
+      "ST01-006_p8",
+      "ST01-006_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Tony Tony.Chopper (ST01-006) (Jolly Roger Foil)",
+      "Tony Tony.Chopper (ST01-006) (Full Art)",
+      "Tony Tony.Chopper (ST01-006) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "ST01-014",
+    "officialIds": [
+      "ST01-014_p2",
+      "ST01-014_p3",
+      "ST01-014_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Guard Point (Jolly Roger Foil)",
+      "Guard Point (Textured Foil)"
+    ]
+  },
+  {
+    "number": "ST02-004",
+    "officialIds": [
+      "ST02-004_p2",
+      "ST02-004_p3",
+      "ST02-004_p4",
+      "ST02-004_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Capone\"Gang\"Bege (ST02-004) (Jolly Roger Foil)",
+      "Capone\"Gang\"Bege (ST02-004) (Full Art)",
+      "Capone\"Gang\"Bege (ST02-004) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "ST03-005",
+    "officialIds": [
+      "ST03-005_p4",
+      "ST03-005_p5",
+      "ST03-005_r2"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Dracule Mihawk (ST03-005) (Jolly Roger Foil)",
+      "Dracule Mihawk (ST03-005) (Full Art)"
+    ]
+  },
+  {
+    "number": "ST03-008",
+    "officialIds": [
+      "ST03-008_p6",
+      "ST03-008_p7",
+      "ST03-008_r2"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Trafalgar Law (ST03-008) (Jolly Roger Foil)",
+      "Trafalgar Law (ST03-008) (Full Art)"
+    ]
+  },
+  {
+    "number": "ST03-013",
+    "officialIds": [
+      "ST03-013_p2",
+      "ST03-013_p3",
+      "ST03-013_p4",
+      "ST03-013_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 4,
+    "localProductCount": 3,
+    "localNames": [
+      "Boa Hancock (ST03-013) (Jolly Roger Foil)",
+      "Boa Hancock (ST03-013) (Full Art)",
+      "Boa Hancock (ST03-013) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "ST04-003",
+    "officialIds": [
+      "ST04-003_p4",
+      "ST04-003_r1"
+    ],
+    "rarity": "SR",
+    "officialEntryCount": 2,
+    "localProductCount": 1,
+    "localNames": [
+      "Kaido (ST04-003) (Alternate Art)"
+    ]
+  },
+  {
+    "number": "ST04-005",
+    "officialIds": [
+      "ST04-005_p3",
+      "ST04-005_p4",
+      "ST04-005_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Queen (Jolly Roger Foil)",
+      "Queen (Full Art)"
+    ]
+  },
+  {
+    "number": "ST04-016",
+    "officialIds": [
+      "ST04-016_p2",
+      "ST04-016_p3",
+      "ST04-016_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Blast Breath (Jolly Roger Foil)",
+      "Blast Breath (Textured Foil)"
+    ]
+  },
+  {
+    "number": "ST06-014",
+    "officialIds": [
+      "ST06-014_p2",
+      "ST06-014_p3",
+      "ST06-014_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Shockwave (Jolly Roger Foil)",
+      "Shockwave (Textured Foil)"
+    ]
+  },
+  {
+    "number": "ST07-007",
+    "officialIds": [
+      "ST07-007_p2",
+      "ST07-007_p3",
+      "ST07-007_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Charlotte Brulee (Jolly Roger Foil)",
+      "Charlotte Brulee (Full Art)"
+    ]
+  },
+  {
+    "number": "ST09-014",
+    "officialIds": [
+      "ST09-014_p2",
+      "ST09-014_p3",
+      "ST09-014_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Narikabura Arrow (Jolly Roger Foil)",
+      "Narikabura Arrow (Textured Foil)"
+    ]
+  },
+  {
+    "number": "ST12-014",
+    "officialIds": [
+      "ST12-014_p2",
+      "ST12-014_p3",
+      "ST12-014_r1"
+    ],
+    "rarity": "C",
+    "officialEntryCount": 3,
+    "localProductCount": 2,
+    "localNames": [
+      "Duval (Jolly Roger Foil)",
+      "Duval (Full Art)"
+    ]
+  }
+]

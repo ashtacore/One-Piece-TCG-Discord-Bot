@@ -1,0 +1,9 @@
+# Reproducible raw research downloads; normalized audit artifacts remain tracked.
+research/catalog-cache/
+__pycache__/
+.dotnet/
+**/bin/
+**/obj/
+data/
+out/
+appsettings.local.json

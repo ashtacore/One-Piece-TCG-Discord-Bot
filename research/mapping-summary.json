@@ -1,0 +1,94 @@
+[
+  {
+    "setCode": "OP-08",
+    "mappedVariantCount": 152,
+    "excludedOrReviewCount": 2,
+    "poolCounts": {
+      "aa": 18,
+      "aa-leader": 6,
+      "base-c": 45,
+      "base-l": 6,
+      "base-r": 26,
+      "base-sec": 2,
+      "base-sr": 10,
+      "base-uc": 30,
+      "don-foil": 1,
+      "manga": 1,
+      "sp": 6,
+      "tr": 1
+    },
+    "reportCategoryCounts": {
+      "AA": 24,
+      "Base": 75,
+      "DON!!": 1,
+      "Foils": 38,
+      "Leaders": 6,
+      "Manga / Other Chase": 1,
+      "SP": 6,
+      "TR": 1
+    },
+    "missingMarketPriceKeys": [],
+    "proposedSharedMappingCount": 0
+  },
+  {
+    "setCode": "EB-01",
+    "mappedVariantCount": 80,
+    "excludedOrReviewCount": 0,
+    "poolCounts": {
+      "aa": 15,
+      "aa-leader": 3,
+      "base-c": 28,
+      "base-l": 3,
+      "base-r": 21,
+      "base-sec": 1,
+      "base-sr": 8,
+      "manga": 1
+    },
+    "reportCategoryCounts": {
+      "AA": 18,
+      "Base": 28,
+      "Foils": 30,
+      "Leaders": 3,
+      "Manga / Other Chase": 1
+    },
+    "missingMarketPriceKeys": [],
+    "proposedSharedMappingCount": 0
+  },
+  {
+    "setCode": "PRB-01",
+    "mappedVariantCount": 409,
+    "excludedOrReviewCount": 1,
+    "poolCounts": {
+      "aa": 60,
+      "aa-leader": 1,
+      "base-c": 23,
+      "base-l": 1,
+      "base-pr": 4,
+      "base-r": 20,
+      "base-sec": 6,
+      "base-sr": 25,
+      "base-uc": 25,
+      "don-foil": 30,
+      "don-gold": 30,
+      "don-normal": 30,
+      "full-art": 50,
+      "jolly-roger": 72,
+      "manga-nami": 1,
+      "manga-reprint-god-pack": 9,
+      "textured-event-stage": 22
+    },
+    "reportCategoryCounts": {
+      "AA": 133,
+      "Base": 96,
+      "DON!!": 90,
+      "Foils": 71,
+      "Leaders": 1,
+      "Manga / Other Chase": 10,
+      "Other": 8
+    },
+    "missingMarketPriceKeys": [
+      "587709:Foil"
+    ],
+    "proposedSharedMappingCount": 54
+  }
+]

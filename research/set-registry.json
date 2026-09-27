@@ -1,0 +1,925 @@
+{
+  "sourceUpdatedAt": "2026-09-26T20:05:16+0000",
+  "categoryId": 68,
+  "groups": [
+    {
+      "groupId": 24833,
+      "name": "The Dominance of God",
+      "abbreviation": "OP18",
+      "catalogPublishedOn": "2026-11-20T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        712901
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24834,
+      "name": "The Dominance of God Release Event Cards",
+      "abbreviation": "OP18 RE",
+      "catalogPublishedOn": "2026-11-13T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24820,
+      "name": "Extra Booster: One Piece Heroine's Edition Vol. 2",
+      "abbreviation": "EB-05",
+      "catalogPublishedOn": "2026-10-30T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        711385
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24708,
+      "name": "Set Sail Deck Set",
+      "abbreviation": "SD01",
+      "catalogPublishedOn": "2026-09-18T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24736,
+      "name": "The World's Strongest Warriors",
+      "abbreviation": "OP17",
+      "catalogPublishedOn": "2026-08-28T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        704752
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24775,
+      "name": "The World's Strongest Warriors Release Event Cards",
+      "abbreviation": "OP17 RE",
+      "catalogPublishedOn": "2026-08-21T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24749,
+      "name": "Starter Deck 31: RED Monkey.D.Luffy",
+      "abbreviation": "ST-31",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24750,
+      "name": "Starter Deck 32: GREEN Roronoa Zoro",
+      "abbreviation": "ST-32",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24751,
+      "name": "Starter Deck 33: BLUE Kuzan",
+      "abbreviation": "ST-33",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24752,
+      "name": "Starter Deck 34: PURPLE Charlotte Katakuri",
+      "abbreviation": "ST-34",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24753,
+      "name": "Starter Deck 35: RED/BLACK Sabo",
+      "abbreviation": "ST-35",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24754,
+      "name": "Starter Deck 36: YELLOW Eustass\"Captain\"Kid",
+      "abbreviation": "ST-36",
+      "catalogPublishedOn": "2026-07-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24678,
+      "name": "Starter Deck EX: Luffy & Ace",
+      "abbreviation": "ST-30",
+      "catalogPublishedOn": "2026-06-12T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24664,
+      "name": "The Time of Battle",
+      "abbreviation": "OP16",
+      "catalogPublishedOn": "2026-06-12T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        689336
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24677,
+      "name": "The Time of Battle Release Event Cards",
+      "abbreviation": "OP16 RE",
+      "catalogPublishedOn": "2026-06-05T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24637,
+      "name": "Adventure on Kami's Island",
+      "abbreviation": "OP15-EB04",
+      "catalogPublishedOn": "2026-04-03T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        682057
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24638,
+      "name": "Adventure on Kami's Island Release Event Cards",
+      "abbreviation": "OP15 RE",
+      "catalogPublishedOn": "2026-03-27T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24545,
+      "name": "Extra Booster: One Piece Heroines Edition",
+      "abbreviation": "EB-03-04",
+      "catalogPublishedOn": "2026-02-20T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        666891
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24575,
+      "name": "Starter Deck 29: Egghead",
+      "abbreviation": "ST-29",
+      "catalogPublishedOn": "2026-01-16T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24537,
+      "name": "The Azure Sea's Seven",
+      "abbreviation": "OP14",
+      "catalogPublishedOn": "2026-01-16T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        665598
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24579,
+      "name": "The Azure Sea's Seven Release Event Cards",
+      "abbreviation": "OP14 RE",
+      "catalogPublishedOn": "2026-01-09T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24303,
+      "name": "Carrying On His Will",
+      "abbreviation": "OP13",
+      "catalogPublishedOn": "2025-11-07T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        628352
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24498,
+      "name": "Carrying On His Will: 3rd Anniversary Tournament Cards",
+      "abbreviation": "OP13 ANN",
+      "catalogPublishedOn": "2025-10-31T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24306,
+      "name": "Learn Together Deck Set",
+      "abbreviation": "LT-01",
+      "catalogPublishedOn": "2025-10-03T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24305,
+      "name": "Premium Booster -The Best- Vol. 2",
+      "abbreviation": "PRB-02",
+      "catalogPublishedOn": "2025-10-03T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        628452
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24304,
+      "name": "Starter Deck 22: Ace & Newgate",
+      "abbreviation": "ST-22",
+      "catalogPublishedOn": "2025-09-05T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24302,
+      "name": "Legacy of the Master",
+      "abbreviation": "OP12",
+      "catalogPublishedOn": "2025-08-22T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        628346
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24406,
+      "name": "Legacy of the Master Release Event Cards",
+      "abbreviation": "OP12 RE",
+      "catalogPublishedOn": "2025-08-15T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24241,
+      "name": "A Fist of Divine Speed",
+      "abbreviation": "OP11",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        620180
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24282,
+      "name": "Starter Deck 23: RED Shanks",
+      "abbreviation": "ST-23",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24283,
+      "name": "Starter Deck 24: GREEN Jewelry Bonney",
+      "abbreviation": "ST-24",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24284,
+      "name": "Starter Deck 25: BLUE Buggy",
+      "abbreviation": "ST-25",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24285,
+      "name": "Starter Deck 26: PURPLE/BLACK Monkey.D.Luffy",
+      "abbreviation": "ST-26",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24286,
+      "name": "Starter Deck 27: BLACK Marshall.D.Teach",
+      "abbreviation": "ST-27",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24287,
+      "name": "Starter Deck 28: GREEN/YELLOW Yamato",
+      "abbreviation": "ST-28",
+      "catalogPublishedOn": "2025-06-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24242,
+      "name": "A Fist of Divine Speed Release Event Cards",
+      "abbreviation": "OP11 RE",
+      "catalogPublishedOn": "2025-05-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23834,
+      "name": "Extra Booster: Anime 25th Collection",
+      "abbreviation": "EB-02",
+      "catalogPublishedOn": "2025-05-09T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        594069
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23766,
+      "name": "Royal Blood",
+      "abbreviation": "OP10",
+      "catalogPublishedOn": "2025-03-21T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        586671
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 24068,
+      "name": "Royal Blood Release Event Cards",
+      "abbreviation": "OP10 RE",
+      "catalogPublishedOn": "2025-03-14T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23991,
+      "name": "Starter Deck EX: Gear 5",
+      "abbreviation": "ST-21",
+      "catalogPublishedOn": "2025-03-14T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23589,
+      "name": "Emperors in the New World",
+      "abbreviation": "OP09",
+      "catalogPublishedOn": "2024-12-13T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        563834
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23590,
+      "name": "Emperors in the New World: 2nd Anniversary Tournament Cards",
+      "abbreviation": "OP09 ANN",
+      "catalogPublishedOn": "2024-12-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23907,
+      "name": "One Piece Demo Deck Cards",
+      "abbreviation": "OP-DD",
+      "catalogPublishedOn": "2024-12-05T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23890,
+      "name": "Revision Pack Cards",
+      "abbreviation": "OP-RP",
+      "catalogPublishedOn": "2024-11-26T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23496,
+      "name": "Premium Booster -The Best-",
+      "abbreviation": "PRB-01",
+      "catalogPublishedOn": "2024-11-08T00:00:00",
+      "disposition": "representative-audit",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        545399
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23490,
+      "name": "Starter Deck 15: RED Edward.Newgate",
+      "abbreviation": "ST-15",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23491,
+      "name": "Starter Deck 16: GREEN Uta",
+      "abbreviation": "ST-16",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23492,
+      "name": "Starter Deck 17: BLUE Donquixote Doflamingo",
+      "abbreviation": "ST-17",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23493,
+      "name": "Starter Deck 18: PURPLE Monkey.D.Luffy",
+      "abbreviation": "ST-18",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23494,
+      "name": "Starter Deck 19: BLACK Smoker",
+      "abbreviation": "ST-19",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23495,
+      "name": "Starter Deck 20: YELLOW Charlotte Katakuri",
+      "abbreviation": "ST-20",
+      "catalogPublishedOn": "2024-10-25T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23462,
+      "name": "Two Legends",
+      "abbreviation": "OP08",
+      "catalogPublishedOn": "2024-09-13T00:00:00",
+      "disposition": "representative-audit",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        542504
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23737,
+      "name": "Two Legends Pre-Release Cards",
+      "abbreviation": "OP08 PRE",
+      "catalogPublishedOn": "2024-09-06T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23489,
+      "name": "Starter Deck 14: 3D2Y",
+      "abbreviation": "ST-14",
+      "catalogPublishedOn": "2024-08-16T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23387,
+      "name": "500 Years in the Future",
+      "abbreviation": "OP07",
+      "catalogPublishedOn": "2024-06-28T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        532106
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23512,
+      "name": "500 Years in the Future Pre-Release Cards",
+      "abbreviation": "OP07 PRE",
+      "catalogPublishedOn": "2024-06-21T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23333,
+      "name": "Extra Booster: Memorial Collection",
+      "abbreviation": "EB-01",
+      "catalogPublishedOn": "2024-05-03T00:00:00",
+      "disposition": "representative-audit",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        521161
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23349,
+      "name": "Ultra Deck: The Three Brothers",
+      "abbreviation": "ST-13",
+      "catalogPublishedOn": "2024-04-19T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23348,
+      "name": "Starter Deck 12: Zoro and Sanji",
+      "abbreviation": "ST-12",
+      "catalogPublishedOn": "2024-03-15T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23272,
+      "name": "Wings of the Captain",
+      "abbreviation": "OP06",
+      "catalogPublishedOn": "2024-03-15T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        515080
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23424,
+      "name": "Wings of the Captain Pre-Release Cards",
+      "abbreviation": "OP06 PRE",
+      "catalogPublishedOn": "2024-03-08T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23250,
+      "name": "Starter Deck 11: Uta",
+      "abbreviation": "ST-11",
+      "catalogPublishedOn": "2024-02-02T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23213,
+      "name": "Awakening of the New Era",
+      "abbreviation": "OP05",
+      "catalogPublishedOn": "2023-12-08T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        498734
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23368,
+      "name": "Awakening of the New Era: 1st Anniversary Tournament Cards",
+      "abbreviation": "OP05 ANN",
+      "catalogPublishedOn": "2023-12-08T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23243,
+      "name": "Ultra Deck: The Three Captains",
+      "abbreviation": "ST-10",
+      "catalogPublishedOn": "2023-11-10T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23304,
+      "name": "One Piece Collection Sets",
+      "abbreviation": "OP-CS",
+      "catalogPublishedOn": "2023-11-03T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23024,
+      "name": "Kingdoms of Intrigue",
+      "abbreviation": "OP04",
+      "catalogPublishedOn": "2023-09-22T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        485833
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23297,
+      "name": "Kingdoms of Intrigue Pre-Release Cards",
+      "abbreviation": "OP04 PRE",
+      "catalogPublishedOn": "2023-09-15T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 22956,
+      "name": "Starter Deck 8: Monkey.D.Luffy",
+      "abbreviation": "ST-08",
+      "catalogPublishedOn": "2023-08-11T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 22957,
+      "name": "Starter Deck 9: Yamato",
+      "abbreviation": "ST-09",
+      "catalogPublishedOn": "2023-08-11T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 22890,
+      "name": "Pillars of Strength",
+      "abbreviation": "OP03",
+      "catalogPublishedOn": "2023-06-30T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        477176
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 23232,
+      "name": "Pillars of Strength Pre-Release Cards",
+      "abbreviation": "OP03 PRE",
+      "catalogPublishedOn": "2023-06-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 22930,
+      "name": "Starter Deck 7: Big Mom Pirates",
+      "abbreviation": "ST-07",
+      "catalogPublishedOn": "2023-06-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17698,
+      "name": "Paramount War",
+      "abbreviation": "OP02",
+      "catalogPublishedOn": "2023-03-10T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        455866
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17699,
+      "name": "Starter Deck 6: Absolute Justice",
+      "abbreviation": "ST-06",
+      "catalogPublishedOn": "2023-03-10T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 22934,
+      "name": "Paramount War Pre-Release Cards",
+      "abbreviation": "OP02 PRE",
+      "catalogPublishedOn": "2023-03-03T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17687,
+      "name": "Starter Deck 5: Film Edition",
+      "abbreviation": "ST-05",
+      "catalogPublishedOn": "2023-02-03T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 3188,
+      "name": "Romance Dawn",
+      "abbreviation": "OP01",
+      "catalogPublishedOn": "2022-12-02T00:00:00",
+      "disposition": "booster-candidate",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [
+        450086,
+        557280
+      ],
+      "evEnabled": false
+    },
+    {
+      "groupId": 3189,
+      "name": "Starter Deck 1: Straw Hat Crew",
+      "abbreviation": "ST-01",
+      "catalogPublishedOn": "2022-12-02T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 3191,
+      "name": "Starter Deck 2: Worst Generation",
+      "abbreviation": "ST-02",
+      "catalogPublishedOn": "2022-12-02T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 3192,
+      "name": "Starter Deck 3: The Seven Warlords of The Sea",
+      "abbreviation": "ST-03",
+      "catalogPublishedOn": "2022-12-02T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 3190,
+      "name": "Starter Deck 4: Animal Kingdom Pirates",
+      "abbreviation": "ST-04",
+      "catalogPublishedOn": "2022-12-02T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17675,
+      "name": "One Piece Promotion Cards",
+      "abbreviation": "OP-PR",
+      "catalogPublishedOn": "2022-09-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": true,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17659,
+      "name": "Super Pre-Release Starter Deck 1: Straw Hat Crew",
+      "abbreviation": "ST-01 PRE",
+      "catalogPublishedOn": "2022-09-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17658,
+      "name": "Super Pre-Release Starter Deck 2: Worst Generation",
+      "abbreviation": "ST-02 PRE",
+      "catalogPublishedOn": "2022-09-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17660,
+      "name": "Super Pre-Release Starter Deck 3: The Seven Warlords of the Sea",
+      "abbreviation": "ST-03 PRE",
+      "catalogPublishedOn": "2022-09-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    },
+    {
+      "groupId": 17661,
+      "name": "Super Pre-Release Starter Deck 4: Animal Kingdom Pirates",
+      "abbreviation": "ST-04 PRE",
+      "catalogPublishedOn": "2022-09-30T00:00:00",
+      "disposition": "excluded-as-booster-set",
+      "productCatalogInspected": false,
+      "boosterBoxProductIds": [],
+      "evEnabled": false
+    }
+  ]
+}

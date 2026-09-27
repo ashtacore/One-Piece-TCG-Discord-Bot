@@ -1,0 +1,6727 @@
+{
+  "schemaVersion": 1,
+  "sets": [
+    {
+      "code": "OP-08",
+      "name": "Two Legends",
+      "version": "2026-09-27.1",
+      "confidence": "Community estimates; chase frequencies and collation assumptions unverified",
+      "enabled": true,
+      "groupId": 23462,
+      "boosterBoxProductId": 542504,
+      "releaseDate": "2024-09-13",
+      "packsPerBox": 24,
+      "cardsPerPack": 12,
+      "boxesPerCase": 12,
+      "bonusCardsPerBox": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op08.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ],
+      "assumptions": [
+        "Case recipe estimates AA 16, SEC 8, SP 2 and AA Leader 4 per 12 boxes; ordinary SR 7, Leader 8 and DON 2 per box.",
+        "TR 1 per case and Manga 1 per 3 cases are low-confidence modeling assumptions, not guarantees; each displaces an ordinary AA.",
+        "Bulk assumption: 7 C and 3 UC per pack before DON replaces C and Leaders replace UC. Remaining rare slots are R.",
+        "Exclude the two DP-05 bonus DON listings; they do not come from this booster box."
+      ],
+      "pools": [
+        {
+          "id": "base-c",
+          "expectedCopiesPerBox": 166
+        },
+        {
+          "id": "base-uc",
+          "expectedCopiesPerBox": 64
+        },
+        {
+          "id": "base-r",
+          "expectedCopiesPerBox": 38.5
+        },
+        {
+          "id": "base-sr",
+          "expectedCopiesPerBox": 7
+        },
+        {
+          "id": "base-l",
+          "expectedCopiesPerBox": 8
+        },
+        {
+          "id": "don-foil",
+          "expectedCopiesPerBox": 2
+        },
+        {
+          "id": "base-sec",
+          "expectedCopiesPerBox": 0.666666666667
+        },
+        {
+          "id": "sp",
+          "expectedCopiesPerBox": 0.166666666667
+        },
+        {
+          "id": "aa-leader",
+          "expectedCopiesPerBox": 0.333333333333
+        },
+        {
+          "id": "aa",
+          "expectedCopiesPerBox": 1.222222222222
+        },
+        {
+          "id": "tr",
+          "expectedCopiesPerBox": 0.083333333333
+        },
+        {
+          "id": "manga",
+          "expectedCopiesPerBox": 0.027777777778
+        }
+      ],
+      "variants": [
+        {
+          "groupId": 23462,
+          "productId": 558019,
+          "subTypeName": "Foil",
+          "name": "Portgas.D.Ace (SP)",
+          "number": "OP02-013",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558020,
+          "subTypeName": "Foil",
+          "name": "Charlotte Pudding (SP)",
+          "number": "OP03-112",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558021,
+          "subTypeName": "Normal",
+          "name": "Tony Tony.Chopper (001)",
+          "number": "OP08-001",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558022,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (001) (Parallel)",
+          "number": "OP08-001",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558023,
+          "subTypeName": "Normal",
+          "name": "Marco",
+          "number": "OP08-002",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558024,
+          "subTypeName": "Foil",
+          "name": "Marco (Parallel)",
+          "number": "OP08-002",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558025,
+          "subTypeName": "Normal",
+          "name": "Twenty Doctors",
+          "number": "OP08-003",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558026,
+          "subTypeName": "Normal",
+          "name": "Kuromarimo",
+          "number": "OP08-004",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558027,
+          "subTypeName": "Normal",
+          "name": "Chess",
+          "number": "OP08-005",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558028,
+          "subTypeName": "Normal",
+          "name": "Chessmarimo",
+          "number": "OP08-006",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558029,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (007)",
+          "number": "OP08-007",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558030,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (0070) (Parallel)",
+          "number": "OP08-007",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558031,
+          "subTypeName": "Foil",
+          "name": "Dalton",
+          "number": "OP08-008",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558032,
+          "subTypeName": "Normal",
+          "name": "Maria Onion Bear",
+          "number": "OP08-009",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558033,
+          "subTypeName": "Normal",
+          "name": "Hiking Bear",
+          "number": "OP08-010",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558034,
+          "subTypeName": "Normal",
+          "name": "Musshuru",
+          "number": "OP08-011",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558035,
+          "subTypeName": "Normal",
+          "name": "Lapins",
+          "number": "OP08-012",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558036,
+          "subTypeName": "Normal",
+          "name": "Robson",
+          "number": "OP08-013",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558037,
+          "subTypeName": "Foil",
+          "name": "Wapol",
+          "number": "OP08-014",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558038,
+          "subTypeName": "Foil",
+          "name": "Dr.Kureha",
+          "number": "OP08-015",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558039,
+          "subTypeName": "Foil",
+          "name": "Dr.Kureha (Parallel)",
+          "number": "OP08-015",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558040,
+          "subTypeName": "Foil",
+          "name": "Dr.Hiriluk",
+          "number": "OP08-016",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558041,
+          "subTypeName": "Normal",
+          "name": "I'd Never Shoot You!!!!",
+          "number": "OP08-017",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558042,
+          "subTypeName": "Foil",
+          "name": "Cloven Rose",
+          "number": "OP08-018",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558043,
+          "subTypeName": "Normal",
+          "name": "Munch-Munch Mutation",
+          "number": "OP08-019",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558044,
+          "subTypeName": "Normal",
+          "name": "Drum Kingdom",
+          "number": "OP08-020",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558045,
+          "subTypeName": "Normal",
+          "name": "Carrot (021)",
+          "number": "OP08-021",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558046,
+          "subTypeName": "Foil",
+          "name": "Carrot (021) (Parallel)",
+          "number": "OP08-021",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558047,
+          "subTypeName": "Normal",
+          "name": "Inuarashi",
+          "number": "OP08-022",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558048,
+          "subTypeName": "Foil",
+          "name": "Carrot (023)",
+          "number": "OP08-023",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558049,
+          "subTypeName": "Foil",
+          "name": "Carrot (023) (Parallel)",
+          "number": "OP08-023",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558050,
+          "subTypeName": "Normal",
+          "name": "Concelot",
+          "number": "OP08-024",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558051,
+          "subTypeName": "Normal",
+          "name": "Shishilian",
+          "number": "OP08-025",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558052,
+          "subTypeName": "Normal",
+          "name": "Giovanni",
+          "number": "OP08-026",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558053,
+          "subTypeName": "Normal",
+          "name": "Tristan",
+          "number": "OP08-027",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558054,
+          "subTypeName": "Normal",
+          "name": "Nekomamushi",
+          "number": "OP08-028",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558055,
+          "subTypeName": "Normal",
+          "name": "Pekoms",
+          "number": "OP08-029",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558056,
+          "subTypeName": "Foil",
+          "name": "Pedro",
+          "number": "OP08-030",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558057,
+          "subTypeName": "Foil",
+          "name": "Pedro (Parallel)",
+          "number": "OP08-030",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558058,
+          "subTypeName": "Normal",
+          "name": "Miyagi",
+          "number": "OP08-031",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558059,
+          "subTypeName": "Normal",
+          "name": "Milky",
+          "number": "OP08-032",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558060,
+          "subTypeName": "Normal",
+          "name": "Roddy",
+          "number": "OP08-033",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558061,
+          "subTypeName": "Foil",
+          "name": "Wanda",
+          "number": "OP08-034",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558062,
+          "subTypeName": "Normal",
+          "name": "BB",
+          "number": "OP08-035",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558063,
+          "subTypeName": "Foil",
+          "name": "Electrical Luna",
+          "number": "OP08-036",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558064,
+          "subTypeName": "Normal",
+          "name": "Garchu",
+          "number": "OP08-037",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558065,
+          "subTypeName": "Normal",
+          "name": "We Would Never Sell a Comrade to an Enemy!!!",
+          "number": "OP08-038",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558066,
+          "subTypeName": "Foil",
+          "name": "Zou",
+          "number": "OP08-039",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558067,
+          "subTypeName": "Normal",
+          "name": "Atmos",
+          "number": "OP08-040",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558068,
+          "subTypeName": "Normal",
+          "name": "Aphelandra",
+          "number": "OP08-041",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558069,
+          "subTypeName": "Normal",
+          "name": "Edward Weevil",
+          "number": "OP08-042",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558070,
+          "subTypeName": "Foil",
+          "name": "Edward.Newgate",
+          "number": "OP08-043",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558071,
+          "subTypeName": "Foil",
+          "name": "Edward.Newgate (Parallel)",
+          "number": "OP08-043",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558072,
+          "subTypeName": "Normal",
+          "name": "Kingdew",
+          "number": "OP08-044",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558073,
+          "subTypeName": "Normal",
+          "name": "Thatch",
+          "number": "OP08-045",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558074,
+          "subTypeName": "Foil",
+          "name": "Shakuyaku",
+          "number": "OP08-046",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558075,
+          "subTypeName": "Foil",
+          "name": "Jozu",
+          "number": "OP08-047",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558076,
+          "subTypeName": "Normal",
+          "name": "Sweetpea",
+          "number": "OP08-048",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558077,
+          "subTypeName": "Normal",
+          "name": "Speed Jil",
+          "number": "OP08-049",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558078,
+          "subTypeName": "Normal",
+          "name": "Namule",
+          "number": "OP08-050",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558079,
+          "subTypeName": "Normal",
+          "name": "Buckin",
+          "number": "OP08-051",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558080,
+          "subTypeName": "Foil",
+          "name": "Portgas.D.Ace",
+          "number": "OP08-052",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558081,
+          "subTypeName": "Foil",
+          "name": "Portgas.D.Ace (Parallel)",
+          "number": "OP08-052",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558082,
+          "subTypeName": "Foil",
+          "name": "Thank You...for Loving Me!!",
+          "number": "OP08-053",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558083,
+          "subTypeName": "Normal",
+          "name": "You Can't Take Our King This Early in the Game.",
+          "number": "OP08-054",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558084,
+          "subTypeName": "Normal",
+          "name": "Phoenix Brand",
+          "number": "OP08-055",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558085,
+          "subTypeName": "Normal",
+          "name": "Moby Dick",
+          "number": "OP08-056",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558086,
+          "subTypeName": "Normal",
+          "name": "King (057)",
+          "number": "OP08-057",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558087,
+          "subTypeName": "Foil",
+          "name": "King (057) (Parallel)",
+          "number": "OP08-057",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558088,
+          "subTypeName": "Normal",
+          "name": "Charlotte Pudding (058)",
+          "number": "OP08-058",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558089,
+          "subTypeName": "Foil",
+          "name": "Charlotte Pudding (058) (Parallel)",
+          "number": "OP08-058",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558090,
+          "subTypeName": "Normal",
+          "name": "Alber",
+          "number": "OP08-059",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558091,
+          "subTypeName": "Foil",
+          "name": "King (060)",
+          "number": "OP08-060",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558092,
+          "subTypeName": "Normal",
+          "name": "Charlotte Oven",
+          "number": "OP08-061",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558093,
+          "subTypeName": "Normal",
+          "name": "Charlotte Katakuri (062)",
+          "number": "OP08-062",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558094,
+          "subTypeName": "Foil",
+          "name": "Charlotte Katakuri (063)",
+          "number": "OP08-063",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558095,
+          "subTypeName": "Normal",
+          "name": "Charlotte Cracker",
+          "number": "OP08-064",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558096,
+          "subTypeName": "Normal",
+          "name": "Charlotte Smoothie",
+          "number": "OP08-065",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558097,
+          "subTypeName": "Normal",
+          "name": "Charlotte Brulee",
+          "number": "OP08-066",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558098,
+          "subTypeName": "Foil",
+          "name": "Charlotte Pudding (067)",
+          "number": "OP08-067",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558099,
+          "subTypeName": "Foil",
+          "name": "Charlotte Pudding (067) (Parallel)",
+          "number": "OP08-067",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558100,
+          "subTypeName": "Normal",
+          "name": "Charlotte Perospero",
+          "number": "OP08-068",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558101,
+          "subTypeName": "Foil",
+          "name": "Charlotte Linlin",
+          "number": "OP08-069",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558102,
+          "subTypeName": "Foil",
+          "name": "Charlotte Linlin (Parallel)",
+          "number": "OP08-069",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558103,
+          "subTypeName": "Normal",
+          "name": "Baron Tamago",
+          "number": "OP08-070",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558104,
+          "subTypeName": "Normal",
+          "name": "Count Niwatori",
+          "number": "OP08-071",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558105,
+          "subTypeName": "Normal",
+          "name": "Biscuit Warrior",
+          "number": "OP08-072",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558106,
+          "subTypeName": "Normal",
+          "name": "Viscount Hiyoko",
+          "number": "OP08-073",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558107,
+          "subTypeName": "Foil",
+          "name": "Black Maria",
+          "number": "OP08-074",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558108,
+          "subTypeName": "Foil",
+          "name": "Black Maria (Parallel)",
+          "number": "OP08-074",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558109,
+          "subTypeName": "Normal",
+          "name": "Candy Maiden",
+          "number": "OP08-075",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558110,
+          "subTypeName": "Normal",
+          "name": "It's to Die For",
+          "number": "OP08-076",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558111,
+          "subTypeName": "Foil",
+          "name": "Conquest of the Sea",
+          "number": "OP08-077",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558112,
+          "subTypeName": "Normal",
+          "name": "Ulti",
+          "number": "OP08-078",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558113,
+          "subTypeName": "Foil",
+          "name": "Kaido",
+          "number": "OP08-079",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558114,
+          "subTypeName": "Foil",
+          "name": "Kaido (Parallel)",
+          "number": "OP08-079",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558115,
+          "subTypeName": "Foil",
+          "name": "Queen",
+          "number": "OP08-080",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558116,
+          "subTypeName": "Foil",
+          "name": "Queen (Parallel)",
+          "number": "OP08-080",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558117,
+          "subTypeName": "Normal",
+          "name": "Guernica",
+          "number": "OP08-081",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558118,
+          "subTypeName": "Foil",
+          "name": "Sasaki",
+          "number": "OP08-082",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558119,
+          "subTypeName": "Normal",
+          "name": "Sheepshead",
+          "number": "OP08-083",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558120,
+          "subTypeName": "Foil",
+          "name": "Jack",
+          "number": "OP08-084",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558121,
+          "subTypeName": "Foil",
+          "name": "Jack (Parallel)",
+          "number": "OP08-084",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558122,
+          "subTypeName": "Normal",
+          "name": "Jinbe",
+          "number": "OP08-085",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558123,
+          "subTypeName": "Normal",
+          "name": "Ginrummy",
+          "number": "OP08-086",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558124,
+          "subTypeName": "Normal",
+          "name": "Scratchmen Apoo",
+          "number": "OP08-087",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558125,
+          "subTypeName": "Normal",
+          "name": "Duval",
+          "number": "OP08-088",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558126,
+          "subTypeName": "Normal",
+          "name": "Basil Hawkins",
+          "number": "OP08-089",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558127,
+          "subTypeName": "Normal",
+          "name": "Hamlet",
+          "number": "OP08-090",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558128,
+          "subTypeName": "Foil",
+          "name": "Who's.Who",
+          "number": "OP08-091",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558129,
+          "subTypeName": "Foil",
+          "name": "Page One",
+          "number": "OP08-092",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558130,
+          "subTypeName": "Normal",
+          "name": "X.Drake",
+          "number": "OP08-093",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558131,
+          "subTypeName": "Foil",
+          "name": "Imperial Flame",
+          "number": "OP08-094",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558132,
+          "subTypeName": "Normal",
+          "name": "Iron Body Fang Flash",
+          "number": "OP08-095",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558133,
+          "subTypeName": "Normal",
+          "name": "People's Dreams Don't Ever End!!",
+          "number": "OP08-096",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558134,
+          "subTypeName": "Normal",
+          "name": "Heliceratops",
+          "number": "OP08-097",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558135,
+          "subTypeName": "Normal",
+          "name": "Kalgara (098)",
+          "number": "OP08-098",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558136,
+          "subTypeName": "Foil",
+          "name": "Kalgara (098) (Parallel)",
+          "number": "OP08-098",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558137,
+          "subTypeName": "Normal",
+          "name": "Kalgara (099)",
+          "number": "OP08-099",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558138,
+          "subTypeName": "Normal",
+          "name": "South Bird",
+          "number": "OP08-100",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558139,
+          "subTypeName": "Normal",
+          "name": "Charlotte Angel",
+          "number": "OP08-101",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558140,
+          "subTypeName": "Normal",
+          "name": "Charlotte Opera",
+          "number": "OP08-102",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558141,
+          "subTypeName": "Normal",
+          "name": "Charlotte Custard",
+          "number": "OP08-103",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558142,
+          "subTypeName": "Normal",
+          "name": "Charlotte Poire",
+          "number": "OP08-104",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558143,
+          "subTypeName": "Foil",
+          "name": "Jewelry Bonney",
+          "number": "OP08-105",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558144,
+          "subTypeName": "Foil",
+          "name": "Jewelry Bonney (Parallel)",
+          "number": "OP08-105",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558145,
+          "subTypeName": "Foil",
+          "name": "Nami",
+          "number": "OP08-106",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558146,
+          "subTypeName": "Foil",
+          "name": "Nami (Parallel)",
+          "number": "OP08-106",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558147,
+          "subTypeName": "Normal",
+          "name": "Nitro",
+          "number": "OP08-107",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558148,
+          "subTypeName": "Normal",
+          "name": "Mont Blanc Cricket",
+          "number": "OP08-108",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558149,
+          "subTypeName": "Foil",
+          "name": "Mont Blanc Noland",
+          "number": "OP08-109",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558150,
+          "subTypeName": "Foil",
+          "name": "Wyper",
+          "number": "OP08-110",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558151,
+          "subTypeName": "Foil",
+          "name": "Wyper (Parallel)",
+          "number": "OP08-110",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558152,
+          "subTypeName": "Normal",
+          "name": "S-Shark",
+          "number": "OP08-111",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558153,
+          "subTypeName": "Foil",
+          "name": "S-Snake",
+          "number": "OP08-112",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558154,
+          "subTypeName": "Foil",
+          "name": "S-Snake (Parallel)",
+          "number": "OP08-112",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558155,
+          "subTypeName": "Normal",
+          "name": "S-Bear",
+          "number": "OP08-113",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558156,
+          "subTypeName": "Foil",
+          "name": "S-Hawk",
+          "number": "OP08-114",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558157,
+          "subTypeName": "Foil",
+          "name": "The Earth Will Not Lose!",
+          "number": "OP08-115",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558158,
+          "subTypeName": "Normal",
+          "name": "Burn Bazooka",
+          "number": "OP08-116",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558159,
+          "subTypeName": "Normal",
+          "name": "Burn Blade",
+          "number": "OP08-117",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558160,
+          "subTypeName": "Foil",
+          "name": "Silvers Rayleigh",
+          "number": "OP08-118",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558161,
+          "subTypeName": "Foil",
+          "name": "Silvers Rayleigh (Parallel)",
+          "number": "OP08-118",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558162,
+          "subTypeName": "Foil",
+          "name": "Silvers Rayleigh (Parallel) (Manga)",
+          "number": "OP08-118",
+          "category": "Manga / Other Chase",
+          "pool": "manga",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558163,
+          "subTypeName": "Foil",
+          "name": "Kaido & Linlin",
+          "number": "OP08-119",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558164,
+          "subTypeName": "Foil",
+          "name": "Kaido & Linlin (Parallel)",
+          "number": "OP08-119",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558165,
+          "subTypeName": "Foil",
+          "name": "Jewelry Bonney (SP)",
+          "number": "ST02-007",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558166,
+          "subTypeName": "Foil",
+          "name": "Gecko Moria (SP)",
+          "number": "ST03-004",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558167,
+          "subTypeName": "Foil",
+          "name": "Queen (SP)",
+          "number": "ST04-005",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 558168,
+          "subTypeName": "Foil",
+          "name": "Tashigi (SP)",
+          "number": "ST06-006",
+          "category": "SP",
+          "pool": "sp",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 564551,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (TR)",
+          "number": "OP07-109",
+          "category": "TR",
+          "pool": "tr",
+          "weight": 1
+        },
+        {
+          "groupId": 23462,
+          "productId": 577568,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Alternate Art)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        }
+      ],
+      "exclusions": [
+        {
+          "productId": 576484,
+          "subTypeName": null,
+          "reason": "external-double-pack-don"
+        },
+        {
+          "productId": 576485,
+          "subTypeName": null,
+          "reason": "external-double-pack-don"
+        }
+      ]
+    },
+    {
+      "code": "EB-01",
+      "name": "Memorial Collection",
+      "version": "2026-09-27.1",
+      "confidence": "Community estimates; chase frequencies and collation assumptions unverified",
+      "enabled": true,
+      "groupId": 23333,
+      "boosterBoxProductId": 521161,
+      "releaseDate": "2024-05-03",
+      "packsPerBox": 24,
+      "cardsPerPack": 12,
+      "boxesPerCase": 12,
+      "bonusCardsPerBox": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/eb01.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ],
+      "assumptions": [
+        "Model 2 ordinary AA plus one SEC or AA Leader per box; SEC 8 and AA Leader 4 per case are estimates.",
+        "Ordinary SR 6 and Leader 6 per box; assume 10 C per pack before Leader replacement and fill remaining rare slots with R.",
+        "Manga 1 per 3 cases is an estimate. Adopt R displacement for the reported fourth hit; exact displaced slot is unverified."
+      ],
+      "pools": [
+        {
+          "id": "base-c",
+          "expectedCopiesPerBox": 234
+        },
+        {
+          "id": "base-r",
+          "expectedCopiesPerBox": 38.972222222222
+        },
+        {
+          "id": "base-sr",
+          "expectedCopiesPerBox": 6
+        },
+        {
+          "id": "base-l",
+          "expectedCopiesPerBox": 6
+        },
+        {
+          "id": "aa",
+          "expectedCopiesPerBox": 2
+        },
+        {
+          "id": "base-sec",
+          "expectedCopiesPerBox": 0.666666666667
+        },
+        {
+          "id": "aa-leader",
+          "expectedCopiesPerBox": 0.333333333333
+        },
+        {
+          "id": "manga",
+          "expectedCopiesPerBox": 0.027777777778
+        }
+      ],
+      "variants": [
+        {
+          "groupId": 23333,
+          "productId": 544523,
+          "subTypeName": "Normal",
+          "name": "Kouzuki Oden",
+          "number": "EB01-001",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544524,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Oden (Alternate Art)",
+          "number": "EB01-001",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544525,
+          "subTypeName": "Foil",
+          "name": "Izo",
+          "number": "EB01-002",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544526,
+          "subTypeName": "Foil",
+          "name": "Kid & Killer",
+          "number": "EB01-003",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544527,
+          "subTypeName": "Foil",
+          "name": "Kid & Killer (Alternate Art)",
+          "number": "EB01-003",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544528,
+          "subTypeName": "Normal",
+          "name": "Koza",
+          "number": "EB01-004",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544529,
+          "subTypeName": "Normal",
+          "name": "Doma",
+          "number": "EB01-005",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544530,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper",
+          "number": "EB01-006",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544531,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (Alternate Art)",
+          "number": "EB01-006",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544532,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (Alternate Art) (Manga)",
+          "number": "EB01-006",
+          "category": "Manga / Other Chase",
+          "pool": "manga",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544533,
+          "subTypeName": "Normal",
+          "name": "Yamato",
+          "number": "EB01-007",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544534,
+          "subTypeName": "Foil",
+          "name": "LittleOars Jr.",
+          "number": "EB01-008",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544535,
+          "subTypeName": "Normal",
+          "name": "Just Shut Up and Come with Us!!!!",
+          "number": "EB01-009",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544536,
+          "subTypeName": "Foil",
+          "name": "There's No Way You Could Defeat Me!!",
+          "number": "EB01-010",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544537,
+          "subTypeName": "Normal",
+          "name": "Mini-Merry",
+          "number": "EB01-011",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544538,
+          "subTypeName": "Foil",
+          "name": "Cavendish",
+          "number": "EB01-012",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544539,
+          "subTypeName": "Foil",
+          "name": "Cavendish (Alternate Art)",
+          "number": "EB01-012",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544540,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Hiyori",
+          "number": "EB01-013",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544541,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Hiyori (Alternate Art)",
+          "number": "EB01-013",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544542,
+          "subTypeName": "Foil",
+          "name": "Sanji",
+          "number": "EB01-014",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544543,
+          "subTypeName": "Foil",
+          "name": "Scratchmen Apoo",
+          "number": "EB01-015",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544544,
+          "subTypeName": "Normal",
+          "name": "Bingoh",
+          "number": "EB01-016",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544545,
+          "subTypeName": "Normal",
+          "name": "Blueno (017)",
+          "number": "EB01-017",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544546,
+          "subTypeName": "Normal",
+          "name": "Mountain God",
+          "number": "EB01-018",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544547,
+          "subTypeName": "Foil",
+          "name": "Off-White",
+          "number": "EB01-019",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544548,
+          "subTypeName": "Normal",
+          "name": "Chambres",
+          "number": "EB01-020",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544549,
+          "subTypeName": "Normal",
+          "name": "Hannyabal",
+          "number": "EB01-021",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544550,
+          "subTypeName": "Foil",
+          "name": "Hannyabal (Alternate Art)",
+          "number": "EB01-021",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544551,
+          "subTypeName": "Foil",
+          "name": "Inazuma",
+          "number": "EB01-022",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544552,
+          "subTypeName": "Foil",
+          "name": "Inazuma (Alternate Art)",
+          "number": "EB01-022",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544553,
+          "subTypeName": "Foil",
+          "name": "Edward Weevil",
+          "number": "EB01-023",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544554,
+          "subTypeName": "Normal",
+          "name": "Hamlet",
+          "number": "EB01-024",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544555,
+          "subTypeName": "Normal",
+          "name": "Fourtricks",
+          "number": "EB01-025",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544556,
+          "subTypeName": "Normal",
+          "name": "Prince Bellett",
+          "number": "EB01-026",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544557,
+          "subTypeName": "Foil",
+          "name": "Mr. 1 (Daz.Bonez)",
+          "number": "EB01-027",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544558,
+          "subTypeName": "Foil",
+          "name": "Mr. 1 (Daz.Bonez) (Alternate Art)",
+          "number": "EB01-027",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544559,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Champion Rifle",
+          "number": "EB01-028",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544560,
+          "subTypeName": "Normal",
+          "name": "Sorry. I'm a Goner.",
+          "number": "EB01-029",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544561,
+          "subTypeName": "Normal",
+          "name": "Loguetown",
+          "number": "EB01-030",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544562,
+          "subTypeName": "Foil",
+          "name": "Kalifa",
+          "number": "EB01-031",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544563,
+          "subTypeName": "Foil",
+          "name": "Kalifa (Alternate Art)",
+          "number": "EB01-031",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544564,
+          "subTypeName": "Normal",
+          "name": "Army Wolves",
+          "number": "EB01-032",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544565,
+          "subTypeName": "Foil",
+          "name": "Blueno (033)",
+          "number": "EB01-033",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544566,
+          "subTypeName": "Foil",
+          "name": "Ms. Wednesday",
+          "number": "EB01-034",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544567,
+          "subTypeName": "Foil",
+          "name": "Ms. Wednesday (Alternate Art)",
+          "number": "EB01-034",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544568,
+          "subTypeName": "Normal",
+          "name": "Ms. Monday",
+          "number": "EB01-035",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544569,
+          "subTypeName": "Normal",
+          "name": "Minochihuahua",
+          "number": "EB01-036",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544570,
+          "subTypeName": "Normal",
+          "name": "Mr. 9",
+          "number": "EB01-037",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544571,
+          "subTypeName": "Normal",
+          "name": "Oh Come My Way",
+          "number": "EB01-038",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544572,
+          "subTypeName": "Foil",
+          "name": "Conquerer of Three Worlds Ragnaraku",
+          "number": "EB01-039",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544573,
+          "subTypeName": "Normal",
+          "name": "Kyros",
+          "number": "EB01-040",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544574,
+          "subTypeName": "Foil",
+          "name": "Kyros (Alternate Art)",
+          "number": "EB01-040",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544575,
+          "subTypeName": "Normal",
+          "name": "Crocus",
+          "number": "EB01-041",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544576,
+          "subTypeName": "Foil",
+          "name": "Scarlet",
+          "number": "EB01-042",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544577,
+          "subTypeName": "Foil",
+          "name": "Spandine",
+          "number": "EB01-043",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544578,
+          "subTypeName": "Normal",
+          "name": "Funkfreed",
+          "number": "EB01-044",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544579,
+          "subTypeName": "Normal",
+          "name": "Brook (045)",
+          "number": "EB01-045",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544580,
+          "subTypeName": "Foil",
+          "name": "Brook (046)",
+          "number": "EB01-046",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544581,
+          "subTypeName": "Foil",
+          "name": "Brook (046) (Alternate Art)",
+          "number": "EB01-046",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544582,
+          "subTypeName": "Normal",
+          "name": "Laboon (047)",
+          "number": "EB01-047",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544583,
+          "subTypeName": "Foil",
+          "name": "Laboon (048)",
+          "number": "EB01-048",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544584,
+          "subTypeName": "Foil",
+          "name": "Laboon (048) (Alternate Art)",
+          "number": "EB01-048",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544585,
+          "subTypeName": "Foil",
+          "name": "T-Bone",
+          "number": "EB01-049",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544586,
+          "subTypeName": "Foil",
+          "name": "T-Bone (Alternate Art)",
+          "number": "EB01-049",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544587,
+          "subTypeName": "Normal",
+          "name": "...I Want to Live!!",
+          "number": "EB01-050",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544588,
+          "subTypeName": "Foil",
+          "name": "Finger Pistol",
+          "number": "EB01-051",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544589,
+          "subTypeName": "Foil",
+          "name": "Viola",
+          "number": "EB01-052",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544590,
+          "subTypeName": "Foil",
+          "name": "Viola (Alternate Art)",
+          "number": "EB01-052",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544591,
+          "subTypeName": "Normal",
+          "name": "Gastino",
+          "number": "EB01-053",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544592,
+          "subTypeName": "Foil",
+          "name": "Gan.Fall",
+          "number": "EB01-054",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544593,
+          "subTypeName": "Normal",
+          "name": "Charlotte Compote",
+          "number": "EB01-055",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544594,
+          "subTypeName": "Foil",
+          "name": "Charlotte Flampe",
+          "number": "EB01-056",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544595,
+          "subTypeName": "Foil",
+          "name": "Charlotte Flampe (Alternate Art)",
+          "number": "EB01-056",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544596,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi",
+          "number": "EB01-057",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544597,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (Alternate Art)",
+          "number": "EB01-057",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544598,
+          "subTypeName": "Normal",
+          "name": "Mont Blanc Cricket",
+          "number": "EB01-058",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544599,
+          "subTypeName": "Foil",
+          "name": "Kingdom Come",
+          "number": "EB01-059",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544600,
+          "subTypeName": "Normal",
+          "name": "Did Someone Say...Kami?",
+          "number": "EB01-060",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544601,
+          "subTypeName": "Foil",
+          "name": "Mr.2.Bon.Kurei (Bentham)",
+          "number": "EB01-061",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23333,
+          "productId": 544602,
+          "subTypeName": "Foil",
+          "name": "Mr.2.Bon.Kurei (Bentham) (Alternate Art)",
+          "number": "EB01-061",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        }
+      ],
+      "exclusions": []
+    },
+    {
+      "code": "PRB-01",
+      "name": "The Best",
+      "version": "2026-09-27.1",
+      "confidence": "Community estimates; chase frequencies and collation assumptions unverified",
+      "enabled": true,
+      "groupId": 23496,
+      "boosterBoxProductId": 545399,
+      "releaseDate": "2024-11-08",
+      "packsPerBox": 20,
+      "cardsPerPack": 10,
+      "boxesPerCase": 10,
+      "bonusCardsPerBox": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/prb01.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ],
+      "assumptions": [
+        "English configuration: 20 ten-card packs, 10 boxes per case. Cases are not assumed to contain 12 boxes.",
+        "Regular box model: 100 bulk C/UC/P, 20 R, 18 SR, 2 SEC, 20 DON, 2 AA-level hits, 2 full-art/textured hits, 1 Leader, 35 Jolly Roger.",
+        "Allocate bulk and full-art/textured combined slots uniformly across their eligible cards; this is an explicit unverified collation assumption.",
+        "DON allocation: 18 Normal, 1.8 Foil, 0.2 Gold per regular box. Gold replaces Foil.",
+        "Sanji AA Leader and standalone Manga Nami each assumed 1 per 30 boxes and replace ordinary AA.",
+        "God pack assumed 1 per 150 boxes (midpoint of 10-20 ten-box cases). It replaces one regular pack with Nami plus nine Manga reprints. Multiply all regular counts by 1-1/3000, then add 10/150 Manga cards.",
+        "54 ordinary reprints use explicitly matched original English number/rarity/finish listings as shared-price proxies. Physical artwork equivalence is not independently verified for every card; this is an adopted pricing assumption, not a completed visual audit.",
+        "Exclude unverified Brannew Normal; include its Foil finish. Manga Ace has a missing market price and must remain unknown."
+      ],
+      "pools": [
+        {
+          "id": "base-c",
+          "expectedCopiesPerBox": 44.216025641026
+        },
+        {
+          "id": "base-uc",
+          "expectedCopiesPerBox": 48.060897435897
+        },
+        {
+          "id": "base-pr",
+          "expectedCopiesPerBox": 7.689743589744
+        },
+        {
+          "id": "base-r",
+          "expectedCopiesPerBox": 19.993333333333
+        },
+        {
+          "id": "base-sr",
+          "expectedCopiesPerBox": 17.994
+        },
+        {
+          "id": "base-sec",
+          "expectedCopiesPerBox": 1.999333333333
+        },
+        {
+          "id": "base-l",
+          "expectedCopiesPerBox": 0.999666666667
+        },
+        {
+          "id": "don-normal",
+          "expectedCopiesPerBox": 17.994
+        },
+        {
+          "id": "don-foil",
+          "expectedCopiesPerBox": 1.7994
+        },
+        {
+          "id": "don-gold",
+          "expectedCopiesPerBox": 0.199933333333
+        },
+        {
+          "id": "aa",
+          "expectedCopiesPerBox": 1.932688888889
+        },
+        {
+          "id": "aa-leader",
+          "expectedCopiesPerBox": 0.033322222222
+        },
+        {
+          "id": "manga-nami",
+          "expectedCopiesPerBox": 0.039988888889
+        },
+        {
+          "id": "full-art",
+          "expectedCopiesPerBox": 1.388425925926
+        },
+        {
+          "id": "textured-event-stage",
+          "expectedCopiesPerBox": 0.610907407407
+        },
+        {
+          "id": "jolly-roger",
+          "expectedCopiesPerBox": 34.988333333333
+        },
+        {
+          "id": "manga-reprint-god-pack",
+          "expectedCopiesPerBox": 0.06
+        }
+      ],
+      "variants": [
+        {
+          "groupId": 23496,
+          "productId": 586178,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (OP01-024) (Alternate Art)",
+          "number": "OP01-024",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586180,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (ST01-006) (Jolly Roger Foil)",
+          "number": "ST01-006",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586181,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Uta) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586182,
+          "subTypeName": "Foil",
+          "name": "Edward.Newgate (OP02-004) (Alternate Art)",
+          "number": "OP02-004",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586183,
+          "subTypeName": "Foil",
+          "name": "Marco (Jolly Roger Foil)",
+          "number": "OP02-018",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586184,
+          "subTypeName": "Foil",
+          "name": "Marco (Alternate Art)",
+          "number": "OP02-018",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586185,
+          "subTypeName": "Foil",
+          "name": "Izo (OP03-003) (Jolly Roger Foil)",
+          "number": "OP03-003",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586186,
+          "subTypeName": "Foil",
+          "name": "Izo (OP03-003) (Alternate Art)",
+          "number": "OP03-003",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586187,
+          "subTypeName": "Foil",
+          "name": "Otama (Alternate Art)",
+          "number": "OP01-006",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586188,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Sakazuki) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586189,
+          "subTypeName": "Foil",
+          "name": "Koala (Alternate Art)",
+          "number": "OP05-006",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586190,
+          "subTypeName": "Foil",
+          "name": "Sabo (OP05-007) (Alternate Art)",
+          "number": "OP05-007",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586191,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Ivankov) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586192,
+          "subTypeName": "Foil",
+          "name": "Belo Betty (Jolly Roger Foil)",
+          "number": "OP05-015",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586193,
+          "subTypeName": "Foil",
+          "name": "Belo Betty (Alternate Art)",
+          "number": "OP05-015",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586194,
+          "subTypeName": "Foil",
+          "name": "Shanks (OP01-120) (Alternate Art)",
+          "number": "OP01-120",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586195,
+          "subTypeName": "Foil",
+          "name": "Koby (Jolly Roger Foil)",
+          "number": "P-014",
+          "category": "Other",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586197,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Red Roc (Alternate Art)",
+          "number": "OP04-056",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586198,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Red Roc (Jolly Roger Foil)",
+          "number": "OP04-056",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586201,
+          "subTypeName": "Foil",
+          "name": "Sanji's Pilaf (Jolly Roger Foil)",
+          "number": "OP03-056",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586202,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Oden) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586408,
+          "subTypeName": "Foil",
+          "name": "Nami (P-053) (Jolly Roger Foil)",
+          "number": "P-053",
+          "category": "Other",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586480,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (P-055) (Jolly Roger Foil)",
+          "number": "P-055",
+          "category": "Other",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586481,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Katakuri) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586482,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Magellan) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586483,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (OP04-100) (Jolly Roger Foil)",
+          "number": "OP04-100",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586484,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (OP04-100) (Alternate Art)",
+          "number": "OP04-100",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586543,
+          "subTypeName": "Foil",
+          "name": "Kaido (OP04-044) (Reprint)",
+          "number": "OP04-044",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586544,
+          "subTypeName": "Foil",
+          "name": "Kaido (OP04-044) (Alternate Art)",
+          "number": "OP04-044",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586545,
+          "subTypeName": "Foil",
+          "name": "Ulti (Alternate Art)",
+          "number": "OP05-043",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586547,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Hiyori (Alternate Art)",
+          "number": "OP06-106",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586548,
+          "subTypeName": "Foil",
+          "name": "Boa Hancock (OP01-078) (Alternate Art)",
+          "number": "OP01-078",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586549,
+          "subTypeName": "Foil",
+          "name": "Dracule Mihawk (OP01-070) (Alternate Art)",
+          "number": "OP01-070",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586550,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rebecca) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586551,
+          "subTypeName": "Foil",
+          "name": "Sanji (OP04-104) (Alternate Art)",
+          "number": "OP04-104",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586552,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Kaido) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586553,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Crocodile) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586554,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Vivi) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586556,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (King) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586557,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Eustass \"Captain\" Kid) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586558,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rob Lucci) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586559,
+          "subTypeName": "Foil",
+          "name": "Ryuma (Jolly Roger Foil)",
+          "number": "OP06-036",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586560,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (P-029) (Jolly Roger Foil)",
+          "number": "P-029",
+          "category": "Other",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586589,
+          "subTypeName": "Foil",
+          "name": "Izo (OP01-033) (Jolly Roger Foil)",
+          "number": "OP01-033",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586590,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Momonosuke (Jolly Roger Foil)",
+          "number": "OP01-041",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586591,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Momonosuke (Alternate Art)",
+          "number": "OP01-041",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586592,
+          "subTypeName": "Foil",
+          "name": "One-Legged Toy Soldier (Jolly Roger Foil)",
+          "number": "OP05-081",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586593,
+          "subTypeName": "Foil",
+          "name": "Gecko Moria (Alternate Art)",
+          "number": "OP06-086",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586594,
+          "subTypeName": "Foil",
+          "name": "Charlotte Cracker (Alternate Art)",
+          "number": "OP03-108",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586595,
+          "subTypeName": "Foil",
+          "name": "Charlotte Smoothie (Jolly Roger Foil)",
+          "number": "OP03-110",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586596,
+          "subTypeName": "Foil",
+          "name": "Charlotte Smoothie (Alternate Art)",
+          "number": "OP03-110",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586597,
+          "subTypeName": "Foil",
+          "name": "Charlotte Perospero (Alternate Art)",
+          "number": "OP03-113",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586598,
+          "subTypeName": "Foil",
+          "name": "Three Thousand Worlds (Alternate Art)",
+          "number": "OP03-057",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586599,
+          "subTypeName": "Foil",
+          "name": "Three Thousand Worlds (Jolly Roger Foil)",
+          "number": "OP03-057",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586600,
+          "subTypeName": "Foil",
+          "name": "Hound Blaze (Alternate Art)",
+          "number": "OP05-057",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586601,
+          "subTypeName": "Foil",
+          "name": "Hound Blaze (Jolly Roger Foil)",
+          "number": "OP05-057",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586602,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (OP04-089) (Alternate Art)",
+          "number": "OP04-089",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586603,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (OP04-089) (Jolly Roger Foil)",
+          "number": "OP04-089",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586604,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP05-082) (Full Art)",
+          "number": "OP05-082",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586606,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP05-082) (Jolly Roger Foil)",
+          "number": "OP05-082",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586607,
+          "subTypeName": "Normal",
+          "name": "Sanji (PRB01-001)",
+          "number": "PRB01-001",
+          "category": "Leaders",
+          "pool": "base-l",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586608,
+          "subTypeName": "Foil",
+          "name": "Sanji (PRB01-001) (Alternate Art)",
+          "number": "PRB01-001",
+          "category": "AA",
+          "pool": "aa-leader",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586715,
+          "subTypeName": "Foil",
+          "name": "Sakazuki (Alternate Art)",
+          "number": "OP02-099",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586716,
+          "subTypeName": "Foil",
+          "name": "Borsalino (Alternate Art)",
+          "number": "OP02-114",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586718,
+          "subTypeName": "Foil",
+          "name": "Brannew (Jolly Roger Foil)",
+          "number": "OP03-089",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586719,
+          "subTypeName": "Foil",
+          "name": "Brannew (Full Art)",
+          "number": "OP03-089",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586720,
+          "subTypeName": "Foil",
+          "name": "Kuzan (OP02-096) (Alternate Art)",
+          "number": "OP02-096",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586721,
+          "subTypeName": "Foil",
+          "name": "Kuzan (OP02-096) (Reprint)",
+          "number": "OP02-096",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586723,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Trafalgar Law) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586804,
+          "subTypeName": "Foil",
+          "name": "Satori (Alternate Art)",
+          "number": "OP05-105",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586805,
+          "subTypeName": "Foil",
+          "name": "Satori (Jolly Roger Foil)",
+          "number": "OP05-105",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586806,
+          "subTypeName": "Foil",
+          "name": "Two-Hundred Million Volts Amaru (Alternate Art)",
+          "number": "OP05-115",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586807,
+          "subTypeName": "Foil",
+          "name": "Two-Hundred Million Volts Amaru (Jolly Roger Foil)",
+          "number": "OP05-115",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586808,
+          "subTypeName": "Foil",
+          "name": "Yamato (OP04-112) (Alternate Art)",
+          "number": "OP04-112",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586809,
+          "subTypeName": "Foil",
+          "name": "Upper Yard (Jolly Roger Foil)",
+          "number": "OP05-117",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586810,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Yamato) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586884,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Sabo) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586885,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Gecko Moria) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586886,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Perona) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586887,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Iceberg) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586888,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Hody Jones) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586889,
+          "subTypeName": "Foil",
+          "name": "Arlong (Jolly Roger Foil)",
+          "number": "OP06-023",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586891,
+          "subTypeName": "Foil",
+          "name": "Yamato (OP01-121) (Alternate Art)",
+          "number": "OP01-121",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586892,
+          "subTypeName": "Foil",
+          "name": "Eustass\"Captain\"Kid (OP01-051) (Alternate Art)",
+          "number": "OP01-051",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586893,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (OP01-047) (Alternate Art)",
+          "number": "OP01-047",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586894,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (ST02-004) (Jolly Roger Foil)",
+          "number": "ST02-004",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586895,
+          "subTypeName": "Foil",
+          "name": "Charlotte Katakuri (Alternate Art)",
+          "number": "OP03-123",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586896,
+          "subTypeName": "Foil",
+          "name": "Boa Hancock (ST03-013) (Jolly Roger Foil)",
+          "number": "ST03-013",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586897,
+          "subTypeName": "Foil",
+          "name": "Donquixote Doflamingo (Alternate Art)",
+          "number": "OP04-031",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586898,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP05-034) (Full Art)",
+          "number": "OP05-034",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586899,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP05-034) (Jolly Roger Foil)",
+          "number": "OP05-034",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586959,
+          "subTypeName": "Foil",
+          "name": "Eustass\"Captain\"Kid (OP05-074) (Alternate Art)",
+          "number": "OP05-074",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586960,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (OP05-119) (Alternate Art)",
+          "number": "OP05-119",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 586961,
+          "subTypeName": "Foil",
+          "name": "Kaido (ST04-003) (Alternate Art)",
+          "number": "ST04-003",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587189,
+          "subTypeName": "Foil",
+          "name": "Judgment of Hell (Alternate Art)",
+          "number": "OP02-089",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587190,
+          "subTypeName": "Foil",
+          "name": "Judgment of Hell (Jolly Roger Foil)",
+          "number": "OP02-089",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587191,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rosinante) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587192,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Zoro) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587233,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (OP06-065) (Jolly Roger Foil)",
+          "number": "OP06-065",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587234,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (OP06-065) (Full Art)",
+          "number": "OP06-065",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587235,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (OP06-067) (Jolly Roger Foil)",
+          "number": "OP06-067",
+          "category": "Foils",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587236,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (OP06-067) (Alternate Art)",
+          "number": "OP06-067",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587237,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Donquixote Doflamingo) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587398,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (ST10-010) (Alternate Art)",
+          "number": "ST10-010",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587399,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Queen) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587573,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Reiju) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587574,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Reiju (OP06-069) (Alternate Art)",
+          "number": "OP06-069",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587575,
+          "subTypeName": "Foil",
+          "name": "Kingdom of GERMA (Jolly Roger Foil)",
+          "number": "OP06-079",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587705,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Enel) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587706,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Luffy) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587708,
+          "subTypeName": "Foil",
+          "name": "Shanks (Manga)",
+          "number": "OP01-120",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587709,
+          "subTypeName": "Foil",
+          "name": "Portgas.D.Ace (Manga)",
+          "number": "OP02-013",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587710,
+          "subTypeName": "Foil",
+          "name": "Sogeking (Manga)",
+          "number": "OP03-122",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587954,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Big Mom) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587955,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Whitebeard) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587957,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Ace) (Gold)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-gold",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587958,
+          "subTypeName": "Foil",
+          "name": "Sabo (OP04-083) (Manga)",
+          "number": "OP04-083",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587959,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (OP05-069) (Manga)",
+          "number": "OP05-069",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587960,
+          "subTypeName": "Foil",
+          "name": "Eustass\"Captain\"Kid (OP05-074) (Manga)",
+          "number": "OP05-074",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587962,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (EB01-006) (Manga)",
+          "number": "EB01-006",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587963,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (OP05-119) (Manga)",
+          "number": "OP05-119",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587964,
+          "subTypeName": "Foil",
+          "name": "Roronoa Zoro (Manga)",
+          "number": "OP06-118",
+          "category": "Manga / Other Chase",
+          "pool": "manga-reprint-god-pack",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 587966,
+          "subTypeName": "Foil",
+          "name": "Nami (OP01-016) (Manga)",
+          "number": "OP01-016",
+          "category": "Manga / Other Chase",
+          "pool": "manga-nami",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593270,
+          "subTypeName": "Foil",
+          "name": "Otama (Full Art)",
+          "number": "OP01-006",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593272,
+          "subTypeName": "Foil",
+          "name": "Radical Beam!! (Jolly Roger Foil)",
+          "number": "OP01-029",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593284,
+          "subTypeName": "Foil",
+          "name": "Izo (OP01-033) (Full Art)",
+          "number": "OP01-033",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593285,
+          "subTypeName": "Foil",
+          "name": "Izo (OP01-033) (Alternate Art)",
+          "number": "OP01-033",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593286,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Momonosuke (Full Art)",
+          "number": "OP01-041",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593291,
+          "subTypeName": "Foil",
+          "name": "Raizo (Jolly Roger Foil)",
+          "number": "OP01-052",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593292,
+          "subTypeName": "Foil",
+          "name": "Raizo (Full Art)",
+          "number": "OP01-052",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593295,
+          "subTypeName": "Foil",
+          "name": "Makino (Jolly Roger Foil)",
+          "number": "OP02-015",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593296,
+          "subTypeName": "Foil",
+          "name": "Makino (Full Art)",
+          "number": "OP02-015",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593297,
+          "subTypeName": "Foil",
+          "name": "Marco (Full Art)",
+          "number": "OP02-018",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593299,
+          "subTypeName": "Foil",
+          "name": "Tsuru (Jolly Roger Foil)",
+          "number": "OP02-106",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593300,
+          "subTypeName": "Foil",
+          "name": "Tsuru (Full Art)",
+          "number": "OP02-106",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593302,
+          "subTypeName": "Foil",
+          "name": "Ice Age (Jolly Roger Foil)",
+          "number": "OP02-117",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593303,
+          "subTypeName": "Foil",
+          "name": "Kuzan (OP02-121) (Alternate Art)",
+          "number": "OP02-121",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593304,
+          "subTypeName": "Foil",
+          "name": "Izo (OP03-003) (Full Art)",
+          "number": "OP03-003",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593306,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Giant Gavel (Jolly Roger Foil)",
+          "number": "OP03-055",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593307,
+          "subTypeName": "Foil",
+          "name": "Sanji's Pilaf (Alternate Art)",
+          "number": "OP03-056",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593309,
+          "subTypeName": "Foil",
+          "name": "Kalifa (Jolly Roger Foil)",
+          "number": "OP03-060",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593310,
+          "subTypeName": "Foil",
+          "name": "Kalifa (Full Art)",
+          "number": "OP03-060",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593311,
+          "subTypeName": "Foil",
+          "name": "Vergo (Jolly Roger Foil)",
+          "number": "OP03-079",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593313,
+          "subTypeName": "Foil",
+          "name": "Vergo (Full Art)",
+          "number": "OP03-079",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593315,
+          "subTypeName": "Foil",
+          "name": "Brannew (Alternate Art)",
+          "number": "OP03-089",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593316,
+          "subTypeName": "Foil",
+          "name": "Air Door (Jolly Roger Foil)",
+          "number": "OP03-094",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593318,
+          "subTypeName": "Foil",
+          "name": "Charlotte Smoothie (Full Art)",
+          "number": "OP03-110",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593358,
+          "subTypeName": "Foil",
+          "name": "Thunder Bolt (Jolly Roger Foil)",
+          "number": "OP03-121",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593361,
+          "subTypeName": "Foil",
+          "name": "Dellinger (Jolly Roger Foil)",
+          "number": "OP04-029",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593362,
+          "subTypeName": "Foil",
+          "name": "Dellinger (Full Art)",
+          "number": "OP04-029",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593430,
+          "subTypeName": "Foil",
+          "name": "Donquixote Family (Jolly Roger Foil)",
+          "number": "OP04-036",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593431,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (OP04-089) (Full Art)",
+          "number": "OP04-089",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593432,
+          "subTypeName": "Foil",
+          "name": "Barrier!! (Jolly Roger Foil)",
+          "number": "OP04-095",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593433,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (OP04-100) (Full Art)",
+          "number": "OP04-100",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593434,
+          "subTypeName": "Foil",
+          "name": "Nico Robin (Jolly Roger Foil)",
+          "number": "OP05-010",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593435,
+          "subTypeName": "Foil",
+          "name": "Nico Robin (Full Art)",
+          "number": "OP05-010",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593436,
+          "subTypeName": "Foil",
+          "name": "Belo Betty (Full Art)",
+          "number": "OP05-015",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593437,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP05-034) (Alternate Art)",
+          "number": "OP05-034",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593438,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP04-032) (Jolly Roger Foil)",
+          "number": "OP04-032",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593439,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP04-032) (Full Art)",
+          "number": "OP04-032",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593464,
+          "subTypeName": "Foil",
+          "name": "Miss Doublefinger(Zala) (Jolly Roger Foil)",
+          "number": "OP05-073",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593465,
+          "subTypeName": "Foil",
+          "name": "Miss Doublefinger(Zala) (Full Art)",
+          "number": "OP05-073",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593469,
+          "subTypeName": "Foil",
+          "name": "One-Legged Toy Soldier (Full Art)",
+          "number": "OP05-081",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593470,
+          "subTypeName": "Foil",
+          "name": "One-Legged Toy Soldier (Alternate Art)",
+          "number": "OP05-081",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593472,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP05-082) (Alternate Art)",
+          "number": "OP05-082",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593473,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP03-116) (Jolly Roger Foil)",
+          "number": "OP03-116",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593474,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP03-116) (Full Art)",
+          "number": "OP03-116",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593476,
+          "subTypeName": "Foil",
+          "name": "Satori (Full Art)",
+          "number": "OP05-105",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593477,
+          "subTypeName": "Foil",
+          "name": "El Thor (Jolly Roger Foil)",
+          "number": "OP05-114",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593479,
+          "subTypeName": "Foil",
+          "name": "Upper Yard (Alternate Art)",
+          "number": "OP05-117",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593480,
+          "subTypeName": "Foil",
+          "name": "Kaido (OP05-118) (Alternate Art)",
+          "number": "OP05-118",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593482,
+          "subTypeName": "Foil",
+          "name": "Emporio.Ivankov (Jolly Roger Foil)",
+          "number": "OP06-003",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593483,
+          "subTypeName": "Foil",
+          "name": "Emporio.Ivankov (Full Art)",
+          "number": "OP06-003",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593485,
+          "subTypeName": "Foil",
+          "name": "Arlong (Full Art)",
+          "number": "OP06-023",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593486,
+          "subTypeName": "Foil",
+          "name": "Arlong (Alternate Art)",
+          "number": "OP06-023",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593488,
+          "subTypeName": "Foil",
+          "name": "Hody Jones (Alternate Art)",
+          "number": "OP06-035",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593489,
+          "subTypeName": "Foil",
+          "name": "Ryuma (Full Art)",
+          "number": "OP06-036",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593490,
+          "subTypeName": "Foil",
+          "name": "Ryuma (Alternate Art)",
+          "number": "OP06-036",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593491,
+          "subTypeName": "Foil",
+          "name": "The Billion-fold World Trichiliocosm (Jolly Roger Foil)",
+          "number": "OP06-038",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593493,
+          "subTypeName": "Foil",
+          "name": "Ama no Murakumo Sword (Jolly Roger Foil)",
+          "number": "OP06-056",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593500,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Ichiji (OP06-060) (Jolly Roger Foil)",
+          "number": "OP06-060",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593501,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Ichiji (OP06-060) (Full Art)",
+          "number": "OP06-060",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593506,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (OP06-064) (Jolly Roger Foil)",
+          "number": "OP06-064",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593507,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (OP06-064) (Full Art)",
+          "number": "OP06-064",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593508,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (OP06-065) (Alternate Art)",
+          "number": "OP06-065",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593553,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (OP06-066) (Jolly Roger Foil)",
+          "number": "OP06-066",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593554,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (OP06-066) (Full Art)",
+          "number": "OP06-066",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593555,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (OP06-067) (Full Art)",
+          "number": "OP06-067",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593558,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Reiju (OP06-068) (Jolly Roger Foil)",
+          "number": "OP06-068",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593559,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Reiju (OP06-068) (Full Art)",
+          "number": "OP06-068",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593561,
+          "subTypeName": "Foil",
+          "name": "Kingdom of GERMA (Alternate Art)",
+          "number": "OP06-079",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593562,
+          "subTypeName": "Foil",
+          "name": "Victoria Cindry (Jolly Roger Foil)",
+          "number": "OP06-091",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593563,
+          "subTypeName": "Foil",
+          "name": "Victoria Cindry (Full Art)",
+          "number": "OP06-091",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593564,
+          "subTypeName": "Foil",
+          "name": "Inuarashi (Jolly Roger Foil)",
+          "number": "OP06-100",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593565,
+          "subTypeName": "Foil",
+          "name": "Inuarashi (Full Art)",
+          "number": "OP06-100",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593567,
+          "subTypeName": "Foil",
+          "name": "Nekomamushi (Jolly Roger Foil)",
+          "number": "OP06-110",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593568,
+          "subTypeName": "Foil",
+          "name": "Nekomamushi (Full Art)",
+          "number": "OP06-110",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593569,
+          "subTypeName": "Foil",
+          "name": "Wyper (Jolly Roger Foil)",
+          "number": "OP06-114",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593570,
+          "subTypeName": "Foil",
+          "name": "Wyper (Full Art)",
+          "number": "OP06-114",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593571,
+          "subTypeName": "Foil",
+          "name": "Koby (Full Art)",
+          "number": "P-014",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593572,
+          "subTypeName": "Foil",
+          "name": "Nami (P-053) (Full Art)",
+          "number": "P-053",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593573,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (P-055) (Full Art)",
+          "number": "P-055",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593574,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (ST01-006) (Full Art)",
+          "number": "ST01-006",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593575,
+          "subTypeName": "Foil",
+          "name": "Tony Tony.Chopper (ST01-006) (Alternate Art)",
+          "number": "ST01-006",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593576,
+          "subTypeName": "Foil",
+          "name": "Guard Point (Jolly Roger Foil)",
+          "number": "ST01-014",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593578,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (ST02-004) (Full Art)",
+          "number": "ST02-004",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593579,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (ST02-004) (Alternate Art)",
+          "number": "ST02-004",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593580,
+          "subTypeName": "Foil",
+          "name": "Dracule Mihawk (ST03-005) (Jolly Roger Foil)",
+          "number": "ST03-005",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593581,
+          "subTypeName": "Foil",
+          "name": "Dracule Mihawk (ST03-005) (Full Art)",
+          "number": "ST03-005",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593583,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (ST03-008) (Jolly Roger Foil)",
+          "number": "ST03-008",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593584,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (ST03-008) (Full Art)",
+          "number": "ST03-008",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593585,
+          "subTypeName": "Foil",
+          "name": "Boa Hancock (ST03-013) (Full Art)",
+          "number": "ST03-013",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593586,
+          "subTypeName": "Foil",
+          "name": "Boa Hancock (ST03-013) (Alternate Art)",
+          "number": "ST03-013",
+          "category": "AA",
+          "pool": "aa",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593587,
+          "subTypeName": "Foil",
+          "name": "Queen (Jolly Roger Foil)",
+          "number": "ST04-005",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593588,
+          "subTypeName": "Foil",
+          "name": "Queen (Full Art)",
+          "number": "ST04-005",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593589,
+          "subTypeName": "Foil",
+          "name": "Blast Breath (Jolly Roger Foil)",
+          "number": "ST04-016",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593673,
+          "subTypeName": "Foil",
+          "name": "Helmeppo (Jolly Roger Foil)",
+          "number": "ST06-010",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593674,
+          "subTypeName": "Foil",
+          "name": "Helmeppo (Full Art)",
+          "number": "ST06-010",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593675,
+          "subTypeName": "Foil",
+          "name": "Shockwave (Jolly Roger Foil)",
+          "number": "ST06-014",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593676,
+          "subTypeName": "Foil",
+          "name": "Charlotte Brulee (Jolly Roger Foil)",
+          "number": "ST07-007",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593677,
+          "subTypeName": "Foil",
+          "name": "Charlotte Brulee (Full Art)",
+          "number": "ST07-007",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593678,
+          "subTypeName": "Foil",
+          "name": "Narikabura Arrow (Jolly Roger Foil)",
+          "number": "ST09-014",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593680,
+          "subTypeName": "Foil",
+          "name": "Duval (Jolly Roger Foil)",
+          "number": "ST12-014",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593681,
+          "subTypeName": "Foil",
+          "name": "Duval (Full Art)",
+          "number": "ST12-014",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593801,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Ace)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593801,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Ace)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593802,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Big Mom)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593802,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Big Mom)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593803,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Crocodile)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593803,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Crocodile)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593804,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Donquixote Doflamingo)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593804,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Donquixote Doflamingo)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593805,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Enel)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593805,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Enel)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593806,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Eustass \"Captain\" Kid)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593806,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Eustass \"Captain\" Kid)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593807,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Gecko Moria)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593807,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Gecko Moria)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593808,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Hody Jones)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593808,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Hody Jones)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593809,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Iceberg)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593809,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Iceberg)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593810,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Ivankov)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593810,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Ivankov)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593811,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Kaido)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593811,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Kaido)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593812,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Katakuri)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593812,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Katakuri)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593813,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (King)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593813,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (King)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593814,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Luffy)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593814,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Luffy)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593815,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Magellan)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593815,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Magellan)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593816,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Oden)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593816,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Oden)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593817,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Perona)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593817,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Perona)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593818,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Queen)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593818,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Queen)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593819,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Rebecca)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593819,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rebecca)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593820,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Reiju)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593820,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Reiju)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593821,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rob Lucci)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593821,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Rob Lucci)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593822,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Rosinante)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593822,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Rosinante)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593823,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Sabo)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593823,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Sabo)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593824,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Sakazuki)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593824,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Sakazuki)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593825,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Trafalgar Law)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593825,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Trafalgar Law)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593826,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Uta)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593826,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Uta)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593827,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Vivi)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593827,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Vivi)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593828,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Whitebeard)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593828,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Whitebeard)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593829,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Yamato)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593829,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Yamato)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593830,
+          "subTypeName": "Normal",
+          "name": "DON!! Card (Zoro)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-normal",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593830,
+          "subTypeName": "Foil",
+          "name": "DON!! Card (Zoro)",
+          "number": null,
+          "category": "DON!!",
+          "pool": "don-foil",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593883,
+          "subTypeName": "Foil",
+          "name": "Radical Beam!! (Textured Foil)",
+          "number": "OP01-029",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593884,
+          "subTypeName": "Foil",
+          "name": "Judgment of Hell (Textured Foil)",
+          "number": "OP02-089",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593885,
+          "subTypeName": "Foil",
+          "name": "Ice Age (Textured Foil)",
+          "number": "OP02-117",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593886,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Giant Gavel (Textured Foil)",
+          "number": "OP03-055",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593887,
+          "subTypeName": "Foil",
+          "name": "Sanji's Pilaf (Textured Foil)",
+          "number": "OP03-056",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593888,
+          "subTypeName": "Foil",
+          "name": "Three Thousand Worlds (Textured Foil)",
+          "number": "OP03-057",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593889,
+          "subTypeName": "Foil",
+          "name": "Air Door (Textured Foil)",
+          "number": "OP03-094",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593890,
+          "subTypeName": "Foil",
+          "name": "Thunder Bolt (Textured Foil)",
+          "number": "OP03-121",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593891,
+          "subTypeName": "Foil",
+          "name": "Donquixote Family (Textured Foil)",
+          "number": "OP04-036",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593892,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Red Roc (Textured Foil)",
+          "number": "OP04-056",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593893,
+          "subTypeName": "Foil",
+          "name": "Barrier!! (Textured Foil)",
+          "number": "OP04-095",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593894,
+          "subTypeName": "Foil",
+          "name": "Hound Blaze (Textured Foil)",
+          "number": "OP05-057",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593895,
+          "subTypeName": "Foil",
+          "name": "El Thor (Textured Foil)",
+          "number": "OP05-114",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593896,
+          "subTypeName": "Foil",
+          "name": "Two-Hundred Million Volts Amaru (Textured Foil)",
+          "number": "OP05-115",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593897,
+          "subTypeName": "Foil",
+          "name": "Upper Yard (Textured Foil)",
+          "number": "OP05-117",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593898,
+          "subTypeName": "Foil",
+          "name": "The Billion-fold World Trichiliocosm (Textured Foil)",
+          "number": "OP06-038",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593899,
+          "subTypeName": "Foil",
+          "name": "Ama no Murakumo Sword (Textured Foil)",
+          "number": "OP06-056",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593900,
+          "subTypeName": "Foil",
+          "name": "Kingdom of GERMA (Textured Foil)",
+          "number": "OP06-079",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593901,
+          "subTypeName": "Foil",
+          "name": "Guard Point (Textured Foil)",
+          "number": "ST01-014",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593902,
+          "subTypeName": "Foil",
+          "name": "Blast Breath (Textured Foil)",
+          "number": "ST04-016",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593903,
+          "subTypeName": "Foil",
+          "name": "Shockwave (Textured Foil)",
+          "number": "ST06-014",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 593904,
+          "subTypeName": "Foil",
+          "name": "Narikabura Arrow (Textured Foil)",
+          "number": "ST09-014",
+          "category": "AA",
+          "pool": "textured-event-stage",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594067,
+          "subTypeName": "Foil",
+          "name": "Otama (Jolly Roger Foil)",
+          "number": "OP01-006",
+          "category": "Base",
+          "pool": "jolly-roger",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594236,
+          "subTypeName": "Normal",
+          "name": "Koby (Reprint)",
+          "number": "P-014",
+          "category": "Other",
+          "pool": "base-pr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594238,
+          "subTypeName": "Normal",
+          "name": "Bartolomeo (P-029) (Reprint)",
+          "number": "P-029",
+          "category": "Other",
+          "pool": "base-pr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594239,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (P-029) (Full Art)",
+          "number": "P-029",
+          "category": "AA",
+          "pool": "full-art",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594291,
+          "subTypeName": "Normal",
+          "name": "Otama (Reprint)",
+          "number": "OP01-006",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594313,
+          "subTypeName": "Normal",
+          "name": "Raizo (Reprint)",
+          "number": "OP01-052",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594314,
+          "subTypeName": "Foil",
+          "name": "Dracule Mihawk (OP01-070) (Reprint)",
+          "number": "OP01-070",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594315,
+          "subTypeName": "Foil",
+          "name": "Boa Hancock (OP01-078) (Reprint)",
+          "number": "OP01-078",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594316,
+          "subTypeName": "Foil",
+          "name": "Shanks (OP01-120) (Reprint)",
+          "number": "OP01-120",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594317,
+          "subTypeName": "Foil",
+          "name": "Edward.Newgate (Reprint)",
+          "number": "OP02-004",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594319,
+          "subTypeName": "Foil",
+          "name": "Marco (Reprint)",
+          "number": "OP02-018",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594320,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (ST10-010) (Reprint)",
+          "number": "ST10-010",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594321,
+          "subTypeName": "Foil",
+          "name": "Sakazuki (Reprint)",
+          "number": "OP02-099",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594322,
+          "subTypeName": "Normal",
+          "name": "Helmeppo (Reprint)",
+          "number": "ST06-010",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594323,
+          "subTypeName": "Normal",
+          "name": "Tsuru (Reprint)",
+          "number": "OP02-106",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594324,
+          "subTypeName": "Foil",
+          "name": "Borsalino (Reprint)",
+          "number": "OP02-114",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594325,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (OP05-119) (Reprint)",
+          "number": "OP05-119",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594326,
+          "subTypeName": "Foil",
+          "name": "Kuzan (OP02-121) (Reprint)",
+          "number": "OP02-121",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594327,
+          "subTypeName": "Foil",
+          "name": "Kaido (OP05-118) (Reprint)",
+          "number": "OP05-118",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594328,
+          "subTypeName": "Foil",
+          "name": "Izo (OP03-003) (Reprint)",
+          "number": "OP03-003",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594329,
+          "subTypeName": "Normal",
+          "name": "Kalifa (Reprint)",
+          "number": "OP03-060",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594330,
+          "subTypeName": "Normal",
+          "name": "Vergo (Reprint)",
+          "number": "OP03-079",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594331,
+          "subTypeName": "Foil",
+          "name": "Brannew (Reprint)",
+          "number": "OP03-089",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594332,
+          "subTypeName": "Foil",
+          "name": "Satori (Reprint)",
+          "number": "OP05-105",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594333,
+          "subTypeName": "Foil",
+          "name": "Charlotte Cracker (Reprint)",
+          "number": "OP03-108",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594334,
+          "subTypeName": "Foil",
+          "name": "Shirahoshi (OP05-082) (Reprint)",
+          "number": "OP05-082",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594335,
+          "subTypeName": "Foil",
+          "name": "Charlotte Smoothie (Reprint)",
+          "number": "OP03-110",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594336,
+          "subTypeName": "Normal",
+          "name": "One-Legged Toy Soldier (Reprint)",
+          "number": "OP05-081",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594337,
+          "subTypeName": "Foil",
+          "name": "Charlotte Perospero (Reprint)",
+          "number": "OP03-113",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594338,
+          "subTypeName": "Foil",
+          "name": "Eustass\"Captain\"Kid (Reprint)",
+          "number": "OP05-074",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594339,
+          "subTypeName": "Normal",
+          "name": "Shirahoshi (OP03-116) (Reprint)",
+          "number": "OP03-116",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594340,
+          "subTypeName": "Normal",
+          "name": "Miss Doublefinger(Zala) (Reprint)",
+          "number": "OP05-073",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594341,
+          "subTypeName": "Foil",
+          "name": "Charlotte Katakuri (Reprint)",
+          "number": "OP03-123",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594342,
+          "subTypeName": "Foil",
+          "name": "Ulti (Reprint)",
+          "number": "OP05-043",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594343,
+          "subTypeName": "Foil",
+          "name": "Baby 5 (OP05-034) (Reprint)",
+          "number": "OP05-034",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594344,
+          "subTypeName": "Normal",
+          "name": "Dellinger (Reprint)",
+          "number": "OP04-029",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594345,
+          "subTypeName": "Foil",
+          "name": "Donquixote Doflamingo (Reprint)",
+          "number": "OP04-031",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594346,
+          "subTypeName": "Foil",
+          "name": "Belo Betty (OP05-015) (Reprint)",
+          "number": "OP05-015",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594347,
+          "subTypeName": "Normal",
+          "name": "Baby 5 (OP04-032) (Reprint)",
+          "number": "OP04-032",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594348,
+          "subTypeName": "Foil",
+          "name": "Bartolomeo (OP04-089) (Reprint)",
+          "number": "OP04-089",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594349,
+          "subTypeName": "Normal",
+          "name": "Nico Robin (Reprint)",
+          "number": "OP05-010",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594350,
+          "subTypeName": "Foil",
+          "name": "Capone\"Gang\"Bege (OP04-100) (Reprint)",
+          "number": "OP04-100",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594351,
+          "subTypeName": "Foil",
+          "name": "Sanji (Reprint)",
+          "number": "OP04-104",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594352,
+          "subTypeName": "Foil",
+          "name": "Sabo (OP05-007) (Reprint)",
+          "number": "OP05-007",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594353,
+          "subTypeName": "Foil",
+          "name": "Yamato (OP04-112) (Reprint)",
+          "number": "OP04-112",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 594354,
+          "subTypeName": "Foil",
+          "name": "Koala (Reprint)",
+          "number": "OP05-006",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 596374,
+          "subTypeName": "Foil",
+          "name": "Yamato (OP01-121) (Reprint)",
+          "number": "OP01-121",
+          "category": "Foils",
+          "pool": "base-sec",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 596376,
+          "subTypeName": "Normal",
+          "name": "Monkey.D.Luffy (P-055) (Reprint)",
+          "number": "P-055",
+          "category": "Other",
+          "pool": "base-pr",
+          "weight": 1
+        },
+        {
+          "groupId": 23496,
+          "productId": 596377,
+          "subTypeName": "Normal",
+          "name": "Nami (P-053) (Reprint)",
+          "number": "P-053",
+          "category": "Other",
+          "pool": "base-pr",
+          "weight": 1
+        },
+        {
+          "groupId": 3188,
+          "productId": 453508,
+          "subTypeName": "Foil",
+          "name": "Monkey.D.Luffy (024)",
+          "number": "OP01-024",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3188,
+          "productId": 454550,
+          "subTypeName": "Normal",
+          "name": "Radical Beam!!",
+          "number": "OP01-029",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3188,
+          "productId": 454554,
+          "subTypeName": "Normal",
+          "name": "Izo",
+          "number": "OP01-033",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3188,
+          "productId": 454565,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Momonosuke",
+          "number": "OP01-041",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3188,
+          "productId": 454571,
+          "subTypeName": "Foil",
+          "name": "Trafalgar Law (047)",
+          "number": "OP01-047",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3188,
+          "productId": 454575,
+          "subTypeName": "Foil",
+          "name": "Eustass\"Captain\"Kid",
+          "number": "OP01-051",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 17698,
+          "productId": 486335,
+          "subTypeName": "Normal",
+          "name": "Makino",
+          "number": "OP02-015",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 17698,
+          "productId": 486456,
+          "subTypeName": "Foil",
+          "name": "Judgment of Hell",
+          "number": "OP02-089",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 17698,
+          "productId": 486494,
+          "subTypeName": "Normal",
+          "name": "Ice Age",
+          "number": "OP02-117",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22890,
+          "productId": 499985,
+          "subTypeName": "Normal",
+          "name": "Gum-Gum Giant Gavel",
+          "number": "OP03-055",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22890,
+          "productId": 499986,
+          "subTypeName": "Normal",
+          "name": "Sanji's Pilaf",
+          "number": "OP03-056",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22890,
+          "productId": 499988,
+          "subTypeName": "Foil",
+          "name": "Three Thousand Worlds",
+          "number": "OP03-057",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22890,
+          "productId": 500044,
+          "subTypeName": "Normal",
+          "name": "Air Door",
+          "number": "OP03-094",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22890,
+          "productId": 500112,
+          "subTypeName": "Normal",
+          "name": "Thunder Bolt",
+          "number": "OP03-121",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23024,
+          "productId": 516756,
+          "subTypeName": "Normal",
+          "name": "Donquixote Family",
+          "number": "OP04-036",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23024,
+          "productId": 516772,
+          "subTypeName": "Foil",
+          "name": "Gum-Gum Red Roc",
+          "number": "OP04-056",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23024,
+          "productId": 516806,
+          "subTypeName": "Normal",
+          "name": "Barrier!!",
+          "number": "OP04-095",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23213,
+          "productId": 528613,
+          "subTypeName": "Foil",
+          "name": "Hound Blaze",
+          "number": "OP05-057",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23213,
+          "productId": 528676,
+          "subTypeName": "Normal",
+          "name": "El Thor",
+          "number": "OP05-114",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23213,
+          "productId": 528677,
+          "subTypeName": "Foil",
+          "name": "Two-Hundred Million Volts Amaru",
+          "number": "OP05-115",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23213,
+          "productId": 528679,
+          "subTypeName": "Normal",
+          "name": "Upper Yard",
+          "number": "OP05-117",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541567,
+          "subTypeName": "Normal",
+          "name": "Emporio.Ivankov",
+          "number": "OP06-003",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 539775,
+          "subTypeName": "Foil",
+          "name": "Arlong",
+          "number": "OP06-023",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 539772,
+          "subTypeName": "Foil",
+          "name": "Hody Jones (035)",
+          "number": "OP06-035",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541045,
+          "subTypeName": "Foil",
+          "name": "Ryuma",
+          "number": "OP06-036",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541606,
+          "subTypeName": "Normal",
+          "name": "The Billion-fold World Trichiliocosm",
+          "number": "OP06-038",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541618,
+          "subTypeName": "Normal",
+          "name": "Ama no Murakumo Sword",
+          "number": "OP06-056",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541621,
+          "subTypeName": "Normal",
+          "name": "Vinsmoke Ichiji (060)",
+          "number": "OP06-060",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541623,
+          "subTypeName": "Normal",
+          "name": "Vinsmoke Niji (064)",
+          "number": "OP06-064",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541070,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Niji (065)",
+          "number": "OP06-065",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541624,
+          "subTypeName": "Normal",
+          "name": "Vinsmoke Yonji (066)",
+          "number": "OP06-066",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541071,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Yonji (067)",
+          "number": "OP06-067",
+          "category": "Foils",
+          "pool": "base-r",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541625,
+          "subTypeName": "Normal",
+          "name": "Vinsmoke Reiju (068)",
+          "number": "OP06-068",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541063,
+          "subTypeName": "Foil",
+          "name": "Vinsmoke Reiju (069)",
+          "number": "OP06-069",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541633,
+          "subTypeName": "Normal",
+          "name": "Kingdom of GERMA",
+          "number": "OP06-079",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541055,
+          "subTypeName": "Foil",
+          "name": "Gecko Moria (086)",
+          "number": "OP06-086",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541641,
+          "subTypeName": "Normal",
+          "name": "Victoria Cindry",
+          "number": "OP06-091",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541647,
+          "subTypeName": "Normal",
+          "name": "Inuarashi",
+          "number": "OP06-100",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 539501,
+          "subTypeName": "Foil",
+          "name": "Kouzuki Hiyori",
+          "number": "OP06-106",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541653,
+          "subTypeName": "Normal",
+          "name": "Nekomamushi",
+          "number": "OP06-110",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23272,
+          "productId": 541657,
+          "subTypeName": "Normal",
+          "name": "Wyper",
+          "number": "OP06-114",
+          "category": "Base",
+          "pool": "base-uc",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3189,
+          "productId": 288235,
+          "subTypeName": "Normal",
+          "name": "Tony Tony.Chopper",
+          "number": "ST01-006",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3189,
+          "productId": 288243,
+          "subTypeName": "Normal",
+          "name": "Guard Point",
+          "number": "ST01-014",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3191,
+          "productId": 288252,
+          "subTypeName": "Normal",
+          "name": "Capone\"Gang\"Bege",
+          "number": "ST02-004",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3192,
+          "productId": 288272,
+          "subTypeName": "Normal",
+          "name": "Dracule Mihawk",
+          "number": "ST03-005",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3192,
+          "productId": 288277,
+          "subTypeName": "Normal",
+          "name": "Trafalgar Law",
+          "number": "ST03-008",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3192,
+          "productId": 288286,
+          "subTypeName": "Normal",
+          "name": "Boa Hancock",
+          "number": "ST03-013",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3190,
+          "productId": 288274,
+          "subTypeName": "Foil",
+          "name": "Kaido (003)",
+          "number": "ST04-003",
+          "category": "Foils",
+          "pool": "base-sr",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3190,
+          "productId": 288278,
+          "subTypeName": "Normal",
+          "name": "Queen",
+          "number": "ST04-005",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 3190,
+          "productId": 288298,
+          "subTypeName": "Normal",
+          "name": "Blast Breath",
+          "number": "ST04-016",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 17699,
+          "productId": 486329,
+          "subTypeName": "Normal",
+          "name": "Shockwave",
+          "number": "ST06-014",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22930,
+          "productId": 500139,
+          "subTypeName": "Normal",
+          "name": "Charlotte Brulee",
+          "number": "ST07-007",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 22957,
+          "productId": 504463,
+          "subTypeName": "Normal",
+          "name": "Narikabura Arrow",
+          "number": "ST09-014",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        },
+        {
+          "groupId": 23348,
+          "productId": 542124,
+          "subTypeName": "Normal",
+          "name": "Duval",
+          "number": "ST12-014",
+          "category": "Base",
+          "pool": "base-c",
+          "weight": 1,
+          "pricingNote": "Explicit shared original-listing price proxy; see profile assumptions."
+        }
+      ],
+      "exclusions": [
+        {
+          "productId": 594331,
+          "subTypeName": "Normal",
+          "reason": "unverified-brannew-normal"
+        }
+      ]
+    }
+  ]
+}

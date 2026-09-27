@@ -1,0 +1,2180 @@
+[
+  {
+    "productId": 544523,
+    "name": "Kouzuki Oden",
+    "url": "https://www.tcgplayer.com/product/544523/one-piece-card-game-extra-booster-memorial-collection-kouzuki-oden",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-001",
+      "Description": "All of your [Land of Wano] type Character cards without a Counter have a +1000 Counter, according to the rules.\r\n<br>\r\n[DON!! x1] [When Attacking] If you have a [Land of Wano] type Character with a cost of 5 or more, this Leader gains +1000 power until the start of your next turn.",
+      "Color": "Green;Red",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Land of Wano;Kouzuki Clan",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544523,
+        "lowPrice": 0.1,
+        "midPrice": 0.28,
+        "highPrice": 10.14,
+        "marketPrice": 0.26,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544524,
+    "name": "Kouzuki Oden (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544524/one-piece-card-game-extra-booster-memorial-collection-kouzuki-oden-alternate-art",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-001",
+      "Description": "All of your [Land of Wano] type Character cards without a Counter have a +1000 Counter, according to the rules.\r\n<br>\r\n[DON!! x1] [When Attacking] If you have a [Land of Wano] type Character with a cost of 5 or more, this Leader gains +1000 power until the start of your next turn.",
+      "Color": "Green;Red",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Land of Wano;Kouzuki Clan",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544524,
+        "lowPrice": 60.99,
+        "midPrice": 70.0,
+        "highPrice": 493.28,
+        "marketPrice": 60.12,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544525,
+    "name": "Izo",
+    "url": "https://www.tcgplayer.com/product/544525/one-piece-card-game-extra-booster-memorial-collection-izo",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-002",
+      "Description": "[On Play] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.\r\n<br>\r\n[On Your Opponent's Attack] [Once Per Turn] <strong>You may trash 1 card from your hand</strong>: If your Leader has the [Land of Wano] or [Whitebeard Pirates] type, give up to 1 of your opponent's Leader or Character cards -2000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "7000",
+      "Subtypes": "Land of Wano;Whitebeard Pirates",
+      "Attribute": "Ranged"
+    },
+    "prices": [
+      {
+        "productId": 544525,
+        "lowPrice": 1.35,
+        "midPrice": 2.98,
+        "highPrice": 25.0,
+        "marketPrice": 2.26,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544526,
+    "name": "Kid & Killer",
+    "url": "https://www.tcgplayer.com/product/544526/one-piece-card-game-extra-booster-memorial-collection-kid-and-killer",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-003",
+      "Description": "[Rush] <em>(This card can attack on the turn in which it is played.)</em>\r\n<br>\r\n[When Attacking] If your opponent has 2 or less Life cards, this Character gains +2000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Kid Pirates;Supernovas",
+      "Attribute": "Slash;Special"
+    },
+    "prices": [
+      {
+        "productId": 544526,
+        "lowPrice": 1.0,
+        "midPrice": 3.0,
+        "highPrice": 50.0,
+        "marketPrice": 2.33,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544527,
+    "name": "Kid & Killer (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544527/one-piece-card-game-extra-booster-memorial-collection-kid-and-killer-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-003",
+      "Description": "[Rush] <em>(This card can attack on the turn in which it is played.)</em>\r\n<br>\r\n[When Attacking] If your opponent has 2 or less Life cards, this Character gains +2000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Kid Pirates;Supernovas",
+      "Attribute": "Slash;Special"
+    },
+    "prices": [
+      {
+        "productId": 544527,
+        "lowPrice": 10.8,
+        "midPrice": 18.85,
+        "highPrice": 99.99,
+        "marketPrice": 11.41,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544528,
+    "name": "Koza",
+    "url": "https://www.tcgplayer.com/product/544528/one-piece-card-game-extra-booster-memorial-collection-koza",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-004",
+      "Description": "[When Attacking] <strong>You may give your 1 active Leader -5000 power during this turn</strong>: Give up to 1 of your opponent's Characters -3000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "3000",
+      "Subtypes": "Alabasta",
+      "Counterplus": "1000",
+      "Attribute": "Ranged"
+    },
+    "prices": [
+      {
+        "productId": 544528,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544529,
+    "name": "Doma",
+    "url": "https://www.tcgplayer.com/product/544529/one-piece-card-game-extra-booster-memorial-collection-doma",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-005",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "3000",
+      "Subtypes": "Whitebeard Pirates Allies",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544529,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.0,
+        "marketPrice": 0.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544530,
+    "name": "Tony Tony.Chopper",
+    "url": "https://www.tcgplayer.com/product/544530/one-piece-card-game-extra-booster-memorial-collection-tony-tonychopper",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-006",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[DON!! x2][When Attacking] Give up to 1 of your opponent's Characters -3000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Animal;Straw Hat Crew",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544530,
+        "lowPrice": 22.99,
+        "midPrice": 27.67,
+        "highPrice": 149.99,
+        "marketPrice": 24.16,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544531,
+    "name": "Tony Tony.Chopper (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544531/one-piece-card-game-extra-booster-memorial-collection-tony-tonychopper-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-006",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[DON!! x2][When Attacking] Give up to 1 of your opponent's Characters -3000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Animal;Straw Hat Crew",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544531,
+        "lowPrice": 104.4,
+        "midPrice": 114.8,
+        "highPrice": 240.84,
+        "marketPrice": 132.98,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544532,
+    "name": "Tony Tony.Chopper (Alternate Art) (Manga)",
+    "url": "https://www.tcgplayer.com/product/544532/one-piece-card-game-extra-booster-memorial-collection-tony-tonychopper-alternate-art-manga",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-006",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[DON!! x2][When Attacking] Give up to 1 of your opponent's Characters -3000 power during this turn.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Animal;Straw Hat Crew",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544532,
+        "lowPrice": 5000.0,
+        "midPrice": 5625.0,
+        "highPrice": 40000.0,
+        "marketPrice": 3250.0,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544533,
+    "name": "Yamato",
+    "url": "https://www.tcgplayer.com/product/544533/one-piece-card-game-extra-booster-memorial-collection-yamato",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-007",
+      "Description": "[Activate:Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "5000",
+      "Subtypes": "Land of Wano",
+      "Counterplus": "2000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544533,
+        "lowPrice": 0.06,
+        "midPrice": 0.25,
+        "highPrice": 9.84,
+        "marketPrice": 0.24,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544534,
+    "name": "LittleOars Jr.",
+    "url": "https://www.tcgplayer.com/product/544534/one-piece-card-game-extra-booster-memorial-collection-littleoars-jr",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-008",
+      "Description": "[Once Per Turn] If this Character would be K.O.'d by an effect, you may trash 1 Event or Stage card from your hand instead.",
+      "Color": "Red",
+      "CardType": "Character",
+      "Cost": "6",
+      "Power": "7000",
+      "Subtypes": "Giant;Whitebeard Pirates Allies",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544534,
+        "lowPrice": 0.07,
+        "midPrice": 0.25,
+        "highPrice": 25.0,
+        "marketPrice": 0.16,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544535,
+    "name": "Just Shut Up and Come with Us!!!!",
+    "url": "https://www.tcgplayer.com/product/544535/one-piece-card-game-extra-booster-memorial-collection-just-shut-up-and-come-with-us",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-009",
+      "Description": "[Counter] Look at 5 cards from the top of your deck and play up to 1 [Animal] type Character card with a cost of 3 or less. Then, place the rest at the bottom of your deck in any order.",
+      "Color": "Red",
+      "CardType": "Event",
+      "Cost": "1",
+      "Subtypes": "Straw Hat Crew;Drum Kingdom"
+    },
+    "prices": [
+      {
+        "productId": 544535,
+        "lowPrice": 0.02,
+        "midPrice": 0.2,
+        "highPrice": 9.72,
+        "marketPrice": 0.14,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544536,
+    "name": "There's No Way You Could Defeat Me!!",
+    "url": "https://www.tcgplayer.com/product/544536/one-piece-card-game-extra-booster-memorial-collection-theres-no-way-you-could-defeat-me",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-010",
+      "Description": "[Counter] K.O. up to 1 of your opponent's Characters with 6000 base power or less.\r\n<br>\r\n[Trigger] K.O. up to 1 of your opponent's Characters with 5000 base power or less.",
+      "Color": "Red",
+      "CardType": "Event",
+      "Cost": "3",
+      "Subtypes": "Straw Hat Crew;Water Seven"
+    },
+    "prices": [
+      {
+        "productId": 544536,
+        "lowPrice": 0.11,
+        "midPrice": 0.3,
+        "highPrice": 25.0,
+        "marketPrice": 0.29,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544537,
+    "name": "Mini-Merry",
+    "url": "https://www.tcgplayer.com/product/544537/one-piece-card-game-extra-booster-memorial-collection-mini-merry",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-011",
+      "Description": "[Activate:Main] <strong>You may rest this card and place 1 of your Characters with 1000 base power at the bottom of your deck</strong>: Draw 1 card.",
+      "Color": "Red",
+      "CardType": "Stage",
+      "Cost": "1",
+      "Subtypes": "Straw Hat Crew"
+    },
+    "prices": [
+      {
+        "productId": 544537,
+        "lowPrice": 0.01,
+        "midPrice": 0.16,
+        "highPrice": 9.18,
+        "marketPrice": 0.15,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544538,
+    "name": "Cavendish",
+    "url": "https://www.tcgplayer.com/product/544538/one-piece-card-game-extra-booster-memorial-collection-cavendish",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-012",
+      "Description": "[On Play]/[When Attacking] If your Leader has the [Supernovas] type and you have no other [Cavendish] Characters, set up to 2 of your DON!! cards as active.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "6000",
+      "Subtypes": "Beautiful Pirates;Supernovas",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544538,
+        "lowPrice": 3.14,
+        "midPrice": 5.19,
+        "highPrice": 52.5,
+        "marketPrice": 4.37,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544539,
+    "name": "Cavendish (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544539/one-piece-card-game-extra-booster-memorial-collection-cavendish-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-012",
+      "Description": "[On Play]/[When Attacking] If your Leader has the [Supernovas] type and you have no other [Cavendish] Characters, set up to 2 of your DON!! cards as active.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "6000",
+      "Subtypes": "Beautiful Pirates;Supernovas",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544539,
+        "lowPrice": 20.27,
+        "midPrice": 30.12,
+        "highPrice": 133.38,
+        "marketPrice": 17.41,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544540,
+    "name": "Kouzuki Hiyori",
+    "url": "https://www.tcgplayer.com/product/544540/one-piece-card-game-extra-booster-memorial-collection-kouzuki-hiyori",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-013",
+      "Description": "[Activate:Main] <strong>You may trash this Character</strong>: Play up to 1 [Land of Wano] type Character card with a cost of 5 or less other than [Kouzuki Hiyori] from your hand. Then, draw 1 card.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "0",
+      "Subtypes": "Land of Wano;Kouzuki Clan",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544540,
+        "lowPrice": 2.7,
+        "midPrice": 4.05,
+        "highPrice": 50.0,
+        "marketPrice": 3.41,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544541,
+    "name": "Kouzuki Hiyori (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544541/one-piece-card-game-extra-booster-memorial-collection-kouzuki-hiyori-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-013",
+      "Description": "[Activate:Main] <strong>You may trash this Character</strong>: Play up to 1 [Land of Wano] type Character card with a cost of 5 or less other than [Kouzuki Hiyori] from your hand. Then, draw 1 card.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "0",
+      "Subtypes": "Land of Wano;Kouzuki Clan",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544541,
+        "lowPrice": 19.0,
+        "midPrice": 27.48,
+        "highPrice": 167.94,
+        "marketPrice": 21.8,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544542,
+    "name": "Sanji",
+    "url": "https://www.tcgplayer.com/product/544542/one-piece-card-game-extra-booster-memorial-collection-sanji",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-014",
+      "Description": "[DON!! x1] [Your Turn] This Character gains +1000 power for every 3 of your rested DON!! cards.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "FILM;Straw Hat Crew",
+      "Counterplus": "2000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544542,
+        "lowPrice": 0.49,
+        "midPrice": 0.95,
+        "highPrice": 50.0,
+        "marketPrice": 0.77,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544543,
+    "name": "Scratchmen Apoo",
+    "url": "https://www.tcgplayer.com/product/544543/one-piece-card-game-extra-booster-memorial-collection-scratchmen-apoo",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-015",
+      "Description": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 2 or less.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "1000",
+      "Subtypes": "On-Air Pirates;Supernovas",
+      "Counterplus": "2000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544543,
+        "lowPrice": 0.24,
+        "midPrice": 0.9,
+        "highPrice": 25.0,
+        "marketPrice": 0.62,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544544,
+    "name": "Bingoh",
+    "url": "https://www.tcgplayer.com/product/544544/one-piece-card-game-extra-booster-memorial-collection-bingoh",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-016",
+      "Description": "[Activate:Main] <strong>You may rest this Character</strong>: K.O. up to 1 of your opponent's rested Characters with a cost of 1 or less.",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "0",
+      "Subtypes": "Land of Wano",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544544,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.0,
+        "marketPrice": 0.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544545,
+    "name": "Blueno (017)",
+    "url": "https://www.tcgplayer.com/product/544545/one-piece-card-game-extra-booster-memorial-collection-blueno-017",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-017",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "2000",
+      "Subtypes": "FILM;CP0",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544545,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.18,
+        "marketPrice": 0.1,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544546,
+    "name": "Mountain God",
+    "url": "https://www.tcgplayer.com/product/544546/one-piece-card-game-extra-booster-memorial-collection-mountain-god",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-018",
+      "Color": "Green",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "7000",
+      "Subtypes": "Animal;Land of Wano",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544546,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.06,
+        "marketPrice": 0.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544547,
+    "name": "Off-White",
+    "url": "https://www.tcgplayer.com/product/544547/one-piece-card-game-extra-booster-memorial-collection-off-white",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-019",
+      "Description": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, look at 3 cards from the top of your deck; reveal up to 1 [Donquixote Pirates] type Character card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+      "Color": "Green",
+      "CardType": "Event",
+      "Cost": "2",
+      "Subtypes": "Donquixote Pirates;The Seven Warlords of the Sea"
+    },
+    "prices": [
+      {
+        "productId": 544547,
+        "lowPrice": 0.16,
+        "midPrice": 0.4,
+        "highPrice": 25.0,
+        "marketPrice": 0.31,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544548,
+    "name": "Chambres",
+    "url": "https://www.tcgplayer.com/product/544548/one-piece-card-game-extra-booster-memorial-collection-chambres",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-020",
+      "Description": "[Main] If your Leader has the [Supernovas] type, return 1 of your Characters to the owner's hand, and play up to 1 Character card with a cost of 2 or less from your hand that is a different color than the returned Character.\r\n<br>\r\n[Trigger] Activate this card's [Main] effect.",
+      "Color": "Green",
+      "CardType": "Event",
+      "Cost": "1",
+      "Subtypes": "Heart Pirates;Supernovas"
+    },
+    "prices": [
+      {
+        "productId": 544548,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.18,
+        "marketPrice": 0.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544549,
+    "name": "Hannyabal",
+    "url": "https://www.tcgplayer.com/product/544549/one-piece-card-game-extra-booster-memorial-collection-hannyabal",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-021",
+      "Description": "[End of Your Turn] <strong>You may return 1 of your [Impel Down] type Characters with a cost of 2 or more to the owner's hand</strong>: Add up to 1 DON!! card from your DON!! deck and set it as active.",
+      "Color": "Blue;Purple",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Impel Down",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544549,
+        "lowPrice": 0.05,
+        "midPrice": 0.25,
+        "highPrice": 9.72,
+        "marketPrice": 0.19,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544550,
+    "name": "Hannyabal (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544550/one-piece-card-game-extra-booster-memorial-collection-hannyabal-alternate-art",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-021",
+      "Description": "[End of Your Turn] <strong>You may return 1 of your [Impel Down] type Characters with a cost of 2 or more to the owner's hand</strong>: Add up to 1 DON!! card from your DON!! deck and set it as active.",
+      "Color": "Blue;Purple",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Impel Down",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544550,
+        "lowPrice": 26.19,
+        "midPrice": 36.92,
+        "highPrice": 186.84,
+        "marketPrice": 23.77,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544551,
+    "name": "Inazuma",
+    "url": "https://www.tcgplayer.com/product/544551/one-piece-card-game-extra-booster-memorial-collection-inazuma",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-022",
+      "Description": "[End of Your Turn] If you have 2 or less cards in your hand, draw 2 cards.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "6",
+      "Power": "7000",
+      "Subtypes": "Revolutionary Army;Impel Down",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544551,
+        "lowPrice": 0.34,
+        "midPrice": 1.29,
+        "highPrice": 25.0,
+        "marketPrice": 0.75,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544552,
+    "name": "Inazuma (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544552/one-piece-card-game-extra-booster-memorial-collection-inazuma-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-022",
+      "Description": "[End of Your Turn] If you have 2 or less cards in your hand, draw 2 cards.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "6",
+      "Power": "7000",
+      "Subtypes": "Revolutionary Army;Impel Down",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544552,
+        "lowPrice": 3.81,
+        "midPrice": 6.92,
+        "highPrice": 48.0,
+        "marketPrice": 6.34,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544553,
+    "name": "Edward Weevil",
+    "url": "https://www.tcgplayer.com/product/544553/one-piece-card-game-extra-booster-memorial-collection-edward-weevil",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-023",
+      "Description": "[On Play] Draw 1 card.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "6000",
+      "Subtypes": "The Seven Warlords of the Sea",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544553,
+        "lowPrice": 0.5,
+        "midPrice": 1.77,
+        "highPrice": 25.0,
+        "marketPrice": 1.05,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544554,
+    "name": "Hamlet",
+    "url": "https://www.tcgplayer.com/product/544554/one-piece-card-game-extra-booster-memorial-collection-hamlet",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-024",
+      "Description": "If you have 4 or less cards in your hand, all of your [SMILE] type Characters gain +1000 power.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Animal Kingdom Pirates;SMILE",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544554,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.05,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544555,
+    "name": "Fourtricks",
+    "url": "https://www.tcgplayer.com/product/544555/one-piece-card-game-extra-booster-memorial-collection-fourtricks",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-025",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "5000",
+      "Subtypes": "Animal Kingdom Pirates;SMILE",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544555,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544556,
+    "name": "Prince Bellett",
+    "url": "https://www.tcgplayer.com/product/544556/one-piece-card-game-extra-booster-memorial-collection-prince-bellett",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-026",
+      "Description": "[DON!! x1] [When Attacking] If you have 1 or less cards in your hand, return up to 1 Character with a cost of 3 or less to the owner's hand.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "2000",
+      "Subtypes": "Impel Down",
+      "Counterplus": "2000",
+      "Attribute": "Ranged"
+    },
+    "prices": [
+      {
+        "productId": 544556,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.06,
+        "marketPrice": 0.06,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544557,
+    "name": "Mr. 1 (Daz.Bonez)",
+    "url": "https://www.tcgplayer.com/product/544557/one-piece-card-game-extra-booster-memorial-collection-mr-1-dazbonez",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-027",
+      "Description": "If your Leader's type includes \"Baroque Works\", this Character gains +1000 power for every 2 Events in your trash.\r\n<br>\r\n[On Play] Draw 2 cards and trash 1 card from your hand.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "6000",
+      "Subtypes": "Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544557,
+        "lowPrice": 0.3,
+        "midPrice": 0.99,
+        "highPrice": 25.0,
+        "marketPrice": 0.74,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544558,
+    "name": "Mr. 1 (Daz.Bonez) (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544558/one-piece-card-game-extra-booster-memorial-collection-mr-1-dazbonez-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-027",
+      "Description": "If your Leader's type includes \"Baroque Works\", this Character gains +1000 power for every 2 Events in your trash.\r\n<br>\r\n[On Play] Draw 2 cards and trash 1 card from your hand.",
+      "Color": "Blue",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "6000",
+      "Subtypes": "Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544558,
+        "lowPrice": 13.74,
+        "midPrice": 19.93,
+        "highPrice": 89.88,
+        "marketPrice": 14.01,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544559,
+    "name": "Gum-Gum Champion Rifle",
+    "url": "https://www.tcgplayer.com/product/544559/one-piece-card-game-extra-booster-memorial-collection-gum-gum-champion-rifle",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-028",
+      "Description": "[Counter] If your Leader has the [Impel Down] type, up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, your opponent returns 1 of their active Characters to the owner's hand.\r\n<br>\r\n[Trigger] Return up to 1 Character with a cost of 3 or less to the bottom of the owner's deck.",
+      "Color": "Blue",
+      "CardType": "Event",
+      "Cost": "1",
+      "Subtypes": "Straw Hat Crew;Impel Down"
+    },
+    "prices": [
+      {
+        "productId": 544559,
+        "lowPrice": 1.0,
+        "midPrice": 3.21,
+        "highPrice": 25.0,
+        "marketPrice": 2.11,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544560,
+    "name": "Sorry. I'm a Goner.",
+    "url": "https://www.tcgplayer.com/product/544560/one-piece-card-game-extra-booster-memorial-collection-sorry-im-a-goner",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-029",
+      "Description": "[Counter] Reveal 1 card from the top of your deck. If the revealed card has a cost of 4 or more, return up to 1 of your Characters to the owner's hand. Then, place the revealed card at the bottom of your deck.\r\n<br>\r\n[Trigger] Return up to 1 Character with a cost of 8 or less to the owner's hand.",
+      "Color": "Blue",
+      "CardType": "Event",
+      "Cost": "1",
+      "Subtypes": "Straw Hat Crew;East Blue"
+    },
+    "prices": [
+      {
+        "productId": 544560,
+        "lowPrice": 0.01,
+        "midPrice": 0.19,
+        "highPrice": 9.54,
+        "marketPrice": 0.14,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544561,
+    "name": "Loguetown",
+    "url": "https://www.tcgplayer.com/product/544561/one-piece-card-game-extra-booster-memorial-collection-loguetown",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-030",
+      "Description": "[Activate:Main] <strong>You may place this card and 1 card from your hand at the bottom of your deck in any order</strong>: Draw 2 cards.\r\n<br>\r\n[Trigger] Play this card.",
+      "Color": "Blue",
+      "CardType": "Stage",
+      "Cost": "2",
+      "Subtypes": "East Blue"
+    },
+    "prices": [
+      {
+        "productId": 544561,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.18,
+        "marketPrice": 0.12,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544562,
+    "name": "Kalifa",
+    "url": "https://www.tcgplayer.com/product/544562/one-piece-card-game-extra-booster-memorial-collection-kalifa",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-031",
+      "Description": "[On Play] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader has the [Water Seven] type, add up to 2 Character cards with a cost of 4 or less from your trash to your hand.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "5000",
+      "Subtypes": "Galley-La Company;Water Seven",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544562,
+        "lowPrice": 0.09,
+        "midPrice": 0.65,
+        "highPrice": 25.0,
+        "marketPrice": 0.63,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544563,
+    "name": "Kalifa (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544563/one-piece-card-game-extra-booster-memorial-collection-kalifa-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-031",
+      "Description": "[On Play] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader has the [Water Seven] type, add up to 2 Character cards with a cost of 4 or less from your trash to your hand.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "5000",
+      "Subtypes": "Galley-La Company;Water Seven",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544563,
+        "lowPrice": 13.66,
+        "midPrice": 18.99,
+        "highPrice": 97.5,
+        "marketPrice": 12.87,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544564,
+    "name": "Army Wolves",
+    "url": "https://www.tcgplayer.com/product/544564/one-piece-card-game-extra-booster-memorial-collection-army-wolves",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-032",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "7000",
+      "Subtypes": "Animal;Impel Down",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544564,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.24,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544565,
+    "name": "Blueno (033)",
+    "url": "https://www.tcgplayer.com/product/544565/one-piece-card-game-extra-booster-memorial-collection-blueno-033",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-033",
+      "Description": "[On Play] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader has the [Water Seven] type, play up to 1 [Water Seven] type Character card with a cost of 5 other than [Blueno] from your hand or trash.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Water Seven",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544565,
+        "lowPrice": 0.5,
+        "midPrice": 2.95,
+        "highPrice": 23.28,
+        "marketPrice": 2.33,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544566,
+    "name": "Ms. Wednesday",
+    "url": "https://www.tcgplayer.com/product/544566/one-piece-card-game-extra-booster-memorial-collection-ms-wednesday",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-034",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[On Your Opponent's Attack][Once Per Turn] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader's type includes \"Baroque Works\", add up to 1 DON!! card from your DON!! deck and set it as active.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544566,
+        "lowPrice": 2.0,
+        "midPrice": 3.29,
+        "highPrice": 50.0,
+        "marketPrice": 2.67,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544567,
+    "name": "Ms. Wednesday (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544567/one-piece-card-game-extra-booster-memorial-collection-ms-wednesday-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-034",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[On Your Opponent's Attack][Once Per Turn] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader's type includes \"Baroque Works\", add up to 1 DON!! card from your DON!! deck and set it as active.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544567,
+        "lowPrice": 10.45,
+        "midPrice": 17.62,
+        "highPrice": 101.82,
+        "marketPrice": 14.1,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544568,
+    "name": "Ms. Monday",
+    "url": "https://www.tcgplayer.com/product/544568/one-piece-card-game-extra-booster-memorial-collection-ms-monday",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-035",
+      "Description": "[On Play] If your Leader's type includes \"Baroque Works\", up to 1 of your Leader or Character cards gains +1000 power during this turn.\r\n<br>\r\n[Trigger] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: Play this card.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "5000",
+      "Subtypes": "Baroque Works",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544568,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544569,
+    "name": "Minochihuahua",
+    "url": "https://www.tcgplayer.com/product/544569/one-piece-card-game-extra-booster-memorial-collection-minochihuahua",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-036",
+      "Description": "[Rush] <em>(This card can attack on the turn in which it is played.)</em>\r\n<br>\r\n[On K.O.] If your Leader has the [Impel Down] type, add up to 1 DON!! card from your DON!! deck and rest it.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Baroque Works;Impel Down;Jailer Beast",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544569,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.18,
+        "marketPrice": 0.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544570,
+    "name": "Mr. 9",
+    "url": "https://www.tcgplayer.com/product/544570/one-piece-card-game-extra-booster-memorial-collection-mr-9",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-037",
+      "Description": "[On Your Opponent's Attack] [Once Per Turn] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544570,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.18,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544571,
+    "name": "Oh Come My Way",
+    "url": "https://www.tcgplayer.com/product/544571/one-piece-card-game-extra-booster-memorial-collection-oh-come-my-way",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-038",
+      "Description": "[Counter] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: If your Leader's type includes \"Baroque Works\", select 1 of your Characters. Change the attack target to the selected Character.\r\n<br>\r\n[Trigger] DON!! -1: Draw 2 cards.",
+      "Color": "Purple",
+      "CardType": "Event",
+      "Cost": "1",
+      "Subtypes": "Baroque Works"
+    },
+    "prices": [
+      {
+        "productId": 544571,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544572,
+    "name": "Conquerer of Three Worlds Ragnaraku",
+    "url": "https://www.tcgplayer.com/product/544572/one-piece-card-game-extra-booster-memorial-collection-conquerer-of-three-worlds-ragnaraku",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-039",
+      "Description": "[Main] DON!! -1 <em>(You may return the specified number of DON!! cards from your field to your DON!! deck.)</em>: K.O. up to 1 of your opponent's Characters with a cost of 8 or less.\r\n<br>\r\n[Trigger] Ad up to 1 DON!! card from your DON!! deck and set it as active.",
+      "Color": "Purple",
+      "CardType": "Event",
+      "Cost": "5",
+      "Subtypes": "Animal Kingdom Pirates;The Four Emperors"
+    },
+    "prices": [
+      {
+        "productId": 544572,
+        "lowPrice": 0.75,
+        "midPrice": 2.0,
+        "highPrice": 25.0,
+        "marketPrice": 1.69,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544573,
+    "name": "Kyros",
+    "url": "https://www.tcgplayer.com/product/544573/one-piece-card-game-extra-booster-memorial-collection-kyros",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-040",
+      "Description": "[Activate:Main] [Once Per Turn] <strong>You may turn 1 card from the top of your Life cards face-up</strong>: K.O. up to 1 of your opponent's Characters with a cost of 0.",
+      "Color": "Black;Yellow",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Dressrosa",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544573,
+        "lowPrice": 0.1,
+        "midPrice": 0.25,
+        "highPrice": 9.84,
+        "marketPrice": 0.24,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544574,
+    "name": "Kyros (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544574/one-piece-card-game-extra-booster-memorial-collection-kyros-alternate-art",
+    "fields": {
+      "Rarity": "L",
+      "Number": "EB01-040",
+      "Description": "[Activate:Main] [Once Per Turn] <strong>You may turn 1 card from the top of your Life cards face-up</strong>: K.O. up to 1 of your opponent's Characters with a cost of 0.",
+      "Color": "Black;Yellow",
+      "CardType": "Leader",
+      "Life": "4",
+      "Power": "5000",
+      "Subtypes": "Dressrosa",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544574,
+        "lowPrice": 19.96,
+        "midPrice": 24.16,
+        "highPrice": 120.0,
+        "marketPrice": 19.82,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544575,
+    "name": "Crocus",
+    "url": "https://www.tcgplayer.com/product/544575/one-piece-card-game-extra-booster-memorial-collection-crocus",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-041",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "6",
+      "Power": "8000",
+      "Subtypes": "Former Roger Pirates",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544575,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.0,
+        "marketPrice": 0.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544576,
+    "name": "Scarlet",
+    "url": "https://www.tcgplayer.com/product/544576/one-piece-card-game-extra-booster-memorial-collection-scarlet",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-042",
+      "Description": "[Activate:Main] <strong>You may trash this Character</strong>: Play up to 1 [Dressrosa] type Character card with a cost of 3 or less other than [Scarlet] from your hand rested. Then, give up to 1 of your opponent's Characters -2 cost during this turn.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "0",
+      "Subtypes": "Dressrosa",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544576,
+        "lowPrice": 0.1,
+        "midPrice": 0.3,
+        "highPrice": 25.0,
+        "marketPrice": 0.25,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544577,
+    "name": "Spandine",
+    "url": "https://www.tcgplayer.com/product/544577/one-piece-card-game-extra-booster-memorial-collection-spandine",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-043",
+      "Description": "[On Play] <strong>You may place 3 cards with a type including \"CP\" from your trash at the bottom of your deck in any order</strong>: Play up to 1 Character card with a type including \"CP\" and a cost of 4 or less other than [Spandine] from your trash rested.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "2000",
+      "Subtypes": "CP9",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544577,
+        "lowPrice": 0.49,
+        "midPrice": 1.95,
+        "highPrice": 25.0,
+        "marketPrice": 1.99,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544578,
+    "name": "Funkfreed",
+    "url": "https://www.tcgplayer.com/product/544578/one-piece-card-game-extra-booster-memorial-collection-funkfreed",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-044",
+      "Description": "[Activate:Main] <strong>You may rest this Character</strong>: Up to 1 of your [Spandam] Characters gains +3000 power during this turn.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "1000",
+      "Subtypes": "CP9",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544578,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.24,
+        "marketPrice": 0.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544579,
+    "name": "Brook (045)",
+    "url": "https://www.tcgplayer.com/product/544579/one-piece-card-game-extra-booster-memorial-collection-brook-045",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-045",
+      "Description": "[On Play] If your opponent has a Character with a cost of 0, this Character gains [Rush] during this turn.\r\n<br>\r\n<em>(This card can attack on the turn in which it is played.)</em>",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Rumbar Pirates",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544579,
+        "lowPrice": 0.01,
+        "midPrice": 0.2,
+        "highPrice": 9.18,
+        "marketPrice": 0.15,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544580,
+    "name": "Brook (046)",
+    "url": "https://www.tcgplayer.com/product/544580/one-piece-card-game-extra-booster-memorial-collection-brook-046",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-046",
+      "Description": "[On Play]/[When Attacking] Give up to 1 of your opponent's Characters -1 cost during this turn. Then, K.O. up to 1 of your opponent's Characters with a cost of 0.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Straw Hat Crew",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544580,
+        "lowPrice": 0.4,
+        "midPrice": 1.38,
+        "highPrice": 100.0,
+        "marketPrice": 0.88,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544581,
+    "name": "Brook (046) (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544581/one-piece-card-game-extra-booster-memorial-collection-brook-046-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-046",
+      "Description": "[On Play]/[When Attacking] Give up to 1 of your opponent's Characters -1 cost during this turn. Then, K.O. up to 1 of your opponent's Characters with a cost of 0.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Straw Hat Crew",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544581,
+        "lowPrice": 22.99,
+        "midPrice": 29.99,
+        "highPrice": 148.02,
+        "marketPrice": 22.63,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544582,
+    "name": "Laboon (047)",
+    "url": "https://www.tcgplayer.com/product/544582/one-piece-card-game-extra-booster-memorial-collection-laboon-047",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-047",
+      "Description": "[Once Per Turn] When a Character is K.O.'d, draw 1 card and trash 1 card from your hand.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "4000",
+      "Subtypes": "Animal",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544582,
+        "lowPrice": 0.01,
+        "midPrice": 0.2,
+        "highPrice": 9.84,
+        "marketPrice": 0.18,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544583,
+    "name": "Laboon (048)",
+    "url": "https://www.tcgplayer.com/product/544583/one-piece-card-game-extra-booster-memorial-collection-laboon-048",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-048",
+      "Description": "[Activate:Main]<strong>You may rest this Character</strong>: Give up to 1 of your opponent's Characters -4 cost during this turn.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Animal",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544583,
+        "lowPrice": 3.79,
+        "midPrice": 5.75,
+        "highPrice": 39.98,
+        "marketPrice": 3.78,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544584,
+    "name": "Laboon (048) (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544584/one-piece-card-game-extra-booster-memorial-collection-laboon-048-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-048",
+      "Description": "[Activate:Main]<strong>You may rest this Character</strong>: Give up to 1 of your opponent's Characters -4 cost during this turn.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "5000",
+      "Subtypes": "Animal",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544584,
+        "lowPrice": 52.99,
+        "midPrice": 69.98,
+        "highPrice": 333.0,
+        "marketPrice": 70.59,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544585,
+    "name": "T-Bone",
+    "url": "https://www.tcgplayer.com/product/544585/one-piece-card-game-extra-booster-memorial-collection-t-bone",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-049",
+      "Description": "[On Play] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "5000",
+      "Subtypes": "Navy;Water Seven",
+      "Counterplus": "2000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544585,
+        "lowPrice": 0.35,
+        "midPrice": 0.73,
+        "highPrice": 50.0,
+        "marketPrice": 0.51,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544586,
+    "name": "T-Bone (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544586/one-piece-card-game-extra-booster-memorial-collection-t-bone-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-049",
+      "Description": "[On Play] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "5",
+      "Power": "5000",
+      "Subtypes": "Navy;Water Seven",
+      "Counterplus": "2000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544586,
+        "lowPrice": 3.76,
+        "midPrice": 5.97,
+        "highPrice": 50.0,
+        "marketPrice": 4.52,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544587,
+    "name": "...I Want to Live!!",
+    "url": "https://www.tcgplayer.com/product/544587/one-piece-card-game-extra-booster-memorial-collection-i-want-to-live",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-050",
+      "Description": "[Counter] If you have 30 or more cards in your trash, add up to 1 card from the top of your deck to the top of your Life cards.",
+      "Color": "Black",
+      "CardType": "Character",
+      "Cost": "3",
+      "Subtypes": "Straw Hat Crew"
+    },
+    "prices": [
+      {
+        "productId": 544587,
+        "lowPrice": 0.08,
+        "midPrice": 0.25,
+        "highPrice": 9.84,
+        "marketPrice": 0.2,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544588,
+    "name": "Finger Pistol",
+    "url": "https://www.tcgplayer.com/product/544588/one-piece-card-game-extra-booster-memorial-collection-finger-pistol",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-051",
+      "Description": "[Main] <strong>You may trash 2 cards from the top of your deck</strong>: K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+      "Color": "Black",
+      "CardType": "Event",
+      "Cost": "4",
+      "Subtypes": "CP9"
+    },
+    "prices": [
+      {
+        "productId": 544588,
+        "lowPrice": 0.39,
+        "midPrice": 0.91,
+        "highPrice": 25.0,
+        "marketPrice": 0.6,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544589,
+    "name": "Viola",
+    "url": "https://www.tcgplayer.com/product/544589/one-piece-card-game-extra-booster-memorial-collection-viola",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-052",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[On Play]Choose one:\r\n<br>\r\n• Look at all of your opponent's Life cards and place them back in their Life area in any order.\r\n<br>\r\n• Turn all of your Life cards face-down.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "0",
+      "Subtypes": "Dressrosa",
+      "Counterplus": "1000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544589,
+        "lowPrice": 3.0,
+        "midPrice": 5.0,
+        "highPrice": 50.0,
+        "marketPrice": 3.49,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544590,
+    "name": "Viola (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544590/one-piece-card-game-extra-booster-memorial-collection-viola-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-052",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[On Play]Choose one:\r\n<br>\r\n• Look at all of your opponent's Life cards and place them back in their Life area in any order.\r\n<br>\r\n• Turn all of your Life cards face-down.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "0",
+      "Subtypes": "Dressrosa",
+      "Counterplus": "1000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544590,
+        "lowPrice": 10.0,
+        "midPrice": 14.0,
+        "highPrice": 76.2,
+        "marketPrice": 11.56,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544591,
+    "name": "Gastino",
+    "url": "https://www.tcgplayer.com/product/544591/one-piece-card-game-extra-booster-memorial-collection-gastino",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-053",
+      "Description": "[On Play] Place up to 1 of your opponent's Characters with a cost of 3 or less at the top or bottom of your opponent's Life cards face-up.\r\n<br>\r\n[Trigger] Give up to a total of 2 of your opponent's Leader or Character cards -3000 power during this turn.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "5000",
+      "Subtypes": "Scientist",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544591,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.0,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544592,
+    "name": "Gan.Fall",
+    "url": "https://www.tcgplayer.com/product/544592/one-piece-card-game-extra-booster-memorial-collection-ganfall",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-054",
+      "Description": "[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>\r\n<br>\r\n[On Play] If your opponent has 1 or less Life cards, K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "3",
+      "Power": "4000",
+      "Subtypes": "Sky Island",
+      "Counterplus": "1000",
+      "Attribute": "Slash"
+    },
+    "prices": [
+      {
+        "productId": 544592,
+        "lowPrice": 0.09,
+        "midPrice": 0.25,
+        "highPrice": 25.0,
+        "marketPrice": 0.17,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544593,
+    "name": "Charlotte Compote",
+    "url": "https://www.tcgplayer.com/product/544593/one-piece-card-game-extra-booster-memorial-collection-charlotte-compote",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-055",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "7",
+      "Power": "9000",
+      "Subtypes": "Big Mom Pirates",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544593,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.09,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544594,
+    "name": "Charlotte Flampe",
+    "url": "https://www.tcgplayer.com/product/544594/one-piece-card-game-extra-booster-memorial-collection-charlotte-flampe",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-056",
+      "Description": "[On Play]<strong>You may add 1 card from the top or bottom of your Life cards to your hand</strong>: Draw 1 card.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "1000",
+      "Subtypes": "Big Mom Pirates",
+      "Counterplus": "2000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544594,
+        "lowPrice": 3.23,
+        "midPrice": 4.99,
+        "highPrice": 30.0,
+        "marketPrice": 3.74,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544595,
+    "name": "Charlotte Flampe (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544595/one-piece-card-game-extra-booster-memorial-collection-charlotte-flampe-alternate-art",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-056",
+      "Description": "[On Play]<strong>You may add 1 card from the top or bottom of your Life cards to your hand</strong>: Draw 1 card.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "1",
+      "Power": "1000",
+      "Subtypes": "Big Mom Pirates",
+      "Counterplus": "2000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544595,
+        "lowPrice": 18.0,
+        "midPrice": 24.98,
+        "highPrice": 119.34,
+        "marketPrice": 23.31,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544596,
+    "name": "Shirahoshi",
+    "url": "https://www.tcgplayer.com/product/544596/one-piece-card-game-extra-booster-memorial-collection-shirahoshi",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-057",
+      "Description": "When this Character is K.O.'d by your opponent's effect, add up to 1 card from the top of your deck to the top of your Life cards.\r\n<br>\r\n[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "0",
+      "Subtypes": "Merfolk",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544596,
+        "lowPrice": 0.39,
+        "midPrice": 1.0,
+        "highPrice": 20.86,
+        "marketPrice": 0.62,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544597,
+    "name": "Shirahoshi (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544597/one-piece-card-game-extra-booster-memorial-collection-shirahoshi-alternate-art",
+    "fields": {
+      "Rarity": "SR",
+      "Number": "EB01-057",
+      "Description": "When this Character is K.O.'d by your opponent's effect, add up to 1 card from the top of your deck to the top of your Life cards.\r\n<br>\r\n[Blocker] <em>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)</em>",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "0",
+      "Subtypes": "Merfolk",
+      "Counterplus": "1000",
+      "Attribute": "Wisdom"
+    },
+    "prices": [
+      {
+        "productId": 544597,
+        "lowPrice": 11.77,
+        "midPrice": 20.0,
+        "highPrice": 102.24,
+        "marketPrice": 10.99,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544598,
+    "name": "Mont Blanc Cricket",
+    "url": "https://www.tcgplayer.com/product/544598/one-piece-card-game-extra-booster-memorial-collection-mont-blanc-cricket",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-058",
+      "Description": "[DON!! x1] [Your Turn] If you have 2 or less Life cards, this Character gains +2000 power.",
+      "Color": "Yellow",
+      "CardType": "Character",
+      "Cost": "2",
+      "Power": "3000",
+      "Subtypes": "Monkey Mountain Alliance",
+      "Counterplus": "1000",
+      "Attribute": "Strike"
+    },
+    "prices": [
+      {
+        "productId": 544598,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.06,
+        "marketPrice": 0.08,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544599,
+    "name": "Kingdom Come",
+    "url": "https://www.tcgplayer.com/product/544599/one-piece-card-game-extra-booster-memorial-collection-kingdom-come",
+    "fields": {
+      "Rarity": "R",
+      "Number": "EB01-059",
+      "Description": "[Main] K.O. up to 1 of your opponent's Characters. Then, trash cards from the top of your Life cards until you have 1 Life card.\r\n<br>\r\n[Trigger] K.O. up to 1 of your opponent's Characters with a cost equal to or less than the total of your and your opponent's Life cards.",
+      "Color": "Yellow",
+      "CardType": "Event",
+      "Cost": "6",
+      "Subtypes": "Sky Island"
+    },
+    "prices": [
+      {
+        "productId": 544599,
+        "lowPrice": 3.67,
+        "midPrice": 6.71,
+        "highPrice": 34.5,
+        "marketPrice": 5.32,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544600,
+    "name": "Did Someone Say...Kami?",
+    "url": "https://www.tcgplayer.com/product/544600/one-piece-card-game-extra-booster-memorial-collection-did-someone-saykami",
+    "fields": {
+      "Rarity": "C",
+      "Number": "EB01-060",
+      "Description": "[Main] Play up to 1 [Enel] with a cost of 7 or less life from your hand or trash. Then, trash cards from the top of your Life cards until you have 1 Life card.\r\n<br>\r\n[Trigger] Draw 2 cards and trash 1 card from your hand.",
+      "Color": "Yellow",
+      "CardType": "Event",
+      "Cost": "4",
+      "Subtypes": "Sky Island"
+    },
+    "prices": [
+      {
+        "productId": 544600,
+        "lowPrice": 0.01,
+        "midPrice": 0.15,
+        "highPrice": 9.12,
+        "marketPrice": 0.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  },
+  {
+    "productId": 544601,
+    "name": "Mr.2.Bon.Kurei (Bentham)",
+    "url": "https://www.tcgplayer.com/product/544601/one-piece-card-game-extra-booster-memorial-collection-mr2bonkurei-bentham",
+    "fields": {
+      "Rarity": "SEC",
+      "Number": "EB01-061",
+      "Description": "[On Play] Add up to 1 DON!! card from your DON!! deck and set it as active.\r\n<br>\r\n[When Attacking] Select up to 1 of your opponent's Characters. This Character's base power becomes the same as the selected Character's power during this turn.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "1000",
+      "Subtypes": "Former Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544601,
+        "lowPrice": 15.99,
+        "midPrice": 21.45,
+        "highPrice": 120.9,
+        "marketPrice": 18.63,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  },
+  {
+    "productId": 544602,
+    "name": "Mr.2.Bon.Kurei (Bentham) (Alternate Art)",
+    "url": "https://www.tcgplayer.com/product/544602/one-piece-card-game-extra-booster-memorial-collection-mr2bonkurei-bentham-alternate-art",
+    "fields": {
+      "Rarity": "SEC",
+      "Number": "EB01-061",
+      "Description": "[On Play] Add up to 1 DON!! card from your DON!! deck and set it as active.\r\n<br>\r\n[When Attacking] Select up to 1 of your opponent's Characters. This Character's base power becomes the same as the selected Character's power during this turn.",
+      "Color": "Purple",
+      "CardType": "Character",
+      "Cost": "4",
+      "Power": "1000",
+      "Subtypes": "Former Baroque Works",
+      "Counterplus": "1000",
+      "Attribute": "Special"
+    },
+    "prices": [
+      {
+        "productId": 544602,
+        "lowPrice": 99.99,
+        "midPrice": 140.25,
+        "highPrice": 799.92,
+        "marketPrice": 112.19,
+        "directLowPrice": null,
+        "subTypeName": "Foil"
+      }
+    ]
+  }
+]

@@ -1,0 +1,195 @@
+{
+  "sourceUpdatedAt": "2026-09-26T20:05:16+0000",
+  "sets": [
+    {
+      "setCode": "PRB-01",
+      "groupId": 23496,
+      "productCount": 329,
+      "cardProductCount": 325,
+      "priceRecordCount": 360,
+      "cardPriceRecordCount": 356,
+      "rarities": {
+        "C": 52,
+        "DON!!": 60,
+        "L": 2,
+        "PR": 12,
+        "R": 71,
+        "SEC": 16,
+        "SR": 47,
+        "UC": 65
+      },
+      "cardPriceSubtypes": {
+        "Foil": 308,
+        "Normal": 48
+      },
+      "cardsWithoutPriceRecord": [],
+      "cardPriceRecordsMissingMarketPrice": [
+        {
+          "productId": 587709,
+          "subTypeName": "Foil"
+        }
+      ],
+      "multiPriceCards": [
+        593801,
+        593802,
+        593803,
+        593804,
+        593805,
+        593806,
+        593807,
+        593808,
+        593809,
+        593810,
+        593811,
+        593812,
+        593813,
+        593814,
+        593815,
+        593816,
+        593817,
+        593818,
+        593819,
+        593820,
+        593821,
+        593822,
+        593823,
+        593824,
+        593825,
+        593826,
+        593827,
+        593828,
+        593829,
+        593830,
+        594331
+      ],
+      "sealedProducts": [
+        {
+          "productId": 545398,
+          "name": "Premium Booster - Booster Pack",
+          "fields": {}
+        },
+        {
+          "productId": 545399,
+          "name": "Premium Booster - Booster Box",
+          "fields": {}
+        },
+        {
+          "productId": 545400,
+          "name": "Premium Booster - Booster Box Case",
+          "fields": {}
+        },
+        {
+          "productId": 622980,
+          "name": "Premium Booster - Sleeved Booster Pack",
+          "fields": {}
+        }
+      ]
+    },
+    {
+      "setCode": "OP-08",
+      "groupId": 23462,
+      "productCount": 162,
+      "cardProductCount": 154,
+      "priceRecordCount": 161,
+      "cardPriceRecordCount": 154,
+      "rarities": {
+        "C": 49,
+        "DON!!": 3,
+        "L": 12,
+        "R": 33,
+        "SEC": 5,
+        "SR": 21,
+        "TR": 1,
+        "UC": 30
+      },
+      "cardPriceSubtypes": {
+        "Foil": 73,
+        "Normal": 81
+      },
+      "cardsWithoutPriceRecord": [],
+      "cardPriceRecordsMissingMarketPrice": [],
+      "multiPriceCards": [],
+      "sealedProducts": [
+        {
+          "productId": 542502,
+          "name": "Two Legends - Booster Pack",
+          "fields": {}
+        },
+        {
+          "productId": 542503,
+          "name": "Two Legends - Sleeved Booster Pack",
+          "fields": {}
+        },
+        {
+          "productId": 542504,
+          "name": "Two Legends - Booster Box",
+          "fields": {}
+        },
+        {
+          "productId": 542505,
+          "name": "Two Legends - Booster Box Case",
+          "fields": {}
+        },
+        {
+          "productId": 561689,
+          "name": "Double Pack Set Volume 5",
+          "fields": {}
+        },
+        {
+          "productId": 561690,
+          "name": "Double Pack Set Volume 5 Display",
+          "fields": {}
+        },
+        {
+          "productId": 561691,
+          "name": "Double Pack Set Volume 5 Display Case",
+          "fields": {}
+        },
+        {
+          "productId": 586061,
+          "name": "Special DON!! Card Pack DP-05",
+          "fields": {}
+        }
+      ]
+    },
+    {
+      "setCode": "EB-01",
+      "groupId": 23333,
+      "productCount": 83,
+      "cardProductCount": 80,
+      "priceRecordCount": 83,
+      "cardPriceRecordCount": 80,
+      "rarities": {
+        "C": 28,
+        "L": 6,
+        "R": 27,
+        "SEC": 2,
+        "SR": 17
+      },
+      "cardPriceSubtypes": {
+        "Foil": 49,
+        "Normal": 31
+      },
+      "cardsWithoutPriceRecord": [],
+      "cardPriceRecordsMissingMarketPrice": [],
+      "multiPriceCards": [],
+      "sealedProducts": [
+        {
+          "productId": 521160,
+          "name": "Memorial Collection - Booster Pack",
+          "fields": {}
+        },
+        {
+          "productId": 521161,
+          "name": "Memorial Collection - Booster Box",
+          "fields": {}
+        },
+        {
+          "productId": 521162,
+          "name": "Memorial Collection - Booster Box Case",
+          "fields": {}
+        }
+      ]
+    }
+  ]
+}
