@@ -126,6 +126,53 @@ var multiLedger=Path.Combine(temp,"multipart-report.json");
 await DiscordDelivery.Send(http,multiLedger,"batch",endpoint,new string('a',3500),document);
 var multiParts=JsonFiles.Read<DeliveryLedger>(multiLedger).Parts.Values.OrderBy(p=>p.Key).ToArray();
 Check(multiParts.Length>1 && multiParts.Count(p=>p.Attachment is not null)==1 && multiParts[^1].Attachment==document && multiParts.All(p=>p.Content.Length<=2000),"Only final report part carries attachment within message limit");
+var tableFixture = before with { Cards = [
+    new CardValue("common", "Common", "Base", "base-c", 100, .10m),
+    new CardValue("uncommon", "Uncommon", "Base", "base-uc", 10, 1m)] };
+var tableText=Reporting.Render(tableFixture,null,catalog.SourceUpdatedAt,null,new());
+var baseRows=tableText.Split('\n').Where(line=>line.StartsWith("| Base ")).ToArray();
+var boxCells=baseRows[0].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+var marketCells=baseRows[1].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+Check(boxCells.SequenceEqual(new[]{"Base","110","$0.18","$20.00"}),"Box table AVG uses expected-copy weighting, not unweighted card mean");
+Check(marketCells.SequenceEqual(new[]{"Base","2","$0.55","$1.10","–"}),"Market AVG is unweighted distinct-card mean; first observation has no trend");
+string[] MarketRow(SetReport now, SetReport? old, string label) => Reporting.Render(now,old,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new())
+    .Split("Market Data:")[1].Split('\n').First(line=>line.StartsWith("| "+label+" ")).Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+var higher=tableFixture with {Cards=tableFixture.Cards.Select(c=>c with {Price=c.Price+1}).ToArray()};
+Check(MarketRow(higher,tableFixture,"Base")[4]=="\U0001F7E2" && MarketRow(tableFixture,higher,"Base")[4]=="\U0001F534","Market totals use requested green/red circle code points");
+Check(MarketRow(tableFixture,tableFixture,"Base")[4]=="\U0001F7E1","Unchanged uses requested yellow circle");
+Check(MarketRow(higher,tableFixture,"Master set")[2]=="$1.55" && MarketRow(higher,tableFixture,"Master set")[4]=="\U0001F7E2","Master-set AVG and trend");
+Check(MarketRow(higher with {ModelHash="new model"},tableFixture,"Master set")[4]=="–","Changed model suppresses trend");
+var changedSource=higher with {Cards=higher.Cards.Select((c,i)=>i==0 ? c with {PriceSource="Mid"}:c).ToArray()};
+Check(MarketRow(changedSource,tableFixture,"Base")[4]=="–" && MarketRow(changedSource,tableFixture,"Master set")[4]=="–","Source switches suppress category and master-set trends");
+var unknown=tableFixture with {Cards=tableFixture.Cards.Select((c,i)=>i==0 ? c with {Price=null}:c).ToArray()};
+Check(MarketRow(unknown,tableFixture,"Base")[2]=="--" && MarketRow(unknown,tableFixture,"Base")[4]=="–","Missing price leaves AVG and trend unavailable");
+Check(!tableText.Contains('%') && tableText.IndexOf("| Master set",StringComparison.Ordinal)>tableText.IndexOf("Market Data:",StringComparison.Ordinal),"Percentages removed; master set in market table");
+var tableMissing=Reporting.Render(tableFixture with {Cards=tableFixture.Cards.Select((c,i)=>i==0 ? c with {Price=null}:c).ToArray()},null,catalog.SourceUpdatedAt,null,new());
+var missingCells=tableMissing.Split('\n').First(line=>line.StartsWith("| Base ")).Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+Check(missingCells[2]=="--" && missingCells[3]=="$10.00*","Missing card cannot become a misleading averaged price");
+foreach(var profile in allProfiles)
+{
+    var rendered=Reporting.Render(Calculation.Evaluate(profile,expandedCatalog),null,catalog.SourceUpdatedAt,null,new());
+    var pieces=Reporting.Split(rendered,1700);
+    Check(pieces.All(p=>p.Length<=1700 && p.Split('\n').Count(l=>l=="```")%2==0),$"{profile.Code}: Discord parts have balanced fences and fit budget");
+    foreach(var piece in pieces)
+    {
+        var pipeLines=piece.Split('\n').Where(l=>l.StartsWith("| ")).ToArray();
+        // Each individual table has aligned pipe positions; separate tables can use different widths.
+        var inside=false; int[]? positions=null;
+        foreach(var line in piece.Split('\n'))
+        {
+            if(line=="```") {inside=!inside;positions=null;continue;}
+            if(!inside || !line.StartsWith("| ")) continue;
+            var currentPositions=line.Select((c,i)=>(c,i)).Where(x=>x.c=='|').Select(x=>x.i).ToArray();
+            positions ??= currentPositions;
+            if(!positions.SequenceEqual(currentPositions)) throw new Exception("Misaligned table: "+profile.Code);
+        }
+    }
+}
+var longCode="```\n"+string.Join('\n',Enumerable.Repeat(new string('x',65),80))+"\n```";
+var codeParts=Reporting.Split(longCode,200);
+Check(codeParts.Length>1 && codeParts.All(p=>p.Length<=200 && p.StartsWith("```\n") && p.EndsWith("\n```")),"Oversized code block reopens correctly across messages");
 Console.WriteLine($"PASS: {checks} checks; no real Discord requests.");
 
 sealed class FakeHandler(Func<HttpRequestMessage,HttpResponseMessage> respond):HttpMessageHandler

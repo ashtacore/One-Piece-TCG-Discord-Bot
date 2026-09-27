@@ -59,23 +59,25 @@ A chase appearing once per 36 boxes contributes `average chase price / 36`. A $3
 
 Expected pool counts must sum to `packsPerBox × cardsPerPack + bonusCardsPerBox`, within decimal rounding tolerance. Replacement hits reduce the displaced pool. Packaged bonuses are modeled as additional pools and physical bonus counts, with duplicate card identities consolidated and their expected counts combined. OP-01 and OP-02 include one packaged topper: 289 cards total. Other OP/EB profiles total 288; PRB profiles total 200. Purchase-campaign Dash Packs and Double Pack bonuses are excluded. Cases use 12 boxes for OP/EB and 10 for PRB.
 
-Reports begin with `Booster Box:` and indented `EV` (expected contents value) and `MP` (sealed-box market price). MP uses the profile's exact `boosterBoxProductId` and its `Normal` market-price listing; an absent or null price displays `Unavailable` and does not affect card EV or master-set completeness. The sealed box is not included in the master-set total. A blank line separates the box section from the master-set price, which appears above the rarity breakdown. An extra blank line separates set reports; Discord's final message part includes an invisible spacing character to retain that line.
+Reports begin with `Booster Box:` and indented `EV` (expected contents value) and `MP` (sealed-box market price). MP uses the profile's exact `boosterBoxProductId` and its `Normal` market-price listing; an absent or null price displays `Unavailable` and does not affect card EV or master-set completeness. The sealed box is not included in the master-set total. Two manually aligned tables follow inside code fences so Discord preserves column spacing. An extra blank line separates set reports; Discord's final message part includes an invisible spacing character to retain that line.
 
-Each category is displayed with its full name and two indented lines: `AVG` is its expected value contribution per booster box (not the average individual card price), and `Total (X)` is the combined price of one copy of each of its X distinct variants. For example:
+The box table has `Rarity`, `Copies`, `AVG` and `Total`. Copies is the expected number of cards from that category per box, including duplicates. AVG is the pull-weighted average price per card: `category EV / expected copies`. Total is the category's contribution to box EV. Weighting matters when a category combines pools with different frequencies, such as R/SR/SEC under Foils. Copies display up to six decimal places and money displays cents; calculations retain full precision, so multiplying rounded values can differ slightly from Total. For example:
 
 ```text
-Treasure Rare:
-  AVG: $20.80 · 16.0%
-  Total (1): $249.58
+| Rarity        |   Copies |     AVG |  Total |
+| ------------- | -------- | ------- | ------ |
+| Treasure Rare | 0.083333 | $249.58 | $20.80 |
 ```
 
-The master set sums **one copy of every distinct eligible artwork/finish**, regardless of its pull probability. Internal pool names remain separate even when combined for display. Categories are exclusive:
+The market table has `Rarity`, `Count`, `AVG`, `Total` and `Trend`: Count is the number of distinct variants, AVG is their unweighted average price (`Total / Count`), and Total buys one of each. Its final `Master set` row sums **one copy of every distinct eligible artwork/finish**, averages that total over the variant count, and shows its trend. This market average differs from the pull-weighted box average. Missing prices leave AVG unavailable rather than averaging only the priced cards.
+
+Trend compares each market total with the previous comparable report: `↑` up, `↓` down, `→` unchanged at displayed-cent precision, and a centered `–` for no comparable data. First observations, incomplete reports, changed models/membership and affected Market/Mid source switches suppress trends using the same safeguards as deltas. Percentages are omitted. Comparable category EV changes appear in the box table's Total cells; the master-set change appears in its final Total cell. Movements retain their existing card-list format. Table padding treats each trend circle as two display columns; rendering can vary by Discord client/font. Direction icons also remain in the box headline and card movers. Tables are kept together where possible; oversized code blocks close and reopen across message parts. Internal pool names remain separate even when combined for display. Categories are exclusive:
 
 | Section | Membership |
 | --- | --- |
 | TR / SP | Treasure Rare / Special Rare treatments |
 | AA | Alternate artworks including AA Leaders; PRB full-art and textured treatments retain separate internal odds |
-| Manga / Other Chase | Manga and exceptional chase variants |
+| Manga / Chase | Manga and exceptional chase variants |
 | Foils | Ordinary R, SR, SEC; eligible R Jolly Roger variants |
 | Base | C and UC, including eligible Jolly Roger variants |
 | Leaders | Ordinary L |
@@ -84,7 +86,7 @@ The master set sums **one copy of every distinct eligible artwork/finish**, rega
 
 Treatment takes precedence over printed rarity. A Manga SEC is counted only as Manga, not again under Foils. DON Normal, Foil and Gold variants are distinct master-set entries. A printed number alone cannot identify an artwork or determine which booster contains a reprint.
 
-If neither Market nor Mid is usable, the price is **unknown, not zero**. Known contributions may be shown as an explicitly INCOMPLETE subtotal, with missing variants named; no percentages or market deltas are shown for that set. A disclosed Mid fallback counts as priced, so it does not by itself trigger `postIncompleteReports: false`. Unknown catalog cards/finishes also flag a profile for review. No missing-card probability is redistributed to the remaining priced cards.
+If neither Market nor Mid is usable, the price is **unknown, not zero**. Known contributions may be shown as an explicitly INCOMPLETE subtotal, with missing variants named; no market deltas are shown for that set. An affected category shows `--` for AVG and `*` on its priced Total in both tables; Copies and Count still include missing cards. The master-set subtotal is also marked `*`. A disclosed Mid fallback counts as priced, so it does not by itself trigger `postIncompleteReports: false`. Unknown catalog cards/finishes also flag a profile for review. No missing-card probability is redistributed to the remaining priced cards.
 
 ## Adopted initial estimates
 
