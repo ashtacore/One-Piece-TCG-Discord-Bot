@@ -52,8 +52,8 @@ public static class Reporting
         foreach (var card in report.Cards.Where(c => c.Price is null)) b.AppendLine($"Missing price: {Safe(card.Name)} [{card.Key}]");
         foreach (var issue in report.Issues) b.AppendLine("Review: " + Safe(issue));
         b.AppendLine();
-        b.AppendLine("⚠️ " + Safe(report.AssumptionsWarning));
-        b.AppendLine("Expected cards per box and model notes: see the accompanying Markdown file.");
+        b.AppendLine("⚠️ Pull rates are community estimates, not guarantees.");
+        b.AppendLine("For assumptions and prediction model notes: see the accompanying Markdown file.");
         return b.ToString().TrimEnd();
     }
 

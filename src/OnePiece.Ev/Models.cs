@@ -139,7 +139,6 @@ public sealed record CardValue(string Key, string Name, string Category, string 
 }
 public sealed record SetReport(string Code, string Name, string ModelHash, string Confidence, CardValue[] Cards, string[] Issues)
 {
-    public string AssumptionsWarning { get; init; } = "Pull rates are community estimates, not guarantees. Equal likelihood within pools is assumed.";
     public decimal? BoxMarketPrice { get; init; }
     [JsonIgnore] public bool Complete => Issues.Length == 0 && Cards.All(c => c.Price is not null);
     [JsonIgnore] public decimal KnownEv => Cards.Sum(c => c.Ev ?? 0);

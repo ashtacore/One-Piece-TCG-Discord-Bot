@@ -83,8 +83,7 @@ public static class Calculation
             boxMarketPrice = boxPrice.MarketPrice;
         return new SetReport(profile.Code, profile.Name, ModelHash(profile), profile.Confidence, cards, issues.Distinct().ToArray())
         {
-            BoxMarketPrice = boxMarketPrice,
-            AssumptionsWarning = AssumptionDocument.Warning(profile)
+            BoxMarketPrice = boxMarketPrice
         };
     }
 

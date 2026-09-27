@@ -16,7 +16,7 @@ public static class AssumptionDocument
         if (profile.Pools.Any(p => p.Id == "demon-elders") || profile.Code is "EB-03" or "OP-17" or "PRB-02") weak.Add("special-pack roster and displacement");
         if (profile.Pools.Any(p => p.Id == "pirate-foil")) weak.Add("bulk/Pirate Foil and SR weighting");
         weak.Add("equal likelihood within pools");
-        return "Pull rates are community estimates, not guarantees. Weaker assumptions: " + string.Join(", ", weak) + ".";
+        return "Pull rates are community estimates, not guarantees. Weaker assumptions; " + string.Join(", ", weak) + ".";
     }
 
     public static MarkdownAttachment Create(SetProfile profile, DateTimeOffset sourceTimestamp)
