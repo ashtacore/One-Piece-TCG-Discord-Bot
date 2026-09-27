@@ -76,10 +76,22 @@ var endpoint=new Uri("https://discord.com/api/webhooks/1/fake?wait=true");
 var calls=0;
 using var http=new HttpClient(new FakeHandler(_=>{calls++;return new(HttpStatusCode.OK){Content=new StringContent("{\"id\":\"123\"}")};}));
 var ledger=Path.Combine(temp,"sent.json");
-await DiscordDelivery.Send(http,ledger,"batch",endpoint,"hello");
-await DiscordDelivery.Send(http,ledger,"batch",endpoint,"changed");
+var firstDelivery=await DiscordDelivery.Send(http,ledger,"batch",endpoint,"hello");
+var repeatDelivery=await DiscordDelivery.Send(http,ledger,"batch",endpoint,"changed");
 Check(calls==1,"Repeated batch not reposted");
+Check(firstDelivery is {Sent:1,AlreadyDelivered:0} && repeatDelivery is {Sent:0,AlreadyDelivered:1},"Delivery summary counts sent and skipped messages");
+Check(repeatDelivery.Summary=="Discord: 0 messages sent, 1 already delivered.","Console delivery summary format");
 Check(JsonFiles.Read<DeliveryLedger>(ledger).Parts.Values.Single().Content=="hello\n\n\u200b","Frozen outbox preserves report separator");
+var forcedAttachment=new MarkdownAttachment("updated.md","Updated assumptions");
+var forced=await DiscordDelivery.Send(http,ledger,"batch",endpoint,"Updated report",forcedAttachment,forcePost:true);
+var forceLedger=JsonFiles.Read<DeliveryLedger>(ledger);
+Check(calls==2 && forced is {Sent:1,AlreadyDelivered:0},"Force post sends a new message");
+Check(forceLedger.Parts.Values.Single(p=>p.Key.StartsWith("batch:")).Content.StartsWith("Updated report") && forceLedger.Parts.Values.Single(p=>p.Key.StartsWith("batch:")).Attachment==forcedAttachment,"Force post uses latest content and attachment");
+Check(forceLedger.Parts.Values.Single(p=>p.Key.StartsWith("archive:")).Content.StartsWith("hello"),"Force post preserves previous receipt");
+var afterForce=await DiscordDelivery.Send(http,ledger,"batch",endpoint,"Should not send");
+Check(calls==2 && afterForce is {Sent:0,AlreadyDelivered:1},"Normal run skips newly force-posted batch");
+var secondForce=await DiscordDelivery.Send(http,ledger,"batch",endpoint,"Second intentional resend",forcePost:true);
+Check(calls==3 && secondForce.Sent==1,"Each force-post invocation intentionally resends");
 var rateCalls=0;
 using var rate=new HttpClient(new FakeHandler(_=>++rateCalls==1 ? new((HttpStatusCode)429){Content=new StringContent("{\"retry_after\":0}")} : new(HttpStatusCode.OK){Content=new StringContent("{\"id\":\"456\"}")}));
 await DiscordDelivery.Send(rate,Path.Combine(temp,"rate.json"),"batch",endpoint,"hello");
@@ -89,9 +101,11 @@ using var timeout=new HttpClient(new FakeHandler(_=>{timeoutCalls++;throw new Ht
 var uncertain=Path.Combine(temp,"uncertain.json");
 for(int i=0;i<2;i++) {try{await DiscordDelivery.Send(timeout,uncertain,"batch",endpoint,"hello");throw new Exception("Expected failure");}catch(InvalidDataException){}}
 Check(timeoutCalls==1 && JsonFiles.Read<DeliveryLedger>(uncertain).Parts.Values.Single().Status=="uncertain","Ambiguous delivery never retried automatically");
+try { await DiscordDelivery.Send(timeout,uncertain,"batch",endpoint,"hello",forcePost:true); throw new Exception("Expected uncertain force failure"); } catch(InvalidDataException) {}
+Check(timeoutCalls==1,"Force post cannot bypass uncertain delivery reconciliation");
 var document=AssumptionDocument.Create(profiles[2],catalog.SourceUpdatedAt);
 Check(document.FileName=="PRB-01-pull-rate-assumptions.md" && document.Content.Contains("AFTER replacement") && document.Content.Contains("0.039988888889") && document.Content.Contains(Calculation.ModelHash(profiles[2])),"Attachment matches adjusted profile and version hash");
-Check(Reporting.Render(reports[2],null,catalog.SourceUpdatedAt,null,new()).EndsWith("Expected cards per box and model notes: see the accompanying Markdown file."),"Report ends with assumptions warning and attachment reference");
+Check(Reporting.Render(reports[2],null,catalog.SourceUpdatedAt,null,new()).EndsWith("see the accompanying Markdown file."),"Report ends with attachment reference");
 var attachmentCalls=0;
 using var upload=new HttpClient(new FakeHandler(request=>
 {

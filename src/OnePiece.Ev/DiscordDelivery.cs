@@ -4,6 +4,11 @@ using System.Text.RegularExpressions;
 using System.Text;
 namespace OnePiece.Ev;
 
+public sealed record DeliveryResult(int Sent, int AlreadyDelivered)
+{
+    public string Summary => $"Discord: {Sent} messages sent, {AlreadyDelivered} already delivered.";
+}
+
 public static class DiscordDelivery
 {
     public static Uri Endpoint(Destination d)
@@ -14,10 +19,24 @@ public static class DiscordDelivery
         if (d.ThreadId is not null && !Regex.IsMatch(d.ThreadId, @"^\d+$")) throw new InvalidDataException("Invalid thread ID.");
         return new(url + "?wait=true" + (d.ThreadId is null ? "" : "&thread_id=" + d.ThreadId));
     }
-    public static async Task Send(HttpClient http, string path, string batch, Uri endpoint, string content, MarkdownAttachment? attachment = null)
+    public static async Task<DeliveryResult> Send(HttpClient http, string path, string batch, Uri endpoint, string content, MarkdownAttachment? attachment = null, bool forcePost = false)
     {
         var ledger = File.Exists(path) ? JsonFiles.Read<DeliveryLedger>(path) : new(new());
         var parts = ledger.Parts.Values.Where(p => p.Key.StartsWith(batch + ":", StringComparison.Ordinal)).OrderBy(p => p.Key).ToArray();
+        if (forcePost && parts.Length > 0)
+        {
+            if (parts.Any(p => p.Status != "sent"))
+                throw new InvalidDataException("Cannot force-post an unfinished delivery. Run normally to resume pending parts, or reconcile uncertain parts first.");
+            // Preserve prior receipts, then replace the active batch with the latest report and attachment.
+            var archive = $"archive:{Guid.NewGuid():N}:";
+            foreach (var part in parts)
+            {
+                ledger.Parts.Remove(part.Key);
+                var archived = part with { Key = archive + part.Key };
+                ledger.Parts.Add(archived.Key, archived);
+            }
+            parts = [];
+        }
         if (parts.Length == 0)
         {
             var title = content.Split('\n')[0].TrimEnd('\r');
@@ -30,9 +49,10 @@ public static class DiscordDelivery
             foreach (var p in parts) ledger.Parts.Add(p.Key, p);
             JsonFiles.Write(path, ledger);
         }
+        int sent = 0, alreadyDelivered = 0;
         foreach (var part in parts)
         {
-            if (part.Status == "sent") continue;
+            if (part.Status == "sent") { alreadyDelivered++; continue; }
             if (part.Status is "inflight" or "uncertain") throw new InvalidDataException("Uncertain Discord delivery: inspect channel and reconcile deliveries.json before retrying.");
             void Save(string status, string? id = null) { ledger.Parts[part.Key] = part with { Status = status, MessageId = id, UpdatedAt = DateTimeOffset.UtcNow }; JsonFiles.Write(path, ledger); }
             for (int attempt = 0; ; attempt++)
@@ -56,12 +76,15 @@ public static class DiscordDelivery
                         throw new InvalidDataException($"Discord returned HTTP {(int)response.StatusCode}.");
                     }
                     using var result = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-                    Save("sent", result.RootElement.GetProperty("id").GetString() ?? throw new InvalidDataException("Missing message ID.")); break;
+                    Save("sent", result.RootElement.GetProperty("id").GetString() ?? throw new InvalidDataException("Missing message ID."));
+                    sent++;
+                    break;
                 }
                 catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException or JsonException or KeyNotFoundException)
                 { Save("uncertain"); throw new InvalidDataException("Discord outcome uncertain; inspect channel before retrying."); }
             }
         }
+        return new DeliveryResult(sent, alreadyDelivered);
     }
 
     private static HttpContent BuildBody(DeliveryPart part)

@@ -32,7 +32,7 @@ public static class Program
         // Parse command-line options. Offline and imported catalogs always run as previews.
         string config = "appsettings.json";
         string? import = null;
-        bool dry = false, offline = false, validate = false;
+        bool dry = false, offline = false, validate = false, forcePost = false;
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -55,6 +55,10 @@ public static class Program
                     dry = true;
                     break;
 
+                case "--force-post":
+                    forcePost = true;
+                    break;
+
                 case "--offline":
                     offline = true;
                     dry = true;
@@ -65,7 +69,7 @@ public static class Program
                     break;
 
                 case "--help":
-                    Console.WriteLine("OnePiece.Ev [--config FILE] [--validate] [--dry-run] [--offline] [--catalog DIRECTORY]");
+                    Console.WriteLine("OnePiece.Ev [--config FILE] [--validate] [--dry-run] [--offline] [--catalog DIRECTORY] [--force-post]");
                     return 0;
 
                 default:
@@ -213,6 +217,7 @@ public static class Program
         }
 
         // Deliver eligible reports; the delivery ledger tracks parts across retries.
+        int sent = 0, alreadyDelivered = 0, incompleteSkipped = 0;
         using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(45) };
         foreach (var d in destinations)
         {
@@ -221,19 +226,23 @@ public static class Program
             {
                 if (!report.Complete && !settings.PostIncompleteReports)
                 {
+                    incompleteSkipped++;
                     continue;
                 }
 
                 var key = $"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:{report.Code}";
                 try
                 {
-                    await DiscordDelivery.Send(
+                    var result = await DiscordDelivery.Send(
                         http,
                         Path.Combine(settings.StateDirectory, "deliveries.json"),
                         key,
                         endpoint,
                         texts[report.Code],
-                        attachments[report.Code]);
+                        attachments[report.Code],
+                        forcePost);
+                    sent += result.Sent;
+                    alreadyDelivered += result.AlreadyDelivered;
                 }
                 catch (Exception ex)
                 {
@@ -250,7 +259,9 @@ public static class Program
             JsonFiles.Write(snapshotPath, current);
         }
 
-        Console.WriteLine("Discord delivery completed.");
+        Console.WriteLine(new DeliveryResult(sent, alreadyDelivered).Summary);
+        if (incompleteSkipped > 0)
+            Console.WriteLine($"Discord: {incompleteSkipped} incomplete reports skipped by configuration.");
         return 0;
     }
 }

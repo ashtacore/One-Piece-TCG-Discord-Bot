@@ -20,6 +20,16 @@ dotnet run --project src/OnePiece.Ev -- --offline
 
 `--dry-run` fetches prices but never posts or advances report history. `--offline` previews the saved catalog without network requests. Reports are written to `out/latest.md` and `out/latest.json`. With no enabled destinations, ordinary execution also produces a preview. `--catalog research/catalog-cache` previews the research download instead and always disables posting.
 
+Use `--force-post` to intentionally resend the current reports, including updated formatting and assumption attachments, to enabled destinations:
+
+```powershell
+dotnet run --project src/OnePiece.Ev -- --config appsettings.local.json --force-post
+```
+
+Each force-post invocation can create another copy. It archives previous successful receipts and replaces the active delivery batch; the next normal run skips that newly delivered batch. Pending or uncertain batches must first be resumed normally or reconciled before force-posting. The flag does not refresh prices, bypass freshness/release/set/incomplete-report filters, or override preview modes (`--dry-run`, `--offline`, `--catalog`) or `--validate`. Existing comparison history is preserved.
+
+Successful live runs print actual message-part counts, for example `Discord: 0 messages sent, 22 already delivered.` Counts include each destination and each multipart message. Reports suppressed by the incomplete-data setting are counted separately.
+
 ## Discord configuration
 
 Copy `appsettings.json` to the ignored `appsettings.local.json`. Set the destination's `enabled` to `true`. Either set `webhookUrl` directly in that private file or use the configured environment variable:
