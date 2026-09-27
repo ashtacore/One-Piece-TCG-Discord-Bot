@@ -47,20 +47,25 @@ public static class Program
         if(settings.Destinations.Any(d=>string.IsNullOrWhiteSpace(d.Id)) || settings.Destinations.Select(d=>d.Id).Distinct().Count()!=settings.Destinations.Length) throw new InvalidDataException("Destination IDs must be unique and nonempty.");
         var destinations=settings.Destinations.Where(d=>d.Enabled).ToArray();
         if(!dry) foreach(var d in destinations) _=DiscordDelivery.Endpoint(d);
-        if(validate) {Console.WriteLine($"Validated {file.Sets.Length} profiles, {file.Sets.Sum(p=>p.Variants.Length)} variants.");return 0;}
-        var profiles=file.Sets.Where(p=>p.Enabled && (settings.EnabledSets.Length==0 || settings.EnabledSets.Contains(p.Code))).ToArray();
+        if(validate) {Console.WriteLine($"Validated {file.Sets.Length} profiles, {file.Sets.Sum(p=>p.Variants.Length)} variants; {file.PlannedSets.Length} releases pending profile review.");return 0;}
+        foreach (var pending in file.PlannedSets.OrderBy(p=>p.ReleaseDate))
+            Console.WriteLine($"Not active: {pending.Code} ({pending.ReleaseDate:yyyy-MM-dd}) — {pending.Reason}");
+        var profiles=ReleaseCalendar.Select(file.Sets, settings.EnabledSets, DateOnly.FromDateTime(DateTime.UtcNow));
         if(profiles.Length==0) throw new InvalidDataException("No sets selected.");
         Directory.CreateDirectory(settings.StateDirectory);
         using var runLock=new FileStream(Path.Combine(settings.StateDirectory,"run.lock"),FileMode.OpenOrCreate,FileAccess.ReadWrite,FileShare.None);
         var groups=profiles.SelectMany(p=>p.Variants.Select(v=>v.GroupId).Append(p.GroupId)).Distinct().Order().ToArray();
         var catalog=import is null ? await Catalog.Load(settings,groups,offline) : Catalog.Import(import,groups);
         if(!dry && (DateTimeOffset.UtcNow-catalog.SourceUpdatedAt>TimeSpan.FromHours(settings.Source.MaxSourceAgeHours) || catalog.SourceUpdatedAt>DateTimeOffset.UtcNow.AddMinutes(5))) throw new InvalidDataException("Source is stale or future-dated; inspect with --dry-run.");
-        profiles=profiles.Where(p=>p.ReleaseDate<=DateOnly.FromDateTime(catalog.SourceUpdatedAt.UtcDateTime)).ToArray();
+        profiles=ReleaseCalendar.Select(profiles, settings.EnabledSets, DateOnly.FromDateTime(catalog.SourceUpdatedAt.UtcDateTime));
         var current=new ReportSnapshot(catalog.SourceUpdatedAt,DateTimeOffset.UtcNow,profiles.Select(p=>Calculation.Evaluate(p,catalog)).ToArray());
         var history=Path.Combine(settings.StateDirectory,"history"); Directory.CreateDirectory(history);
         var previous=Directory.EnumerateFiles(history,"*.json").Select(JsonFiles.Read<ReportSnapshot>).Where(s=>s.SourceUpdatedAt<current.SourceUpdatedAt).OrderByDescending(s=>s.SourceUpdatedAt).FirstOrDefault();
         var texts=current.Sets.ToDictionary(s=>s.Code,s=>Reporting.Render(s,previous?.Sets.FirstOrDefault(p=>p.Code==s.Code),current.SourceUpdatedAt,previous?.SourceUpdatedAt,settings.Movers));
         Directory.CreateDirectory(settings.ReportDirectory);
+        var attachments = profiles.ToDictionary(p => p.Code, p => AssumptionDocument.Create(p, current.SourceUpdatedAt));
+        foreach (var attachment in attachments.Values)
+            File.WriteAllText(Path.Combine(settings.ReportDirectory, attachment.FileName), attachment.Content);
         File.WriteAllText(Path.Combine(settings.ReportDirectory,"latest.md"),string.Join("\n\n\n",texts.Values) + "\n\n");
         JsonFiles.Write(Path.Combine(settings.ReportDirectory,"latest.json"),current);
         Console.WriteLine(string.Join("\n\n\n",texts.Values) + "\n");
@@ -73,7 +78,7 @@ public static class Program
             {
                 if(!report.Complete && !settings.PostIncompleteReports) continue;
                 var key=$"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:{report.Code}";
-                await DiscordDelivery.Send(http,Path.Combine(settings.StateDirectory,"deliveries.json"),key,endpoint,texts[report.Code]);
+                await DiscordDelivery.Send(http,Path.Combine(settings.StateDirectory,"deliveries.json"),key,endpoint,texts[report.Code],attachments[report.Code]);
             }
         }
         var snapshotPath=Path.Combine(history,$"{current.SourceUpdatedAt:yyyyMMddHHmmss}.json");

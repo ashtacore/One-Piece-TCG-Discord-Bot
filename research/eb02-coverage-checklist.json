@@ -1,0 +1,632 @@
+[
+  {
+    "id": "EB01-001_p2",
+    "number": "EB01-001",
+    "rarity": "L",
+    "name": "Kouzuki Oden"
+  },
+  {
+    "id": "EB01-021_p2",
+    "number": "EB01-021",
+    "rarity": "L",
+    "name": "Hannyabal"
+  },
+  {
+    "id": "EB01-040_p2",
+    "number": "EB01-040",
+    "rarity": "L",
+    "name": "Kyros"
+  },
+  {
+    "id": "EB02-001",
+    "number": "EB02-001",
+    "rarity": "C",
+    "name": "Karoo"
+  },
+  {
+    "id": "EB02-002",
+    "number": "EB02-002",
+    "rarity": "R",
+    "name": "Sabo"
+  },
+  {
+    "id": "EB02-003",
+    "number": "EB02-003",
+    "rarity": "R",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "id": "EB02-003_p1",
+    "number": "EB02-003",
+    "rarity": "R",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "id": "EB02-004",
+    "number": "EB02-004",
+    "rarity": "C",
+    "name": "Don Accino"
+  },
+  {
+    "id": "EB02-005",
+    "number": "EB02-005",
+    "rarity": "C",
+    "name": "Fake Straw Hat Crew"
+  },
+  {
+    "id": "EB02-006",
+    "number": "EB02-006",
+    "rarity": "SR",
+    "name": "Yamato"
+  },
+  {
+    "id": "EB02-006_p1",
+    "number": "EB02-006",
+    "rarity": "SR",
+    "name": "Yamato"
+  },
+  {
+    "id": "EB02-007",
+    "number": "EB02-007",
+    "rarity": "C",
+    "name": "Cloven Rose Blizzard"
+  },
+  {
+    "id": "EB02-008",
+    "number": "EB02-008",
+    "rarity": "R",
+    "name": "The Peak"
+  },
+  {
+    "id": "EB02-009",
+    "number": "EB02-009",
+    "rarity": "C",
+    "name": "Thousand Sunny"
+  },
+  {
+    "id": "EB02-010",
+    "number": "EB02-010",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "EB02-010_p1",
+    "number": "EB02-010",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "EB02-011",
+    "number": "EB02-011",
+    "rarity": "SR",
+    "name": "Arlong"
+  },
+  {
+    "id": "EB02-011_p1",
+    "number": "EB02-011",
+    "rarity": "SR",
+    "name": "Arlong"
+  },
+  {
+    "id": "EB02-012",
+    "number": "EB02-012",
+    "rarity": "C",
+    "name": "Gaimon"
+  },
+  {
+    "id": "EB02-013",
+    "number": "EB02-013",
+    "rarity": "C",
+    "name": "Carrot"
+  },
+  {
+    "id": "EB02-014",
+    "number": "EB02-014",
+    "rarity": "C",
+    "name": "Sarfunkel"
+  },
+  {
+    "id": "EB02-015",
+    "number": "EB02-015",
+    "rarity": "SR",
+    "name": "Jewelry Bonney"
+  },
+  {
+    "id": "EB02-015_p1",
+    "number": "EB02-015",
+    "rarity": "SR",
+    "name": "Jewelry Bonney"
+  },
+  {
+    "id": "EB02-016",
+    "number": "EB02-016",
+    "rarity": "C",
+    "name": "Chopperman"
+  },
+  {
+    "id": "EB02-017",
+    "number": "EB02-017",
+    "rarity": "R",
+    "name": "Nami"
+  },
+  {
+    "id": "EB02-017_p1",
+    "number": "EB02-017",
+    "rarity": "R",
+    "name": "Nami"
+  },
+  {
+    "id": "EB02-018",
+    "number": "EB02-018",
+    "rarity": "R",
+    "name": "Buggy"
+  },
+  {
+    "id": "EB02-019",
+    "number": "EB02-019",
+    "rarity": "R",
+    "name": "Roronoa Zoro"
+  },
+  {
+    "id": "EB02-020",
+    "number": "EB02-020",
+    "rarity": "R",
+    "name": "We Are!"
+  },
+  {
+    "id": "EB02-021",
+    "number": "EB02-021",
+    "rarity": "C",
+    "name": "Gum-Gum Giant Pistol"
+  },
+  {
+    "id": "EB02-022",
+    "number": "EB02-022",
+    "rarity": "R",
+    "name": "Usopp"
+  },
+  {
+    "id": "EB02-022_p1",
+    "number": "EB02-022",
+    "rarity": "R",
+    "name": "Usopp"
+  },
+  {
+    "id": "EB02-023",
+    "number": "EB02-023",
+    "rarity": "C",
+    "name": "Crocodile"
+  },
+  {
+    "id": "EB02-024",
+    "number": "EB02-024",
+    "rarity": "C",
+    "name": "Sogeking"
+  },
+  {
+    "id": "EB02-025",
+    "number": "EB02-025",
+    "rarity": "R",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "EB02-026",
+    "number": "EB02-026",
+    "rarity": "SR",
+    "name": "Nefeltari Vivi"
+  },
+  {
+    "id": "EB02-026_p1",
+    "number": "EB02-026",
+    "rarity": "SR",
+    "name": "Nefeltari Vivi"
+  },
+  {
+    "id": "EB02-027",
+    "number": "EB02-027",
+    "rarity": "C",
+    "name": "Vista"
+  },
+  {
+    "id": "EB02-028",
+    "number": "EB02-028",
+    "rarity": "R",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "EB02-029",
+    "number": "EB02-029",
+    "rarity": "C",
+    "name": "Grandpa Ryu"
+  },
+  {
+    "id": "EB02-030",
+    "number": "EB02-030",
+    "rarity": "C",
+    "name": "And That's When Somebody Makes Fun of Their Friend's Dream!!!!"
+  },
+  {
+    "id": "EB02-031",
+    "number": "EB02-031",
+    "rarity": "R",
+    "name": "Hope"
+  },
+  {
+    "id": "EB02-032",
+    "number": "EB02-032",
+    "rarity": "C",
+    "name": "Iceburg"
+  },
+  {
+    "id": "EB02-033",
+    "number": "EB02-033",
+    "rarity": "C",
+    "name": "Klabautermann"
+  },
+  {
+    "id": "EB02-034",
+    "number": "EB02-034",
+    "rarity": "C",
+    "name": "Komei"
+  },
+  {
+    "id": "EB02-035",
+    "number": "EB02-035",
+    "rarity": "SR",
+    "name": "Sanji & Pudding"
+  },
+  {
+    "id": "EB02-035_p1",
+    "number": "EB02-035",
+    "rarity": "SR",
+    "name": "Sanji & Pudding"
+  },
+  {
+    "id": "EB02-036",
+    "number": "EB02-036",
+    "rarity": "R",
+    "name": "Nico Robin"
+  },
+  {
+    "id": "EB02-036_p1",
+    "number": "EB02-036",
+    "rarity": "R",
+    "name": "Nico Robin"
+  },
+  {
+    "id": "EB02-037",
+    "number": "EB02-037",
+    "rarity": "R",
+    "name": "Franky"
+  },
+  {
+    "id": "EB02-038",
+    "number": "EB02-038",
+    "rarity": "C",
+    "name": "Magellan"
+  },
+  {
+    "id": "EB02-039",
+    "number": "EB02-039",
+    "rarity": "C",
+    "name": "GERMA 66"
+  },
+  {
+    "id": "EB02-040",
+    "number": "EB02-040",
+    "rarity": "R",
+    "name": "BRAND NEW WORLD"
+  },
+  {
+    "id": "EB02-041",
+    "number": "EB02-041",
+    "rarity": "R",
+    "name": "Merry Go"
+  },
+  {
+    "id": "EB02-042",
+    "number": "EB02-042",
+    "rarity": "C",
+    "name": "All-Hunt Grount"
+  },
+  {
+    "id": "EB02-043",
+    "number": "EB02-043",
+    "rarity": "C",
+    "name": "Jonathan"
+  },
+  {
+    "id": "EB02-044",
+    "number": "EB02-044",
+    "rarity": "SR",
+    "name": "Sengoku"
+  },
+  {
+    "id": "EB02-044_p1",
+    "number": "EB02-044",
+    "rarity": "SR",
+    "name": "Sengoku"
+  },
+  {
+    "id": "EB02-045",
+    "number": "EB02-045",
+    "rarity": "SR",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "EB02-045_p1",
+    "number": "EB02-045",
+    "rarity": "SR",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "EB02-046",
+    "number": "EB02-046",
+    "rarity": "C",
+    "name": "Hildon"
+  },
+  {
+    "id": "EB02-047",
+    "number": "EB02-047",
+    "rarity": "C",
+    "name": "Blueno"
+  },
+  {
+    "id": "EB02-048",
+    "number": "EB02-048",
+    "rarity": "R",
+    "name": "Brook"
+  },
+  {
+    "id": "EB02-048_p1",
+    "number": "EB02-048",
+    "rarity": "R",
+    "name": "Brook"
+  },
+  {
+    "id": "EB02-049",
+    "number": "EB02-049",
+    "rarity": "R",
+    "name": "Monkey.D.Garp"
+  },
+  {
+    "id": "EB02-050",
+    "number": "EB02-050",
+    "rarity": "R",
+    "name": "Kokoro no Chizu"
+  },
+  {
+    "id": "EB02-051",
+    "number": "EB02-051",
+    "rarity": "C",
+    "name": "Three-Pace Hum Soul Notch Slash"
+  },
+  {
+    "id": "EB02-052",
+    "number": "EB02-052",
+    "rarity": "SR",
+    "name": "Enel"
+  },
+  {
+    "id": "EB02-052_p1",
+    "number": "EB02-052",
+    "rarity": "SR",
+    "name": "Enel"
+  },
+  {
+    "id": "EB02-053",
+    "number": "EB02-053",
+    "rarity": "C",
+    "name": "Myskina Olga"
+  },
+  {
+    "id": "EB02-054",
+    "number": "EB02-054",
+    "rarity": "R",
+    "name": "Sanji"
+  },
+  {
+    "id": "EB02-054_p1",
+    "number": "EB02-054",
+    "rarity": "R",
+    "name": "Sanji"
+  },
+  {
+    "id": "EB02-055",
+    "number": "EB02-055",
+    "rarity": "R",
+    "name": "Jinbe"
+  },
+  {
+    "id": "EB02-056",
+    "number": "EB02-056",
+    "rarity": "SR",
+    "name": "Vegapunk"
+  },
+  {
+    "id": "EB02-056_p1",
+    "number": "EB02-056",
+    "rarity": "SR",
+    "name": "Vegapunk"
+  },
+  {
+    "id": "EB02-057",
+    "number": "EB02-057",
+    "rarity": "C",
+    "name": "Mad Treasure"
+  },
+  {
+    "id": "EB02-058",
+    "number": "EB02-058",
+    "rarity": "R",
+    "name": "UUUUUS!"
+  },
+  {
+    "id": "EB02-059",
+    "number": "EB02-059",
+    "rarity": "C",
+    "name": "Without Your Help I Can't Become the King of the Pirates!!!!"
+  },
+  {
+    "id": "EB02-060",
+    "number": "EB02-060",
+    "rarity": "C",
+    "name": "Merry Go"
+  },
+  {
+    "id": "EB02-061",
+    "number": "EB02-061",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "EB02-061_p1",
+    "number": "EB02-061",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "EB02-061_p2",
+    "number": "EB02-061",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-001_p2",
+    "number": "OP05-001",
+    "rarity": "L",
+    "name": "Sabo"
+  },
+  {
+    "id": "OP05-002_p2",
+    "number": "OP05-002",
+    "rarity": "L",
+    "name": "Belo Betty"
+  },
+  {
+    "id": "OP05-022_p2",
+    "number": "OP05-022",
+    "rarity": "L",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "OP05-060_p4",
+    "number": "OP05-060",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-098_p2",
+    "number": "OP05-098",
+    "rarity": "L",
+    "name": "Enel"
+  },
+  {
+    "id": "OP06-001_p2",
+    "number": "OP06-001",
+    "rarity": "L",
+    "name": "Uta"
+  },
+  {
+    "id": "OP06-020_p2",
+    "number": "OP06-020",
+    "rarity": "L",
+    "name": "Hody Jones"
+  },
+  {
+    "id": "OP06-021_p2",
+    "number": "OP06-021",
+    "rarity": "L",
+    "name": "Perona"
+  },
+  {
+    "id": "OP06-022_p2",
+    "number": "OP06-022",
+    "rarity": "L",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP06-042_p2",
+    "number": "OP06-042",
+    "rarity": "L",
+    "name": "Vinsmoke Reiju"
+  },
+  {
+    "id": "OP06-080_p2",
+    "number": "OP06-080",
+    "rarity": "L",
+    "name": "Gecko Moria"
+  },
+  {
+    "id": "OP07-001_p2",
+    "number": "OP07-001",
+    "rarity": "L",
+    "name": "Monkey.D.Dragon"
+  },
+  {
+    "id": "OP07-019_p2",
+    "number": "OP07-019",
+    "rarity": "L",
+    "name": "Jewelry Bonney"
+  },
+  {
+    "id": "OP07-038_p2",
+    "number": "OP07-038",
+    "rarity": "L",
+    "name": "Boa Hancock"
+  },
+  {
+    "id": "OP07-059_p2",
+    "number": "OP07-059",
+    "rarity": "L",
+    "name": "Foxy"
+  },
+  {
+    "id": "OP07-079_p2",
+    "number": "OP07-079",
+    "rarity": "L",
+    "name": "Rob Lucci"
+  },
+  {
+    "id": "OP07-097_p2",
+    "number": "OP07-097",
+    "rarity": "L",
+    "name": "Vegapunk"
+  },
+  {
+    "id": "OP08-001_p2",
+    "number": "OP08-001",
+    "rarity": "L",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "id": "OP08-002_p2",
+    "number": "OP08-002",
+    "rarity": "L",
+    "name": "Marco"
+  },
+  {
+    "id": "OP08-021_p2",
+    "number": "OP08-021",
+    "rarity": "L",
+    "name": "Carrot"
+  },
+  {
+    "id": "OP08-057_p2",
+    "number": "OP08-057",
+    "rarity": "L",
+    "name": "King"
+  },
+  {
+    "id": "OP08-058_p2",
+    "number": "OP08-058",
+    "rarity": "L",
+    "name": "Charlotte Pudding"
+  },
+  {
+    "id": "OP08-098_p2",
+    "number": "OP08-098",
+    "rarity": "L",
+    "name": "Kalgara"
+  }
+]

@@ -11,13 +11,17 @@ public static class Reporting
     public static string Render(SetReport report, SetReport? previous, DateTimeOffset stamp, DateTimeOffset? previousStamp, MoverSettings settings)
     {
         var compare = Calculation.Comparable(report, previous);
-        string Delta(decimal value, decimal before) => compare ? $" ({Signed(value - before)}) {(Math.Round(value - before, 2) == 0 ? "⚪" : value > before ? "🟢" : "🔴")}" : "";
+        var compatible = Calculation.Compatible(report, previous);
+        var sourceChanges = Calculation.SourceChanges(report, previous);
+        var estimates = report.Cards.Where(c => c.PriceSource == "Mid").ToArray();
+        string Delta(decimal value, decimal before, bool? allowed = null) => (allowed ?? compare) ? $" ({Signed(value - before)}) {(Math.Round(value - before, 2) == 0 ? "⚪" : value > before ? "🟢" : "🔴")}" : "";
         var b = new StringBuilder();
         b.AppendLine($"**{Safe(report.Name)} ({report.Code})**");
         b.AppendLine($"Source: {stamp:yyyy-MM-dd HH:mm} UTC · estimated odds");
         b.AppendLine("Booster Box:");
         b.AppendLine(report.Complete ? $"  EV: **{Money(report.KnownEv)}**{Delta(report.KnownEv, previous?.KnownEv ?? 0)}" : $"  EV: **INCOMPLETE — priced subtotal: {Money(report.KnownEv)}**");
         b.AppendLine($"  MP: {(report.BoxMarketPrice is decimal mp ? Money(mp) : "Unavailable")}");
+        if (estimates.Length > 0) b.AppendLine($"Includes {estimates.Length} listing-based estimate{(estimates.Length == 1 ? "" : "s")} (TCGplayer Mid; details below).");
         b.AppendLine();
         b.AppendLine($"Master set ({report.Cards.Length}): {Money(report.KnownMaster)}{(report.Complete ? Delta(report.KnownMaster, previous?.KnownMaster ?? 0) : " (subtotal)")}");
         foreach (var category in Calculation.Categories)
@@ -35,15 +39,21 @@ public static class Reporting
                 _ => category
             };
             b.AppendLine($"{label}:");
-            b.AppendLine($"  AVG: {Money(ev)}{Delta(ev, oldEv)}{share}");
+            b.AppendLine($"  AVG: {Money(ev)}{Delta(ev, oldEv, compatible && !sourceChanges.Any(c => c.Category == category))}{share}");
             b.AppendLine($"  Total ({cards.Length}): {Money(cards.Sum(c => c.Price ?? 0))}{(cards.Any(c => c.Price is null) ? " (subtotal)" : "")}");
         }
-        if (compare) b.AppendLine($"Changes vs {previousStamp:yyyy-MM-dd HH:mm} UTC");
+        if (compatible) b.AppendLine($"Changes vs {previousStamp:yyyy-MM-dd HH:mm} UTC");
         else b.AppendLine("Changes unavailable: first observation, incomplete prices, or changed model/membership.");
+        foreach (var card in sourceChanges)
+            b.AppendLine($"Pricing source changed: {Safe(card.Name)}; box/master-set and affected category deltas suppressed; card excluded from movers.");
         foreach (var mover in Calculation.Movers(report, previous, settings))
-            b.AppendLine($"{(mover.PriceChange > 0 ? "🟢" : "🔴")} {Safe(mover.Card.Name)}: {Signed(mover.PriceChange)} ({Signed(mover.BoxImpact)} bx) [{Money(mover.Card.Price!.Value)}]");
+            b.AppendLine($"{(mover.PriceChange > 0 ? "🟢" : "🔴")} {Safe(mover.Card.Name)}: {Signed(mover.PriceChange)} ({Signed(mover.BoxImpact)} bx) [{Money(mover.Card.Price!.Value)}]{(mover.Card.PriceSource == "Mid" ? " (Mid estimate)" : "")}");
+        foreach (var card in estimates) b.AppendLine($"Mid estimate: {Safe(card.Name)} [{card.Key}]: {Money(card.Price!.Value)}");
         foreach (var card in report.Cards.Where(c => c.Price is null)) b.AppendLine($"Missing price: {Safe(card.Name)} [{card.Key}]");
         foreach (var issue in report.Issues) b.AppendLine("Review: " + Safe(issue));
+        b.AppendLine();
+        b.AppendLine("⚠️ " + Safe(report.AssumptionsWarning));
+        b.AppendLine("Expected cards per box and model notes: see the accompanying Markdown file.");
         return b.ToString().TrimEnd();
     }
 

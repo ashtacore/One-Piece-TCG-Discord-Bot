@@ -1,0 +1,926 @@
+[
+  {
+    "id": "OP05-001",
+    "number": "OP05-001",
+    "rarity": "L",
+    "name": "Sabo"
+  },
+  {
+    "id": "OP05-001_p1",
+    "number": "OP05-001",
+    "rarity": "L",
+    "name": "Sabo"
+  },
+  {
+    "id": "OP05-002",
+    "number": "OP05-002",
+    "rarity": "L",
+    "name": "Belo Betty"
+  },
+  {
+    "id": "OP05-002_p1",
+    "number": "OP05-002",
+    "rarity": "L",
+    "name": "Belo Betty"
+  },
+  {
+    "id": "OP05-003",
+    "number": "OP05-003",
+    "rarity": "UC",
+    "name": "Inazuma"
+  },
+  {
+    "id": "OP05-004",
+    "number": "OP05-004",
+    "rarity": "UC",
+    "name": "Emporio.Ivankov"
+  },
+  {
+    "id": "OP05-005",
+    "number": "OP05-005",
+    "rarity": "R",
+    "name": "Karasu"
+  },
+  {
+    "id": "OP05-006",
+    "number": "OP05-006",
+    "rarity": "SR",
+    "name": "Koala"
+  },
+  {
+    "id": "OP05-006_p1",
+    "number": "OP05-006",
+    "rarity": "SR",
+    "name": "Koala"
+  },
+  {
+    "id": "OP05-007",
+    "number": "OP05-007",
+    "rarity": "SR",
+    "name": "Sabo"
+  },
+  {
+    "id": "OP05-007_p1",
+    "number": "OP05-007",
+    "rarity": "SR",
+    "name": "Sabo"
+  },
+  {
+    "id": "OP05-008",
+    "number": "OP05-008",
+    "rarity": "UC",
+    "name": "Chaka"
+  },
+  {
+    "id": "OP05-009",
+    "number": "OP05-009",
+    "rarity": "C",
+    "name": "Toh-Toh"
+  },
+  {
+    "id": "OP05-010",
+    "number": "OP05-010",
+    "rarity": "UC",
+    "name": "Nico Robin"
+  },
+  {
+    "id": "OP05-011",
+    "number": "OP05-011",
+    "rarity": "C",
+    "name": "Bartholomew Kuma"
+  },
+  {
+    "id": "OP05-012",
+    "number": "OP05-012",
+    "rarity": "C",
+    "name": "Hack"
+  },
+  {
+    "id": "OP05-013",
+    "number": "OP05-013",
+    "rarity": "C",
+    "name": "Bunny Joe"
+  },
+  {
+    "id": "OP05-014",
+    "number": "OP05-014",
+    "rarity": "C",
+    "name": "Pell"
+  },
+  {
+    "id": "OP05-015",
+    "number": "OP05-015",
+    "rarity": "R",
+    "name": "Belo Betty"
+  },
+  {
+    "id": "OP05-015_p1",
+    "number": "OP05-015",
+    "rarity": "R",
+    "name": "Belo Betty"
+  },
+  {
+    "id": "OP05-016",
+    "number": "OP05-016",
+    "rarity": "R",
+    "name": "Morley"
+  },
+  {
+    "id": "OP05-017",
+    "number": "OP05-017",
+    "rarity": "R",
+    "name": "Lindbergh"
+  },
+  {
+    "id": "OP05-018",
+    "number": "OP05-018",
+    "rarity": "C",
+    "name": "Emporio Energy Hormone"
+  },
+  {
+    "id": "OP05-019",
+    "number": "OP05-019",
+    "rarity": "R",
+    "name": "Fire Fist"
+  },
+  {
+    "id": "OP05-020",
+    "number": "OP05-020",
+    "rarity": "UC",
+    "name": "Four Thousand-Brick Fist"
+  },
+  {
+    "id": "OP05-021",
+    "number": "OP05-021",
+    "rarity": "UC",
+    "name": "Revolutionary Army HQ"
+  },
+  {
+    "id": "OP05-022",
+    "number": "OP05-022",
+    "rarity": "L",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "OP05-022_p1",
+    "number": "OP05-022",
+    "rarity": "L",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "OP05-023",
+    "number": "OP05-023",
+    "rarity": "R",
+    "name": "Vergo"
+  },
+  {
+    "id": "OP05-024",
+    "number": "OP05-024",
+    "rarity": "C",
+    "name": "Kuween"
+  },
+  {
+    "id": "OP05-025",
+    "number": "OP05-025",
+    "rarity": "C",
+    "name": "Gladius"
+  },
+  {
+    "id": "OP05-026",
+    "number": "OP05-026",
+    "rarity": "C",
+    "name": "Sarquiss"
+  },
+  {
+    "id": "OP05-027",
+    "number": "OP05-027",
+    "rarity": "UC",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP05-028",
+    "number": "OP05-028",
+    "rarity": "C",
+    "name": "Donquixote Doflamingo"
+  },
+  {
+    "id": "OP05-029",
+    "number": "OP05-029",
+    "rarity": "UC",
+    "name": "Donquixote Doflamingo"
+  },
+  {
+    "id": "OP05-030",
+    "number": "OP05-030",
+    "rarity": "R",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "OP05-031",
+    "number": "OP05-031",
+    "rarity": "C",
+    "name": "Buffalo"
+  },
+  {
+    "id": "OP05-032",
+    "number": "OP05-032",
+    "rarity": "SR",
+    "name": "Pica"
+  },
+  {
+    "id": "OP05-032_p1",
+    "number": "OP05-032",
+    "rarity": "SR",
+    "name": "Pica"
+  },
+  {
+    "id": "OP05-033",
+    "number": "OP05-033",
+    "rarity": "C",
+    "name": "Baby 5"
+  },
+  {
+    "id": "OP05-034",
+    "number": "OP05-034",
+    "rarity": "R",
+    "name": "Baby 5"
+  },
+  {
+    "id": "OP05-034_p1",
+    "number": "OP05-034",
+    "rarity": "R",
+    "name": "Baby 5"
+  },
+  {
+    "id": "OP05-035",
+    "number": "OP05-035",
+    "rarity": "C",
+    "name": "Bellamy"
+  },
+  {
+    "id": "OP05-036",
+    "number": "OP05-036",
+    "rarity": "UC",
+    "name": "Monet"
+  },
+  {
+    "id": "OP05-037",
+    "number": "OP05-037",
+    "rarity": "R",
+    "name": "Because the Side of Justice Will Be Whichever Side Wins!!"
+  },
+  {
+    "id": "OP05-038",
+    "number": "OP05-038",
+    "rarity": "C",
+    "name": "Charlestone"
+  },
+  {
+    "id": "OP05-039",
+    "number": "OP05-039",
+    "rarity": "UC",
+    "name": "Stick-Stickem Meteora"
+  },
+  {
+    "id": "OP05-040",
+    "number": "OP05-040",
+    "rarity": "C",
+    "name": "Birdcage"
+  },
+  {
+    "id": "OP05-041",
+    "number": "OP05-041",
+    "rarity": "L",
+    "name": "Sakazuki"
+  },
+  {
+    "id": "OP05-041_p1",
+    "number": "OP05-041",
+    "rarity": "L",
+    "name": "Sakazuki"
+  },
+  {
+    "id": "OP05-042",
+    "number": "OP05-042",
+    "rarity": "R",
+    "name": "Issho"
+  },
+  {
+    "id": "OP05-043",
+    "number": "OP05-043",
+    "rarity": "SR",
+    "name": "Ulti"
+  },
+  {
+    "id": "OP05-043_p1",
+    "number": "OP05-043",
+    "rarity": "SR",
+    "name": "Ulti"
+  },
+  {
+    "id": "OP05-044",
+    "number": "OP05-044",
+    "rarity": "C",
+    "name": "John Giant"
+  },
+  {
+    "id": "OP05-045",
+    "number": "OP05-045",
+    "rarity": "C",
+    "name": "Stainless"
+  },
+  {
+    "id": "OP05-046",
+    "number": "OP05-046",
+    "rarity": "C",
+    "name": "Dalmatian"
+  },
+  {
+    "id": "OP05-047",
+    "number": "OP05-047",
+    "rarity": "C",
+    "name": "Basil Hawkins"
+  },
+  {
+    "id": "OP05-048",
+    "number": "OP05-048",
+    "rarity": "UC",
+    "name": "Bastille"
+  },
+  {
+    "id": "OP05-049",
+    "number": "OP05-049",
+    "rarity": "UC",
+    "name": "Haccha"
+  },
+  {
+    "id": "OP05-050",
+    "number": "OP05-050",
+    "rarity": "R",
+    "name": "Hina"
+  },
+  {
+    "id": "OP05-051",
+    "number": "OP05-051",
+    "rarity": "SR",
+    "name": "Borsalino"
+  },
+  {
+    "id": "OP05-051_p1",
+    "number": "OP05-051",
+    "rarity": "SR",
+    "name": "Borsalino"
+  },
+  {
+    "id": "OP05-052",
+    "number": "OP05-052",
+    "rarity": "C",
+    "name": "Maynard"
+  },
+  {
+    "id": "OP05-053",
+    "number": "OP05-053",
+    "rarity": "C",
+    "name": "Mozambia"
+  },
+  {
+    "id": "OP05-054",
+    "number": "OP05-054",
+    "rarity": "UC",
+    "name": "Monkey.D.Garp"
+  },
+  {
+    "id": "OP05-055",
+    "number": "OP05-055",
+    "rarity": "R",
+    "name": "X.Drake"
+  },
+  {
+    "id": "OP05-055_p1",
+    "number": "OP05-055",
+    "rarity": "R",
+    "name": "X.Drake"
+  },
+  {
+    "id": "OP05-056",
+    "number": "OP05-056",
+    "rarity": "C",
+    "name": "X.Barrels"
+  },
+  {
+    "id": "OP05-057",
+    "number": "OP05-057",
+    "rarity": "R",
+    "name": "Hound Blaze"
+  },
+  {
+    "id": "OP05-058",
+    "number": "OP05-058",
+    "rarity": "C",
+    "name": "It's a Waste of Human Life!!"
+  },
+  {
+    "id": "OP05-059",
+    "number": "OP05-059",
+    "rarity": "UC",
+    "name": "Let Us Begin the World of Violence!!!"
+  },
+  {
+    "id": "OP05-060",
+    "number": "OP05-060",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-060_p1",
+    "number": "OP05-060",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-061",
+    "number": "OP05-061",
+    "rarity": "UC",
+    "name": "Uso-Hachi"
+  },
+  {
+    "id": "OP05-062",
+    "number": "OP05-062",
+    "rarity": "UC",
+    "name": "O-Nami"
+  },
+  {
+    "id": "OP05-063",
+    "number": "OP05-063",
+    "rarity": "C",
+    "name": "O-Robi"
+  },
+  {
+    "id": "OP05-064",
+    "number": "OP05-064",
+    "rarity": "R",
+    "name": "Killer"
+  },
+  {
+    "id": "OP05-065",
+    "number": "OP05-065",
+    "rarity": "C",
+    "name": "San-Gorou"
+  },
+  {
+    "id": "OP05-066",
+    "number": "OP05-066",
+    "rarity": "C",
+    "name": "Jinbe"
+  },
+  {
+    "id": "OP05-067",
+    "number": "OP05-067",
+    "rarity": "R",
+    "name": "Zoro-Juurou"
+  },
+  {
+    "id": "OP05-067_p1",
+    "number": "OP05-067",
+    "rarity": "R",
+    "name": "Zoro-Juurou"
+  },
+  {
+    "id": "OP05-068",
+    "number": "OP05-068",
+    "rarity": "C",
+    "name": "Chopa-Emon"
+  },
+  {
+    "id": "OP05-069",
+    "number": "OP05-069",
+    "rarity": "SR",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP05-069_p1",
+    "number": "OP05-069",
+    "rarity": "SR",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP05-069_p2",
+    "number": "OP05-069",
+    "rarity": "SR",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP05-070",
+    "number": "OP05-070",
+    "rarity": "UC",
+    "name": "Fra-Nosuke"
+  },
+  {
+    "id": "OP05-071",
+    "number": "OP05-071",
+    "rarity": "R",
+    "name": "Bepo"
+  },
+  {
+    "id": "OP05-072",
+    "number": "OP05-072",
+    "rarity": "C",
+    "name": "Hone-Kichi"
+  },
+  {
+    "id": "OP05-073",
+    "number": "OP05-073",
+    "rarity": "UC",
+    "name": "Miss Doublefinger(Zala)"
+  },
+  {
+    "id": "OP05-074",
+    "number": "OP05-074",
+    "rarity": "SR",
+    "name": "Eustass\"Captain\"Kid"
+  },
+  {
+    "id": "OP05-074_p1",
+    "number": "OP05-074",
+    "rarity": "SR",
+    "name": "Eustass\"Captain\"Kid"
+  },
+  {
+    "id": "OP05-074_p2",
+    "number": "OP05-074",
+    "rarity": "SR",
+    "name": "Eustass\"Captain\"Kid"
+  },
+  {
+    "id": "OP05-075",
+    "number": "OP05-075",
+    "rarity": "C",
+    "name": "Mr.1(Daz.Bonez)"
+  },
+  {
+    "id": "OP05-076",
+    "number": "OP05-076",
+    "rarity": "R",
+    "name": "When You're at Sea You Fight against Pirates!!"
+  },
+  {
+    "id": "OP05-077",
+    "number": "OP05-077",
+    "rarity": "C",
+    "name": "Gamma Knife"
+  },
+  {
+    "id": "OP05-078",
+    "number": "OP05-078",
+    "rarity": "UC",
+    "name": "Punk Rotten"
+  },
+  {
+    "id": "OP05-079",
+    "number": "OP05-079",
+    "rarity": "UC",
+    "name": "Viola"
+  },
+  {
+    "id": "OP05-080",
+    "number": "OP05-080",
+    "rarity": "UC",
+    "name": "Elizabello II"
+  },
+  {
+    "id": "OP05-081",
+    "number": "OP05-081",
+    "rarity": "UC",
+    "name": "One-Legged Toy Soldier"
+  },
+  {
+    "id": "OP05-082",
+    "number": "OP05-082",
+    "rarity": "R",
+    "name": "Shirahoshi"
+  },
+  {
+    "id": "OP05-083",
+    "number": "OP05-083",
+    "rarity": "C",
+    "name": "Sterry"
+  },
+  {
+    "id": "OP05-084",
+    "number": "OP05-084",
+    "rarity": "C",
+    "name": "Saint Charlos"
+  },
+  {
+    "id": "OP05-085",
+    "number": "OP05-085",
+    "rarity": "UC",
+    "name": "Nefeltari Cobra"
+  },
+  {
+    "id": "OP05-086",
+    "number": "OP05-086",
+    "rarity": "R",
+    "name": "Nefeltari Vivi"
+  },
+  {
+    "id": "OP05-087",
+    "number": "OP05-087",
+    "rarity": "C",
+    "name": "Hakuba"
+  },
+  {
+    "id": "OP05-088",
+    "number": "OP05-088",
+    "rarity": "R",
+    "name": "Mansherry"
+  },
+  {
+    "id": "OP05-088_p1",
+    "number": "OP05-088",
+    "rarity": "R",
+    "name": "Mansherry"
+  },
+  {
+    "id": "OP05-089",
+    "number": "OP05-089",
+    "rarity": "C",
+    "name": "Saint Mjosgard"
+  },
+  {
+    "id": "OP05-090",
+    "number": "OP05-090",
+    "rarity": "C",
+    "name": "Riku Doldo III"
+  },
+  {
+    "id": "OP05-091",
+    "number": "OP05-091",
+    "rarity": "SR",
+    "name": "Rebecca"
+  },
+  {
+    "id": "OP05-091_p1",
+    "number": "OP05-091",
+    "rarity": "SR",
+    "name": "Rebecca"
+  },
+  {
+    "id": "OP05-092",
+    "number": "OP05-092",
+    "rarity": "C",
+    "name": "Saint Rosward"
+  },
+  {
+    "id": "OP05-093",
+    "number": "OP05-093",
+    "rarity": "SR",
+    "name": "Rob Lucci"
+  },
+  {
+    "id": "OP05-093_p1",
+    "number": "OP05-093",
+    "rarity": "SR",
+    "name": "Rob Lucci"
+  },
+  {
+    "id": "OP05-094",
+    "number": "OP05-094",
+    "rarity": "R",
+    "name": "Haute Couture Patch\u2605Work"
+  },
+  {
+    "id": "OP05-095",
+    "number": "OP05-095",
+    "rarity": "C",
+    "name": "Dragon Claw"
+  },
+  {
+    "id": "OP05-096",
+    "number": "OP05-096",
+    "rarity": "UC",
+    "name": "I Bid 500 Million!!"
+  },
+  {
+    "id": "OP05-097",
+    "number": "OP05-097",
+    "rarity": "C",
+    "name": "Mary Geoise"
+  },
+  {
+    "id": "OP05-098",
+    "number": "OP05-098",
+    "rarity": "L",
+    "name": "Enel"
+  },
+  {
+    "id": "OP05-098_p1",
+    "number": "OP05-098",
+    "rarity": "L",
+    "name": "Enel"
+  },
+  {
+    "id": "OP05-099",
+    "number": "OP05-099",
+    "rarity": "UC",
+    "name": "Amazon"
+  },
+  {
+    "id": "OP05-100",
+    "number": "OP05-100",
+    "rarity": "SR",
+    "name": "Enel"
+  },
+  {
+    "id": "OP05-100_p1",
+    "number": "OP05-100",
+    "rarity": "SR",
+    "name": "Enel"
+  },
+  {
+    "id": "OP05-101",
+    "number": "OP05-101",
+    "rarity": "R",
+    "name": "Ohm"
+  },
+  {
+    "id": "OP05-102",
+    "number": "OP05-102",
+    "rarity": "R",
+    "name": "Gedatsu"
+  },
+  {
+    "id": "OP05-102_p1",
+    "number": "OP05-102",
+    "rarity": "R",
+    "name": "Gedatsu"
+  },
+  {
+    "id": "OP05-103",
+    "number": "OP05-103",
+    "rarity": "UC",
+    "name": "Kotori"
+  },
+  {
+    "id": "OP05-104",
+    "number": "OP05-104",
+    "rarity": "UC",
+    "name": "Conis"
+  },
+  {
+    "id": "OP05-105",
+    "number": "OP05-105",
+    "rarity": "R",
+    "name": "Satori"
+  },
+  {
+    "id": "OP05-106",
+    "number": "OP05-106",
+    "rarity": "R",
+    "name": "Shura"
+  },
+  {
+    "id": "OP05-107",
+    "number": "OP05-107",
+    "rarity": "C",
+    "name": "Lieutenant Spacey"
+  },
+  {
+    "id": "OP05-108",
+    "number": "OP05-108",
+    "rarity": "C",
+    "name": "Nola"
+  },
+  {
+    "id": "OP05-109",
+    "number": "OP05-109",
+    "rarity": "C",
+    "name": "Pagaya"
+  },
+  {
+    "id": "OP05-110",
+    "number": "OP05-110",
+    "rarity": "C",
+    "name": "Holly"
+  },
+  {
+    "id": "OP05-111",
+    "number": "OP05-111",
+    "rarity": "UC",
+    "name": "Hotori"
+  },
+  {
+    "id": "OP05-112",
+    "number": "OP05-112",
+    "rarity": "C",
+    "name": "Captain McKinley"
+  },
+  {
+    "id": "OP05-113",
+    "number": "OP05-113",
+    "rarity": "C",
+    "name": "Yama"
+  },
+  {
+    "id": "OP05-114",
+    "number": "OP05-114",
+    "rarity": "UC",
+    "name": "El Thor"
+  },
+  {
+    "id": "OP05-115",
+    "number": "OP05-115",
+    "rarity": "R",
+    "name": "Two-Hundred Million Volts Amaru"
+  },
+  {
+    "id": "OP05-116",
+    "number": "OP05-116",
+    "rarity": "C",
+    "name": "Hino Bird Zap"
+  },
+  {
+    "id": "OP05-117",
+    "number": "OP05-117",
+    "rarity": "UC",
+    "name": "Upper Yard"
+  },
+  {
+    "id": "OP05-118",
+    "number": "OP05-118",
+    "rarity": "SEC",
+    "name": "Kaido"
+  },
+  {
+    "id": "OP05-118_p1",
+    "number": "OP05-118",
+    "rarity": "SEC",
+    "name": "Kaido"
+  },
+  {
+    "id": "OP05-119",
+    "number": "OP05-119",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-119_p1",
+    "number": "OP05-119",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP05-119_p2",
+    "number": "OP05-119",
+    "rarity": "SEC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "ST01-012_p2",
+    "number": "ST01-012",
+    "rarity": "SR",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "ST01-012_p3",
+    "number": "ST01-012",
+    "rarity": "SR",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP01-016_p4",
+    "number": "OP01-016",
+    "rarity": "SP CARD",
+    "name": "Nami"
+  },
+  {
+    "id": "OP01-121_p2",
+    "number": "OP01-121",
+    "rarity": "SP CARD",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP02-120_p2",
+    "number": "OP02-120",
+    "rarity": "SP CARD",
+    "name": "Uta"
+  },
+  {
+    "id": "OP03-092_p2",
+    "number": "OP03-092",
+    "rarity": "SP CARD",
+    "name": "Rob Lucci"
+  },
+  {
+    "id": "OP04-044_p2",
+    "number": "OP04-044",
+    "rarity": "SP CARD",
+    "name": "Kaido"
+  },
+  {
+    "id": "OP05-100_p2",
+    "number": "OP05-100",
+    "rarity": "SP CARD",
+    "name": "Enel"
+  }
+]

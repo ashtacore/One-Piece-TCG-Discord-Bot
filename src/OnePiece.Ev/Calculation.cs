@@ -63,13 +63,17 @@ public static class Calculation
         var cards = profile.Variants.Select(v =>
         {
             decimal? price = null;
+            var priceSource = "Missing";
             if (!products.TryGetValue(v.GroupId, out var sourceProducts) || !sourceProducts.TryGetValue(v.ProductId, out var product))
                 issues.Add($"Missing product {v.ProductId}.");
             else if (v.Number is not null && product.Field("Number") != v.Number)
                 issues.Add($"Card number changed for {v.ProductId}; profile review needed.");
-            else if (prices.TryGetValue(v.GroupId, out var sourcePrices) && sourcePrices.TryGetValue(v.Key, out var current) && current.MarketPrice >= 0)
-                price = current.MarketPrice;
-            return new CardValue(v.Key, v.Name, v.Category, v.Pool, poolRates[v.Pool] * v.Weight / weightTotals[v.Pool], price);
+            else if (prices.TryGetValue(v.GroupId, out var sourcePrices) && sourcePrices.TryGetValue(v.Key, out var current))
+            {
+                if (current.MarketPrice >= 0) { price = current.MarketPrice; priceSource = "Market"; }
+                else if (current.MidPrice >= 0) { price = current.MidPrice; priceSource = "Mid"; }
+            }
+            return new CardValue(v.Key, v.Name, v.Category, v.Pool, poolRates[v.Pool] * v.Weight / weightTotals[v.Pool], price) { PriceSource = priceSource };
         }).ToArray();
         decimal? boxMarketPrice = null;
         if (setProducts?.ContainsKey(profile.BoosterBoxProductId) == true
@@ -79,19 +83,29 @@ public static class Calculation
             boxMarketPrice = boxPrice.MarketPrice;
         return new SetReport(profile.Code, profile.Name, ModelHash(profile), profile.Confidence, cards, issues.Distinct().ToArray())
         {
-            BoxMarketPrice = boxMarketPrice
+            BoxMarketPrice = boxMarketPrice,
+            AssumptionsWarning = AssumptionDocument.Warning(profile)
         };
     }
 
-    public static bool Comparable(SetReport current, SetReport? previous) => previous is not null && current.Complete && previous.Complete
+    public static bool Compatible(SetReport current, SetReport? previous) => previous is not null && current.Complete && previous.Complete
         && current.ModelHash == previous.ModelHash
         && current.Cards.Select(c => c.Key).Order().SequenceEqual(previous.Cards.Select(c => c.Key).Order());
 
+    public static CardValue[] SourceChanges(SetReport current, SetReport? previous)
+    {
+        if (!Compatible(current, previous)) return [];
+        var old = previous!.Cards.ToDictionary(c => c.Key);
+        return current.Cards.Where(c => c.PriceSource != old[c.Key].PriceSource).ToArray();
+    }
+
+    public static bool Comparable(SetReport current, SetReport? previous) => Compatible(current, previous) && SourceChanges(current, previous).Length == 0;
+
     public static Mover[] Movers(SetReport current, SetReport? previous, MoverSettings settings)
     {
-        if (!Comparable(current, previous)) return [];
+        if (!Compatible(current, previous)) return [];
         var old = previous!.Cards.ToDictionary(c => c.Key);
-        return current.Cards.Where(c => c.Price is not null && old[c.Key].Price > 0)
+        return current.Cards.Where(c => c.Price is not null && old[c.Key].Price > 0 && c.PriceSource == old[c.Key].PriceSource)
             .Select(c => new Mover(c, c.Price!.Value - old[c.Key].Price!.Value,
                 100 * (c.Price.Value - old[c.Key].Price!.Value) / old[c.Key].Price!.Value,
                 c.ExpectedCopies * (c.Price.Value - old[c.Key].Price!.Value)))

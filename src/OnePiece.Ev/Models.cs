@@ -68,7 +68,9 @@ public sealed record ProfileFile
 {
     public int SchemaVersion { get; init; } = 1;
     public required SetProfile[] Sets { get; init; }
+    public PlannedSet[] PlannedSets { get; init; } = [];
 }
+public sealed record PlannedSet(string Code, string Name, int GroupId, DateOnly ReleaseDate, string Reason);
 public sealed record SetProfile
 {
     public required string Code { get; init; }
@@ -119,19 +121,25 @@ public sealed record Product(int ProductId, int GroupId, string Name, ExtendedFi
     public string? Field(string name) => ExtendedData.FirstOrDefault(x => x.Name == name)?.Value;
     public bool IsCard => Field("Rarity") is not null || Field("Number") is not null;
 }
-public sealed record Price(int ProductId, string SubTypeName, decimal? MarketPrice)
+public sealed record Price(int ProductId, string SubTypeName, decimal? MarketPrice, decimal? MidPrice = null)
 {
     [JsonIgnore] public string Key => $"{ProductId}:{SubTypeName}";
 }
 public sealed record SourceGroup(int GroupId, Product[] Products, Price[] Prices);
-public sealed record CatalogSnapshot(DateTimeOffset SourceUpdatedAt, DateTimeOffset RetrievedAt, Group[] Groups, SourceGroup[] Data);
+public sealed record CatalogSnapshot(DateTimeOffset SourceUpdatedAt, DateTimeOffset RetrievedAt, Group[] Groups, SourceGroup[] Data)
+{
+    public int PricingSchemaVersion { get; init; }
+}
 public sealed record CacheIndex(string SnapshotFile, DateTimeOffset LastCheckedAt);
 public sealed record CardValue(string Key, string Name, string Category, string Pool, decimal ExpectedCopies, decimal? Price)
 {
+    // Historical reports predate fallback support and used Market exclusively.
+    public string PriceSource { get; init; } = "Market";
     [JsonIgnore] public decimal? Ev => Price * ExpectedCopies;
 }
 public sealed record SetReport(string Code, string Name, string ModelHash, string Confidence, CardValue[] Cards, string[] Issues)
 {
+    public string AssumptionsWarning { get; init; } = "Pull rates are community estimates, not guarantees. Equal likelihood within pools is assumed.";
     public decimal? BoxMarketPrice { get; init; }
     [JsonIgnore] public bool Complete => Issues.Length == 0 && Cards.All(c => c.Price is not null);
     [JsonIgnore] public decimal KnownEv => Cards.Sum(c => c.Ev ?? 0);
@@ -139,5 +147,9 @@ public sealed record SetReport(string Code, string Name, string ModelHash, strin
 }
 public sealed record ReportSnapshot(DateTimeOffset SourceUpdatedAt, DateTimeOffset CreatedAt, SetReport[] Sets);
 public sealed record Mover(CardValue Card, decimal PriceChange, decimal PercentChange, decimal BoxImpact);
-public sealed record DeliveryPart(string Key, string Content, string Status, string? MessageId, DateTimeOffset UpdatedAt);
+public sealed record MarkdownAttachment(string FileName, string Content);
+public sealed record DeliveryPart(string Key, string Content, string Status, string? MessageId, DateTimeOffset UpdatedAt)
+{
+    public MarkdownAttachment? Attachment { get; init; }
+}
 public sealed record DeliveryLedger(Dictionary<string, DeliveryPart> Parts);

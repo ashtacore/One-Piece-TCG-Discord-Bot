@@ -1,6 +1,7 @@
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Text;
 namespace OnePiece.Ev;
 
 public static class DiscordDelivery
@@ -13,7 +14,7 @@ public static class DiscordDelivery
         if (d.ThreadId is not null && !Regex.IsMatch(d.ThreadId, @"^\d+$")) throw new InvalidDataException("Invalid thread ID.");
         return new(url + "?wait=true" + (d.ThreadId is null ? "" : "&thread_id=" + d.ThreadId));
     }
-    public static async Task Send(HttpClient http, string path, string batch, Uri endpoint, string content)
+    public static async Task Send(HttpClient http, string path, string batch, Uri endpoint, string content, MarkdownAttachment? attachment = null)
     {
         var ledger = File.Exists(path) ? JsonFiles.Read<DeliveryLedger>(path) : new(new());
         var parts = ledger.Parts.Values.Where(p => p.Key.StartsWith(batch + ":", StringComparison.Ordinal)).OrderBy(p => p.Key).ToArray();
@@ -25,6 +26,7 @@ public static class DiscordDelivery
             // An invisible character preserves a blank final line when Discord trims trailing whitespace.
             chunks[^1] += "\n\n\u200b";
             parts = chunks.Select((s,i) => new DeliveryPart($"{batch}:{i:D4}", i == 0 ? s : title + $" (continued {i+1}/{chunks.Length})\n" + s,"pending",null,DateTimeOffset.UtcNow)).ToArray();
+            parts[^1] = parts[^1] with { Attachment = attachment };
             foreach (var p in parts) ledger.Parts.Add(p.Key,p);
             JsonFiles.Write(path,ledger);
         }
@@ -38,7 +40,8 @@ public static class DiscordDelivery
                 Save("inflight");
                 try
                 {
-                    using var response=await http.PostAsJsonAsync(endpoint,new {content=part.Content,allowed_mentions=new {parse=Array.Empty<string>()}});
+                    using var requestBody = BuildBody(part);
+                    using var response=await http.PostAsync(endpoint,requestBody);
                     if ((int)response.StatusCode==429)
                     {
                         Save("pending");
@@ -59,5 +62,15 @@ public static class DiscordDelivery
                 { Save("uncertain"); throw new InvalidDataException("Discord outcome uncertain; inspect channel before retrying."); }
             }
         }
+    }
+
+    private static HttpContent BuildBody(DeliveryPart part)
+    {
+        var payload = new {content=part.Content,allowed_mentions=new {parse=Array.Empty<string>()}};
+        if (part.Attachment is null) return JsonContent.Create(payload);
+        var body = new MultipartFormDataContent();
+        body.Add(new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"), "payload_json");
+        body.Add(new StringContent(part.Attachment.Content, Encoding.UTF8, "text/markdown"), "files[0]", part.Attachment.FileName);
+        return body;
     }
 }

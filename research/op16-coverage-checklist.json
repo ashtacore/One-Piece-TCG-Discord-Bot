@@ -1,0 +1,932 @@
+[
+  {
+    "id": "OP16-001",
+    "number": "OP16-001",
+    "rarity": "L",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-001_p1",
+    "number": "OP16-001",
+    "rarity": "L",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-002",
+    "number": "OP16-002",
+    "rarity": "UC",
+    "name": "Izo"
+  },
+  {
+    "id": "OP16-003",
+    "number": "OP16-003",
+    "rarity": "SR",
+    "name": "Edward.Newgate"
+  },
+  {
+    "id": "OP16-003_p1",
+    "number": "OP16-003",
+    "rarity": "SR",
+    "name": "Edward.Newgate"
+  },
+  {
+    "id": "OP16-004",
+    "number": "OP16-004",
+    "rarity": "C",
+    "name": "Curiel"
+  },
+  {
+    "id": "OP16-005",
+    "number": "OP16-005",
+    "rarity": "UC",
+    "name": "Thatch"
+  },
+  {
+    "id": "OP16-006",
+    "number": "OP16-006",
+    "rarity": "C",
+    "name": "Shanks"
+  },
+  {
+    "id": "OP16-007",
+    "number": "OP16-007",
+    "rarity": "UC",
+    "name": "Jozu"
+  },
+  {
+    "id": "OP16-008",
+    "number": "OP16-008",
+    "rarity": "C",
+    "name": "Squard"
+  },
+  {
+    "id": "OP16-009",
+    "number": "OP16-009",
+    "rarity": "C",
+    "name": "Speed Jil"
+  },
+  {
+    "id": "OP16-010",
+    "number": "OP16-010",
+    "rarity": "UC",
+    "name": "Namule"
+  },
+  {
+    "id": "OP16-011",
+    "number": "OP16-011",
+    "rarity": "R",
+    "name": "Vista"
+  },
+  {
+    "id": "OP16-011_p1",
+    "number": "OP16-011",
+    "rarity": "TR",
+    "name": "Vista"
+  },
+  {
+    "id": "OP16-012",
+    "number": "OP16-012",
+    "rarity": "R",
+    "name": "Benn.Beckman"
+  },
+  {
+    "id": "OP16-013",
+    "number": "OP16-013",
+    "rarity": "C",
+    "name": "McGuy"
+  },
+  {
+    "id": "OP16-014",
+    "number": "OP16-014",
+    "rarity": "R",
+    "name": "Marco"
+  },
+  {
+    "id": "OP16-014_p1",
+    "number": "OP16-014",
+    "rarity": "R",
+    "name": "Marco"
+  },
+  {
+    "id": "OP16-015",
+    "number": "OP16-015",
+    "rarity": "SR",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-015_p1",
+    "number": "OP16-015",
+    "rarity": "SR",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-016",
+    "number": "OP16-016",
+    "rarity": "C",
+    "name": "Ramba"
+  },
+  {
+    "id": "OP16-017",
+    "number": "OP16-017",
+    "rarity": "R",
+    "name": "LittleOars Jr."
+  },
+  {
+    "id": "OP16-018",
+    "number": "OP16-018",
+    "rarity": "C",
+    "name": "Rockstar"
+  },
+  {
+    "id": "OP16-019",
+    "number": "OP16-019",
+    "rarity": "C",
+    "name": "Let's Show 'Em What We're Made Of!!"
+  },
+  {
+    "id": "OP16-020",
+    "number": "OP16-020",
+    "rarity": "UC",
+    "name": "If You're Coming with Me... Kiss Your Lives Goodbye!!"
+  },
+  {
+    "id": "OP16-021",
+    "number": "OP16-021",
+    "rarity": "R",
+    "name": "Moby Dick"
+  },
+  {
+    "id": "OP16-021_p1",
+    "number": "OP16-021",
+    "rarity": "R",
+    "name": "Moby Dick"
+  },
+  {
+    "id": "OP16-022",
+    "number": "OP16-022",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-022_p1",
+    "number": "OP16-022",
+    "rarity": "L",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-023",
+    "number": "OP16-023",
+    "rarity": "C",
+    "name": "Arlong"
+  },
+  {
+    "id": "OP16-024",
+    "number": "OP16-024",
+    "rarity": "UC",
+    "name": "Inazuma"
+  },
+  {
+    "id": "OP16-025",
+    "number": "OP16-025",
+    "rarity": "UC",
+    "name": "Bunkov"
+  },
+  {
+    "id": "OP16-026",
+    "number": "OP16-026",
+    "rarity": "SR",
+    "name": "Emporio.Ivankov"
+  },
+  {
+    "id": "OP16-026_p1",
+    "number": "OP16-026",
+    "rarity": "SR",
+    "name": "Emporio.Ivankov"
+  },
+  {
+    "id": "OP16-027",
+    "number": "OP16-027",
+    "rarity": "R",
+    "name": "Jinbe"
+  },
+  {
+    "id": "OP16-028",
+    "number": "OP16-028",
+    "rarity": "C",
+    "name": "Smoker"
+  },
+  {
+    "id": "OP16-029",
+    "number": "OP16-029",
+    "rarity": "UC",
+    "name": "Antlerkov"
+  },
+  {
+    "id": "OP16-030",
+    "number": "OP16-030",
+    "rarity": "R",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP16-031",
+    "number": "OP16-031",
+    "rarity": "UC",
+    "name": "Buggy"
+  },
+  {
+    "id": "OP16-032",
+    "number": "OP16-032",
+    "rarity": "SR",
+    "name": "Boa Hancock"
+  },
+  {
+    "id": "OP16-032_p1",
+    "number": "OP16-032",
+    "rarity": "SR",
+    "name": "Boa Hancock"
+  },
+  {
+    "id": "OP16-033",
+    "number": "OP16-033",
+    "rarity": "C",
+    "name": "Morley"
+  },
+  {
+    "id": "OP16-034",
+    "number": "OP16-034",
+    "rarity": "R",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-034_p1",
+    "number": "OP16-034",
+    "rarity": "R",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-035",
+    "number": "OP16-035",
+    "rarity": "C",
+    "name": "Roronoa Zoro"
+  },
+  {
+    "id": "OP16-036",
+    "number": "OP16-036",
+    "rarity": "C",
+    "name": "Mr.2.Bon.Kurei(Bentham)"
+  },
+  {
+    "id": "OP16-037",
+    "number": "OP16-037",
+    "rarity": "C",
+    "name": "Mr.3(Galdino)"
+  },
+  {
+    "id": "OP16-038",
+    "number": "OP16-038",
+    "rarity": "R",
+    "name": "Let's Go!! To the Navy Headquarters!!"
+  },
+  {
+    "id": "OP16-039",
+    "number": "OP16-039",
+    "rarity": "C",
+    "name": "Gum-Gum Twin Jet Pistol"
+  },
+  {
+    "id": "OP16-040",
+    "number": "OP16-040",
+    "rarity": "UC",
+    "name": "Gum-Gum Hammer Rifle"
+  },
+  {
+    "id": "OP16-041",
+    "number": "OP16-041",
+    "rarity": "L",
+    "name": "Buggy"
+  },
+  {
+    "id": "OP16-041_p1",
+    "number": "OP16-041",
+    "rarity": "L",
+    "name": "Buggy"
+  },
+  {
+    "id": "OP16-042",
+    "number": "OP16-042",
+    "rarity": "R",
+    "name": "Prisoner of Impel Down"
+  },
+  {
+    "id": "OP16-043",
+    "number": "OP16-043",
+    "rarity": "UC",
+    "name": "Usopp"
+  },
+  {
+    "id": "OP16-044",
+    "number": "OP16-044",
+    "rarity": "C",
+    "name": "Emporio.Ivankov"
+  },
+  {
+    "id": "OP16-045",
+    "number": "OP16-045",
+    "rarity": "UC",
+    "name": "Crocodile"
+  },
+  {
+    "id": "OP16-046",
+    "number": "OP16-046",
+    "rarity": "C",
+    "name": "Jinbe"
+  },
+  {
+    "id": "OP16-047",
+    "number": "OP16-047",
+    "rarity": "C",
+    "name": "Donquixote Doflamingo"
+  },
+  {
+    "id": "OP16-048",
+    "number": "OP16-048",
+    "rarity": "SR",
+    "name": "Buggy"
+  },
+  {
+    "id": "OP16-048_p1",
+    "number": "OP16-048",
+    "rarity": "SR",
+    "name": "Buggy"
+  },
+  {
+    "id": "OP16-049",
+    "number": "OP16-049",
+    "rarity": "C",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-050",
+    "number": "OP16-050",
+    "rarity": "UC",
+    "name": "Miss Olive"
+  },
+  {
+    "id": "OP16-051",
+    "number": "OP16-051",
+    "rarity": "C",
+    "name": "Mohji & Cabaji"
+  },
+  {
+    "id": "OP16-052",
+    "number": "OP16-052",
+    "rarity": "UC",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-053",
+    "number": "OP16-053",
+    "rarity": "C",
+    "name": "Roronoa Zoro"
+  },
+  {
+    "id": "OP16-054",
+    "number": "OP16-054",
+    "rarity": "R",
+    "name": "Mr.1(Daz.Bonez)"
+  },
+  {
+    "id": "OP16-055",
+    "number": "OP16-055",
+    "rarity": "R",
+    "name": "Mr.2.Bon.Kurei(Bentham)"
+  },
+  {
+    "id": "OP16-055_p1",
+    "number": "OP16-055",
+    "rarity": "R",
+    "name": "Mr.2.Bon.Kurei(Bentham)"
+  },
+  {
+    "id": "OP16-056",
+    "number": "OP16-056",
+    "rarity": "SR",
+    "name": "Mr.3(Galdino)"
+  },
+  {
+    "id": "OP16-056_p1",
+    "number": "OP16-056",
+    "rarity": "SR",
+    "name": "Mr.3(Galdino)"
+  },
+  {
+    "id": "OP16-057",
+    "number": "OP16-057",
+    "rarity": "C",
+    "name": "Captain Buggy's Our Savior!!"
+  },
+  {
+    "id": "OP16-058",
+    "number": "OP16-058",
+    "rarity": "R",
+    "name": "The Prisoners Are Rioting!!"
+  },
+  {
+    "id": "OP16-059",
+    "number": "OP16-059",
+    "rarity": "UC",
+    "name": "We'll Change This Mission from Sneaky to Flashy!"
+  },
+  {
+    "id": "OP16-060",
+    "number": "OP16-060",
+    "rarity": "L",
+    "name": "Sengoku"
+  },
+  {
+    "id": "OP16-060_p1",
+    "number": "OP16-060",
+    "rarity": "L",
+    "name": "Sengoku"
+  },
+  {
+    "id": "OP16-061",
+    "number": "OP16-061",
+    "rarity": "C",
+    "name": "Older Brother Marine"
+  },
+  {
+    "id": "OP16-062",
+    "number": "OP16-062",
+    "rarity": "C",
+    "name": "Younger Brother Marine"
+  },
+  {
+    "id": "OP16-063",
+    "number": "OP16-063",
+    "rarity": "R",
+    "name": "Kuzan"
+  },
+  {
+    "id": "OP16-063_p1",
+    "number": "OP16-063",
+    "rarity": "R",
+    "name": "Kuzan"
+  },
+  {
+    "id": "OP16-063_p2",
+    "number": "OP16-063",
+    "rarity": "R",
+    "name": "Kuzan"
+  },
+  {
+    "id": "OP16-064",
+    "number": "OP16-064",
+    "rarity": "R",
+    "name": "Koby"
+  },
+  {
+    "id": "OP16-065",
+    "number": "OP16-065",
+    "rarity": "SR",
+    "name": "Sakazuki"
+  },
+  {
+    "id": "OP16-065_p1",
+    "number": "OP16-065",
+    "rarity": "SR",
+    "name": "Sakazuki"
+  },
+  {
+    "id": "OP16-065_p2",
+    "number": "OP16-065",
+    "rarity": "SR",
+    "name": "Sakazuki"
+  },
+  {
+    "id": "OP16-066",
+    "number": "OP16-066",
+    "rarity": "UC",
+    "name": "Sengoku"
+  },
+  {
+    "id": "OP16-067",
+    "number": "OP16-067",
+    "rarity": "UC",
+    "name": "Tsuru"
+  },
+  {
+    "id": "OP16-068",
+    "number": "OP16-068",
+    "rarity": "C",
+    "name": "Trafalgar Law"
+  },
+  {
+    "id": "OP16-069",
+    "number": "OP16-069",
+    "rarity": "C",
+    "name": "Donquixote Doflamingo"
+  },
+  {
+    "id": "OP16-070",
+    "number": "OP16-070",
+    "rarity": "UC",
+    "name": "Donquixote Rosinante"
+  },
+  {
+    "id": "OP16-071",
+    "number": "OP16-071",
+    "rarity": "C",
+    "name": "Benevolent King of the Waves"
+  },
+  {
+    "id": "OP16-072",
+    "number": "OP16-072",
+    "rarity": "C",
+    "name": "Hannyabal"
+  },
+  {
+    "id": "OP16-073",
+    "number": "OP16-073",
+    "rarity": "R",
+    "name": "Borsalino"
+  },
+  {
+    "id": "OP16-073_p1",
+    "number": "OP16-073",
+    "rarity": "R",
+    "name": "Borsalino"
+  },
+  {
+    "id": "OP16-073_p2",
+    "number": "OP16-073",
+    "rarity": "R",
+    "name": "Borsalino"
+  },
+  {
+    "id": "OP16-074",
+    "number": "OP16-074",
+    "rarity": "C",
+    "name": "Magellan"
+  },
+  {
+    "id": "OP16-075",
+    "number": "OP16-075",
+    "rarity": "C",
+    "name": "Monkey.D.Garp"
+  },
+  {
+    "id": "OP16-076",
+    "number": "OP16-076",
+    "rarity": "UC",
+    "name": "The Three Admirals!!"
+  },
+  {
+    "id": "OP16-077",
+    "number": "OP16-077",
+    "rarity": "R",
+    "name": "\"Buddha\" Sengoku"
+  },
+  {
+    "id": "OP16-078",
+    "number": "OP16-078",
+    "rarity": "UC",
+    "name": "Marineford"
+  },
+  {
+    "id": "OP16-079",
+    "number": "OP16-079",
+    "rarity": "L",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-079_p1",
+    "number": "OP16-079",
+    "rarity": "L",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-080",
+    "number": "OP16-080",
+    "rarity": "L",
+    "name": "Marshall.D.Teach"
+  },
+  {
+    "id": "OP16-080_p1",
+    "number": "OP16-080",
+    "rarity": "L",
+    "name": "Marshall.D.Teach"
+  },
+  {
+    "id": "OP16-081",
+    "number": "OP16-081",
+    "rarity": "C",
+    "name": "Otama"
+  },
+  {
+    "id": "OP16-082",
+    "number": "OP16-082",
+    "rarity": "SR",
+    "name": "Kin'emon"
+  },
+  {
+    "id": "OP16-082_p1",
+    "number": "OP16-082",
+    "rarity": "SR",
+    "name": "Kin'emon"
+  },
+  {
+    "id": "OP16-083",
+    "number": "OP16-083",
+    "rarity": "C",
+    "name": "Kouzuki Oden"
+  },
+  {
+    "id": "OP16-084",
+    "number": "OP16-084",
+    "rarity": "UC",
+    "name": "Kouzuki Momonosuke"
+  },
+  {
+    "id": "OP16-085",
+    "number": "OP16-085",
+    "rarity": "R",
+    "name": "Kouzuki Momonosuke"
+  },
+  {
+    "id": "OP16-085_p1",
+    "number": "OP16-085",
+    "rarity": "R",
+    "name": "Kouzuki Momonosuke"
+  },
+  {
+    "id": "OP16-086",
+    "number": "OP16-086",
+    "rarity": "C",
+    "name": "Sanji"
+  },
+  {
+    "id": "OP16-087",
+    "number": "OP16-087",
+    "rarity": "UC",
+    "name": "Shinobu"
+  },
+  {
+    "id": "OP16-088",
+    "number": "OP16-088",
+    "rarity": "C",
+    "name": "Shimotsuki Ushimaru"
+  },
+  {
+    "id": "OP16-089",
+    "number": "OP16-089",
+    "rarity": "C",
+    "name": "Dracule Mihawk"
+  },
+  {
+    "id": "OP16-090",
+    "number": "OP16-090",
+    "rarity": "C",
+    "name": "Tony Tony.Chopper"
+  },
+  {
+    "id": "OP16-091",
+    "number": "OP16-091",
+    "rarity": "R",
+    "name": "Nami"
+  },
+  {
+    "id": "OP16-092",
+    "number": "OP16-092",
+    "rarity": "UC",
+    "name": "Nico Robin"
+  },
+  {
+    "id": "OP16-093",
+    "number": "OP16-093",
+    "rarity": "C",
+    "name": "Bartholomew Kuma"
+  },
+  {
+    "id": "OP16-094",
+    "number": "OP16-094",
+    "rarity": "UC",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-095",
+    "number": "OP16-095",
+    "rarity": "R",
+    "name": "Monkey.D.Luffy"
+  },
+  {
+    "id": "OP16-096",
+    "number": "OP16-096",
+    "rarity": "R",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-097",
+    "number": "OP16-097",
+    "rarity": "R",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-098",
+    "number": "OP16-098",
+    "rarity": "SR",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-098_p1",
+    "number": "OP16-098",
+    "rarity": "SR",
+    "name": "Yamato"
+  },
+  {
+    "id": "OP16-099",
+    "number": "OP16-099",
+    "rarity": "UC",
+    "name": "I've Come Here... To Cut Those Chains!!!"
+  },
+  {
+    "id": "OP16-100",
+    "number": "OP16-100",
+    "rarity": "C",
+    "name": "Hallowed Glacier Slash"
+  },
+  {
+    "id": "OP16-101",
+    "number": "OP16-101",
+    "rarity": "C",
+    "name": "Mahoroba"
+  },
+  {
+    "id": "OP16-102",
+    "number": "OP16-102",
+    "rarity": "UC",
+    "name": "Avalo Pizarro"
+  },
+  {
+    "id": "OP16-103",
+    "number": "OP16-103",
+    "rarity": "UC",
+    "name": "Van Augur"
+  },
+  {
+    "id": "OP16-104",
+    "number": "OP16-104",
+    "rarity": "R",
+    "name": "Catarina Devon"
+  },
+  {
+    "id": "OP16-105",
+    "number": "OP16-105",
+    "rarity": "C",
+    "name": "Gecko Moria"
+  },
+  {
+    "id": "OP16-106",
+    "number": "OP16-106",
+    "rarity": "R",
+    "name": "Sanjuan.Wolf"
+  },
+  {
+    "id": "OP16-107",
+    "number": "OP16-107",
+    "rarity": "C",
+    "name": "Jesus Burgess"
+  },
+  {
+    "id": "OP16-108",
+    "number": "OP16-108",
+    "rarity": "SR",
+    "name": "Shiryu"
+  },
+  {
+    "id": "OP16-108_p1",
+    "number": "OP16-108",
+    "rarity": "SR",
+    "name": "Shiryu"
+  },
+  {
+    "id": "OP16-109",
+    "number": "OP16-109",
+    "rarity": "UC",
+    "name": "Doc Q"
+  },
+  {
+    "id": "OP16-110",
+    "number": "OP16-110",
+    "rarity": "R",
+    "name": "Vasco Shot"
+  },
+  {
+    "id": "OP16-111",
+    "number": "OP16-111",
+    "rarity": "C",
+    "name": "Boa Sandersonia"
+  },
+  {
+    "id": "OP16-112",
+    "number": "OP16-112",
+    "rarity": "C",
+    "name": "Boa Hancock"
+  },
+  {
+    "id": "OP16-113",
+    "number": "OP16-113",
+    "rarity": "UC",
+    "name": "Boa Marigold"
+  },
+  {
+    "id": "OP16-114",
+    "number": "OP16-114",
+    "rarity": "C",
+    "name": "Laffitte"
+  },
+  {
+    "id": "OP16-115",
+    "number": "OP16-115",
+    "rarity": "UC",
+    "name": "Black Vortex"
+  },
+  {
+    "id": "OP16-116",
+    "number": "OP16-116",
+    "rarity": "R",
+    "name": "Zehahahahaha!"
+  },
+  {
+    "id": "OP16-116_p1",
+    "number": "OP16-116",
+    "rarity": "R",
+    "name": "Zehahahahaha!"
+  },
+  {
+    "id": "OP16-117",
+    "number": "OP16-117",
+    "rarity": "C",
+    "name": "Black Hole"
+  },
+  {
+    "id": "OP16-118",
+    "number": "OP16-118",
+    "rarity": "SEC",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-118_p1",
+    "number": "OP16-118",
+    "rarity": "SEC",
+    "name": "Portgas.D.Ace"
+  },
+  {
+    "id": "OP16-119",
+    "number": "OP16-119",
+    "rarity": "SEC",
+    "name": "Marshall.D.Teach"
+  },
+  {
+    "id": "OP16-119_p1",
+    "number": "OP16-119",
+    "rarity": "SEC",
+    "name": "Marshall.D.Teach"
+  },
+  {
+    "id": "EB04-054_p1",
+    "number": "EB04-054",
+    "rarity": "SP CARD",
+    "name": "Bartholomew Kuma"
+  },
+  {
+    "id": "OP10-045_p2",
+    "number": "OP10-045",
+    "rarity": "SP CARD",
+    "name": "Cavendish"
+  },
+  {
+    "id": "OP11-067_p3",
+    "number": "OP11-067",
+    "rarity": "SP CARD",
+    "name": "Charlotte Katakuri"
+  },
+  {
+    "id": "OP14-029_p1",
+    "number": "OP14-029",
+    "rarity": "SP CARD",
+    "name": "Tashigi"
+  },
+  {
+    "id": "OP14-084_p2",
+    "number": "OP14-084",
+    "rarity": "SP CARD",
+    "name": "Ms. All Sunday"
+  },
+  {
+    "id": "ST15-005_p5",
+    "number": "ST15-005",
+    "rarity": "SP CARD",
+    "name": "Portgas.D.Ace"
+  }
+]

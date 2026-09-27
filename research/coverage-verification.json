@@ -1,0 +1,469 @@
+{
+  "sourceUpdatedAt": "2026-09-26T20:05:16+00:00",
+  "sets": [
+    {
+      "code": "OP-01",
+      "releaseDate": "2022-12-02",
+      "groupId": 3188,
+      "variants": 155,
+      "expectedCards": 289.0,
+      "numberedChecklistEntries": 154,
+      "checklistSha256": "1e8347b12780936439bfc822cb20da206175c53f61c5679465bef08c9cbfc7e4",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 4,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op01.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569101",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/12lt321/op02_pull_rate/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/14i9xw4/"
+      ]
+    },
+    {
+      "code": "OP-02",
+      "releaseDate": "2023-03-10",
+      "groupId": 17698,
+      "variants": 155,
+      "expectedCards": 289.0,
+      "numberedChecklistEntries": 154,
+      "checklistSha256": "836b95ff79d06e68b85a73e0723354fd38275cb7928d41a0f4be009a07b60979",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 3,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op02.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569102",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/12lt321/op02_pull_rate/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/14i9xw4/"
+      ]
+    },
+    {
+      "code": "OP-03",
+      "releaseDate": "2023-06-30",
+      "groupId": 22890,
+      "variants": 155,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 154,
+      "checklistSha256": "5d90acde43681fb9e011c617c22f72e1050666339537592f0ef60a380e513087",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 1,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op03.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569103",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/12lt321/op02_pull_rate/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/14i9xw4/"
+      ]
+    },
+    {
+      "code": "OP-04",
+      "releaseDate": "2023-09-22",
+      "groupId": 23024,
+      "variants": 150,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 149,
+      "checklistSha256": "b65f339eb22545bb8b7be73f60540af82a0f523fdc77416186fc8fb427b4ac91",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 8,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op04.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569104",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-05",
+      "releaseDate": "2023-12-08",
+      "groupId": 23213,
+      "variants": 155,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 154,
+      "checklistSha256": "8f1f4511b417e28845af3657aa19804058ca8144d892e04413e09f57c2c39eac",
+      "missingPrices": [],
+      "midEstimates": 1,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op05.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569105",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-06",
+      "releaseDate": "2024-03-15",
+      "groupId": 23272,
+      "variants": 152,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 151,
+      "checklistSha256": "6b07df79710f920ea14aff284663fe73e5d9bc0b207e1006fafdc103a6662880",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op06.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569106",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "EB-01",
+      "releaseDate": "2024-05-03",
+      "groupId": 23333,
+      "variants": 80,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 80,
+      "checklistSha256": "9e6c43380d8360d5e859bf7700e043e958bac422e7a1d5c1b1f11e14270ce341",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/eb01.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-07",
+      "releaseDate": "2024-06-28",
+      "groupId": 23387,
+      "variants": 152,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 151,
+      "checklistSha256": "3fac9062407b6ff12713d711b1ed83705f53f466600ddd144149c75d0aa4966c",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op07.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569107",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-08",
+      "releaseDate": "2024-09-13",
+      "groupId": 23462,
+      "variants": 152,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 151,
+      "checklistSha256": "c70ce16147b167928b76fe1338a19c975e2917a42477fb30db43f3a745f3c283",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op08.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "PRB-01",
+      "releaseDate": "2024-11-08",
+      "groupId": 23496,
+      "variants": 409,
+      "expectedCards": 200.0,
+      "numberedChecklistEntries": 319,
+      "checklistSha256": "3b6500fd09f827e2bc0b2ff5c348b33bf948591c3c8d0fc3dcb54eada6c06f71",
+      "missingPrices": [],
+      "midEstimates": 1,
+      "exclusions": 1,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/prb01.php",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-09",
+      "releaseDate": "2024-12-13",
+      "groupId": 23589,
+      "variants": 160,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 159,
+      "checklistSha256": "bc27026c563482492292bc4a8f2e65c28b8537733b7dcbb6003953d0d4258f82",
+      "missingPrices": [
+        {
+          "key": "597068:Foil",
+          "name": "Monkey.D.Luffy (119) (Manga)"
+        }
+      ],
+      "midEstimates": 1,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op09.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569109",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-10",
+      "releaseDate": "2025-03-21",
+      "groupId": 23766,
+      "variants": 152,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 151,
+      "checklistSha256": "1e70b5f7e0c550d3ff7dcdbd72be99681da28dec34360bd8bebb7ee502ed77ba",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 1,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op10.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569110",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "EB-02",
+      "releaseDate": "2025-05-09",
+      "groupId": 23834,
+      "variants": 105,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 105,
+      "checklistSha256": "5e5f133eabc58143610447f43db41d59a4fd8349904452951e4615a72eb9c79f",
+      "missingPrices": [
+        {
+          "key": "629086:Foil",
+          "name": "Kouzuki Oden (SP)"
+        },
+        {
+          "key": "629167:Foil",
+          "name": "Monkey.D.Luffy (061) (Manga)"
+        },
+        {
+          "key": "629171:Foil",
+          "name": "Monkey.D.Luffy (SP)"
+        },
+        {
+          "key": "629184:Foil",
+          "name": "Vegapunk (SP)"
+        },
+        {
+          "key": "629188:Foil",
+          "name": "King (SP)"
+        }
+      ],
+      "midEstimates": 1,
+      "exclusions": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/eb02.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569202",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1qi62if/finally_completed_the_eb02_sp_leaders/",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1vidunp/eb02/"
+      ]
+    },
+    {
+      "code": "OP-11",
+      "releaseDate": "2025-06-06",
+      "groupId": 24241,
+      "variants": 157,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 156,
+      "checklistSha256": "a6f30e23e271d111eaf1d3b145c091e7391fc2f7132172594ec8a45b73672d08",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op11.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569111",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-12",
+      "releaseDate": "2025-08-22",
+      "groupId": 24302,
+      "variants": 156,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 155,
+      "checklistSha256": "fc38cd65f319147ac7e7b946dbd20d57857d11b9e9689b02160b2828aef3f4eb",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op12.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569112",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "PRB-02",
+      "releaseDate": "2025-10-03",
+      "groupId": 24305,
+      "variants": 406,
+      "expectedCards": 200.0,
+      "numberedChecklistEntries": 316,
+      "checklistSha256": "282bddc1dfe95e3bdbb726c8c58a2002c9cfa115787720fbabfdc423dedb16ae",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/prb02.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569302",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1nse1rp/prb_02_hit_rates_and_thoughts/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1m8nek4/",
+        "https://zardocards.com/products/prb-02-the-best-vol-2-booster-pack"
+      ]
+    },
+    {
+      "code": "OP-13",
+      "releaseDate": "2025-11-07",
+      "groupId": 24303,
+      "variants": 177,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 175,
+      "checklistSha256": "aeb773876558fe54cd460e134ed4b27e1db9aad80d831ec76342116e70d92cd4",
+      "missingPrices": [],
+      "midEstimates": 2,
+      "exclusions": 0,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op13.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569113",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1ohjo5c/op13_case_odds/",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1ojpcjq/pulled_a_god_pack/"
+      ]
+    },
+    {
+      "code": "OP14-EB04",
+      "releaseDate": "2026-01-16",
+      "groupId": 24537,
+      "variants": 203,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 199,
+      "checklistSha256": "3d82814b8a9b25e30f459fcae5d40f42cc96c860729e8c75e6dc2a996bbbbc13",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 8,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op14-eb04.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569114",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "EB-03",
+      "releaseDate": "2026-02-20",
+      "groupId": 24545,
+      "variants": 102,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 90,
+      "checklistSha256": "b46e29550eb2dad21b86b32542a2b4c341ab1b18a102ed145875bf4a41f44043",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 6,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/eb03.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569203",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP15-EB04",
+      "releaseDate": "2026-04-03",
+      "groupId": 24637,
+      "variants": 198,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 196,
+      "checklistSha256": "c5a313c1d2df7ca82c8801cc1515a2e3432543ce38c5d0df056669100d0f3f28",
+      "missingPrices": [
+        {
+          "key": "685324:Foil",
+          "name": "Sentomaru"
+        }
+      ],
+      "midEstimates": 0,
+      "exclusions": 10,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/boosters/op15-eb04.php",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569115",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-16",
+      "releaseDate": "2026-06-12",
+      "groupId": 24664,
+      "variants": 157,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 155,
+      "checklistSha256": "22c64927e6dc312df6f9e211a1e881515eee9506a3f30635eab5d241563daabe",
+      "missingPrices": [],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/op16.html",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569116",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/"
+      ]
+    },
+    {
+      "code": "OP-17",
+      "releaseDate": "2026-08-28",
+      "groupId": 24736,
+      "variants": 177,
+      "expectedCards": 288.0,
+      "numberedChecklistEntries": 169,
+      "checklistSha256": "73838a40b3f6a537de015b3b2ba3967aa771a38ffea300af97d31e55d61fb7b1",
+      "missingPrices": [
+        {
+          "key": "710857:Foil",
+          "name": "Monkey.D.Luffy (EB04-061) (SP)"
+        },
+        {
+          "key": "712117:Foil",
+          "name": "Rocks.D.Xebec (118) (Super Alternate Art)"
+        }
+      ],
+      "midEstimates": 0,
+      "exclusions": 2,
+      "sources": [
+        "https://en.onepiece-cardgame.com/products/op17.html",
+        "https://en.onepiece-cardgame.com/cardlist/?series=569117",
+        "https://www.reddit.com/r/OnePieceTCGFinance/comments/1fp510n/understanding_one_piece_tcg_rarity_system_pull/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1jgnfii/a_casual_players_primer_on_booster_box_drop_rates/",
+        "https://www.reddit.com/r/OnePieceTCG/comments/1voyt5t/op17_god_pack_confirmed/",
+        "https://tcgtalk.com/guides/op17-pull-rates-case-opening"
+      ]
+    }
+  ],
+  "plannedSets": [
+    {
+      "code": "EB-05",
+      "name": "Extra Booster: One Piece Heroine's Edition Vol. 2",
+      "groupId": 24820,
+      "releaseDate": "2026-10-30",
+      "reason": "Unreleased; catalog/checklist incomplete. Requires a complete reviewed profile before activation."
+    },
+    {
+      "code": "OP-18",
+      "name": "The Dominance of God",
+      "groupId": 24833,
+      "releaseDate": "2026-11-20",
+      "reason": "Unreleased; catalog/checklist incomplete. Requires a complete reviewed profile before activation."
+    }
+  ]
+}

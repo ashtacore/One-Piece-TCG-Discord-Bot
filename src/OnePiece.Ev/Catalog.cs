@@ -22,16 +22,16 @@ public static class Catalog
             Parse<Group>(File.ReadAllText(Path.Combine(directory, "groups.json"))),
             groups.Select(id => new SourceGroup(id,
                 Parse<Product>(File.ReadAllText(Path.Combine(directory, id.ToString(), "products.json"))),
-                Parse<Price>(File.ReadAllText(Path.Combine(directory, id.ToString(), "prices.json"))))).ToArray());
+                Parse<Price>(File.ReadAllText(Path.Combine(directory, id.ToString(), "prices.json"))))).ToArray()) { PricingSchemaVersion = 1 };
     }
 
     public static async Task<CatalogSnapshot> Load(AppSettings settings, int[] groups, bool offline)
     {
         var path = Path.Combine(settings.StateDirectory, "catalog.json");
         var existing = File.Exists(path) ? JsonFiles.Read<CatalogSnapshot>(path) : null;
-        bool Covers() => existing is not null && groups.All(id => existing.Data.Any(g => g.GroupId == id));
+        bool Covers() => existing is not null && existing.PricingSchemaVersion == 1 && groups.All(id => existing.Data.Any(g => g.GroupId == id));
         if (offline)
-            return Covers() ? existing! : throw new InvalidDataException("No complete local catalog exists.");
+            return Covers() ? existing! : throw new InvalidDataException("No compatible complete local catalog exists. Run --dry-run online to refresh pricing fields.");
         if (Covers() && DateTimeOffset.UtcNow - existing!.RetrievedAt < TimeSpan.FromHours(settings.Source.RefreshHours))
             return existing;
         using var http = new HttpClient { BaseAddress = new Uri(settings.Source.BaseUrl), Timeout = TimeSpan.FromSeconds(settings.Source.TimeoutSeconds) };
@@ -67,7 +67,7 @@ public static class Catalog
             data.Add(new(id, Parse<Product>(await Get(prefix + id + "/products")), Parse<Price>(await Get(prefix + id + "/prices"))));
         if (Timestamp(await Get("last-updated.txt")) != stamp)
             throw new InvalidDataException("Provider updated during download; no snapshot saved. Run again later.");
-        var snapshot = new CatalogSnapshot(stamp, DateTimeOffset.UtcNow, sourceGroups, data.ToArray());
+        var snapshot = new CatalogSnapshot(stamp, DateTimeOffset.UtcNow, sourceGroups, data.ToArray()) { PricingSchemaVersion = 1 };
         JsonFiles.Write(path, snapshot);
         return snapshot;
     }

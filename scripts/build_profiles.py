@@ -28,7 +28,7 @@ specs = [
       "Sanji AA Leader and standalone Manga Nami each assumed 1 per 30 boxes and replace ordinary AA.",
       "God pack assumed 1 per 150 boxes (midpoint of 10-20 ten-box cases). It replaces one regular pack with Nami plus nine Manga reprints. Multiply all regular counts by 1-1/3000, then add 10/150 Manga cards.",
       "54 ordinary reprints use explicitly matched original English number/rarity/finish listings as shared-price proxies. Physical artwork equivalence is not independently verified for every card; this is an adopted pricing assumption, not a completed visual audit.",
-      "Exclude unverified Brannew Normal; include its Foil finish. Manga Ace has a missing market price and must remain unknown."])
+      "Exclude unverified Brannew Normal; include its Foil finish. Manga Ace has a missing Market price; use the explicitly disclosed Mid fallback when available, otherwise leave it unknown."])
 ]
 for code,name,gid,box,date,packs,cards,case,rates,assumptions in specs:
     if code == "PRB-01":
@@ -54,5 +54,9 @@ for code,name,gid,box,date,packs,cards,case,rates,assumptions in specs:
                          bonusCardsPerBox=0,sources=[f"https://en.onepiece-cardgame.com/products/boosters/{code.lower().replace('-','')}.php",guide,primer],
                          assumptions=assumptions,pools=[dict(id=k,expectedCopiesPerBox=v) for k,v in rates.items()],variants=variants,exclusions=exclusions))
 (ROOT/"config").mkdir(exist_ok=True)
-(ROOT/"config/pullrates.json").write_text(json.dumps(dict(schemaVersion=1,sets=profiles),indent=2)+"\n",encoding="utf-8")
+target=ROOT/"config/pullrates.json"
+existing=read('config/pullrates.json') if target.exists() else {}
+rebuilt={p['code'] for p in profiles}
+profiles=sorted(profiles+[p for p in existing.get('sets',[]) if p['code'] not in rebuilt],key=lambda p:(p['releaseDate'],p['code']))
+target.write_text(json.dumps(dict(schemaVersion=1,sets=profiles,plannedSets=existing.get('plannedSets',[])),indent=2)+"\n",encoding="utf-8")
 print("Built profiles:", [(p['code'], len(p['variants']), sum(x['expectedCopiesPerBox'] for x in p['pools'])) for p in profiles])

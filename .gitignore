@@ -1,5 +1,6 @@
 # Reproducible raw research downloads; normalized audit artifacts remain tracked.
 research/catalog-cache/
+research/coverage-cache/
 __pycache__/
 .dotnet/
 **/bin/
