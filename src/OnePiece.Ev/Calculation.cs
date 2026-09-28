@@ -15,7 +15,7 @@ public static class Calculation
         void Require(bool ok, string message) { if (!ok) throw new InvalidDataException($"{profile.Code}: {message}"); }
         Require(!string.IsNullOrWhiteSpace(profile.Code) && !string.IsNullOrWhiteSpace(profile.Version), "code/version required");
         Require(profile.PacksPerBox > 0 && profile.CardsPerPack > 0 && profile.BoxesPerCase > 0 && profile.BonusCardsPerBox >= 0, "invalid physical counts");
-        Require(profile.GroupId > 0 && profile.BoosterBoxProductId > 0, "source identities required");
+        Require(profile.GroupId > 0 && profile.BoosterBoxProductId > 0 && profile.BoosterCaseProductId > 0, "source identities required");
         Require(profile.ReleaseDate != default, "release date required");
         Require(profile.Sources.Length > 0 && profile.Assumptions.Length > 0 && !string.IsNullOrWhiteSpace(profile.Confidence), "sources, assumptions and confidence required");
         Require(profile.Pools.Length > 0 && profile.Variants.Length > 0, "empty profile");
@@ -83,7 +83,12 @@ public static class Calculation
             boxMarketPrice = boxPrice.MarketPrice;
         return new SetReport(profile.Code, profile.Name, ModelHash(profile), profile.Confidence, cards, issues.Distinct().ToArray())
         {
-            BoxMarketPrice = boxMarketPrice
+            BoxMarketPrice = boxMarketPrice,
+            BoxesPerCase = profile.BoxesPerCase,
+            CaseMarketPrice = setProducts?.ContainsKey(profile.BoosterCaseProductId) == true
+                && prices.TryGetValue(profile.GroupId, out var casePrices)
+                && casePrices.TryGetValue($"{profile.BoosterCaseProductId}:Normal", out var casePrice)
+                && casePrice.MarketPrice >= 0 ? casePrice.MarketPrice : null
         };
     }
 

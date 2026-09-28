@@ -4,6 +4,7 @@ Outputs explicit allowlists, never a runtime name-based classifier.
 """
 import collections, json, re
 from pathlib import Path
+from sealed_cases import CASE_PRODUCTS
 ROOT=Path(__file__).resolve().parents[1]
 CACHE=ROOT/'research/catalog-cache'
 read=lambda path:json.loads(path.read_text(encoding='utf-8-sig'))
@@ -209,8 +210,8 @@ def profile(code,gid,box):
     if min(rates.values())<0: raise ValueError((code,'negative rate'))
     rates={p:round(v,12) for p,v in rates.items()}
     if abs(sum(rates.values())-(packs*cards+bonus))>1e-8: raise ValueError((code,'physical count mismatch',sum(rates.values())))
-    return dict(code=code,name=GROUPS[gid]['name'],version='2026-09-27.expansion.1',confidence='Community estimates; rare chase frequencies, replacements and within-pool weights unverified',
-                enabled=True,groupId=gid,boosterBoxProductId=box,releaseDate=GROUPS[gid]['catalogPublishedOn'][:10],packsPerBox=packs,cardsPerPack=cards,boxesPerCase=case,bonusCardsPerBox=bonus,
+    return dict(code=code,name=GROUPS[gid]['name'],version='2026-09-27.expansion.2',confidence='Community estimates; rare chase frequencies, replacements and within-pool weights unverified',
+                enabled=True,groupId=gid,boosterBoxProductId=box,boosterCaseProductId=CASE_PRODUCTS[code],releaseDate=GROUPS[gid]['catalogPublishedOn'][:10],packsPerBox=packs,cardsPerPack=cards,boxesPerCase=case,bonusCardsPerBox=bonus,
                 sources=list(dict.fromkeys(sources)),assumptions=assumptions,pools=[dict(id=p,expectedCopiesPerBox=r) for p,r in rates.items()],variants=variants,exclusions=excluded)
 
 if __name__=='__main__':

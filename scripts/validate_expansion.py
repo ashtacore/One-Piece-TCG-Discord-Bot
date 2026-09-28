@@ -27,8 +27,13 @@ for p in profiles:
     assert abs(total-(p['packsPerBox']*p['cardsPerPack']+p['bonusCardsPerBox']))<1e-8
     report=reports[code]
     assert not report['issues'],(code,report['issues'])
+    case_products=read(ROOT/'research/catalog-cache'/str(p['groupId'])/'products.json')['results']
+    case=next(x for x in case_products if x['productId']==p['boosterCaseProductId'])
+    assert "Box Case" in case['name']
+    assert report['boxesPerCase']==p['boxesPerCase']==(10 if code in ['PRB-01','PRB-02'] else 12)
     missing=[dict(key=c['key'],name=c['name']) for c in report['cards'] if c['price'] is None]
     rows.append(dict(code=code,releaseDate=p['releaseDate'],groupId=p['groupId'],variants=len(p['variants']),
+                     boosterCaseProductId=p['boosterCaseProductId'],caseName=case['name'],boxesPerCase=p['boxesPerCase'],caseMarketPrice=report['caseMarketPrice'],
                      expectedCards=round(total,6),numberedChecklistEntries=len(official),
                      checklistSha256=hashlib.sha256(checklist.read_bytes()).hexdigest(),
                      missingPrices=missing,midEstimates=sum(c['priceSource']=='Mid' for c in report['cards']),
@@ -42,6 +47,7 @@ lines=['# Expanded set coverage audit','',
 for r in rows: lines.append(f"| {r['code']} | {r['releaseDate']} | {r['variants']} | {r['expectedCards']:g} | {len(r['missingPrices'])} | {r['midEstimates']} |")
 lines+=['','## Specific decisions','',
         '- OP01/02 include one packaged topper; OP01 sealed MP uses the later White box listing, avoiding the first-wave collectible box premium.',
+        '- Cases use explicit Normal TCGCSV product IDs from the frozen 2026-09-26 catalog; OP01 uses Wave 2 White. Case contents EV scales box EV by 12 (OP/EB) or 10 (PRB01/02). Sealed case MP is Market-only; unavailable quotes do not affect contents completeness.',
         '- OP14-EB04 and OP15-EB04 remain combined English products, matching Bandai labels. TCGCSV calls the former OP14 and calls EB-03 EB-03-04; IDs are mapped explicitly.',
         '- Dash Packs are purchase campaigns, not assumed to be inside sealed boxes. Double Pack and tournament products are excluded.',
         '- Additional Normal finish quotes for ordinary R/SR/SEC are excluded from booster rosters. OP10 Normal alternate DON is unverified and excluded.',

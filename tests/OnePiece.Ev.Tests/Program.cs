@@ -20,6 +20,9 @@ foreach(var profile in allProfiles)
     var report=Calculation.Evaluate(profile,expandedCatalog);
     Check(report.Issues.Length==0,$"{profile.Code}: every catalog card/finish mapped or explicitly excluded");
     Check(Math.Abs(report.Cards.Sum(c=>c.ExpectedCopies)-(profile.PacksPerBox*profile.CardsPerPack+profile.BonusCardsPerBox))<.00000001m,$"{profile.Code}: physical card count");
+    Check(report.BoxesPerCase == (profile.Code is "PRB-01" or "PRB-02" ? 10 : 12) && report.KnownCaseEv == report.KnownEv * report.BoxesPerCase, $"{profile.Code}: case EV scales existing box model");
+    Check(expandedCatalog.Data.Single(g=>g.GroupId==profile.GroupId).Products.Single(p=>p.ProductId==profile.BoosterCaseProductId).Name.Contains("Box Case"), $"{profile.Code}: exact case listing");
+    Check(report.CaseMarketPrice == expandedCatalog.Data.Single(g=>g.GroupId==profile.GroupId).Prices.Single(p=>p.ProductId==profile.BoosterCaseProductId && p.SubTypeName=="Normal").MarketPrice,$"{profile.Code}: exact case market quote, including unavailable prices");
     Check(report.BoxMarketPrice is not null,$"{profile.Code}: sealed-box price maps to a real listing");
     Check(report.Cards.All(c=>c.ExpectedCopies>0),$"{profile.Code}: every eligible variant has nonzero modeled probability");
     Check(profile.Variants.All(v=>!v.Name.Contains("Dash Pack") && !v.Name.Contains("Double Pack")),$"{profile.Code}: external bonus products excluded");
@@ -36,6 +39,16 @@ var catalog=Catalog.Import("research/catalog-cache",groups);
 var reports=profiles.Select(p=>Calculation.Evaluate(p,catalog)).ToArray();
 Check(reports[0].Complete && reports[1].Complete,"OP/EB complete");
 Check(reports[0].BoxMarketPrice == 246.47m, "Box MP uses configured sealed box Normal listing");
+Check(reports[0].CaseMarketPrice == 2696.29m && reports[2].CaseMarketPrice == 9048.50m, "Case MP uses actual case quote, not multiplied box price");
+foreach(decimal? quote in new decimal?[]{null,-1m,0m,123m})
+{
+    var caseCatalog=catalog with {Data=catalog.Data.Select(g=>g with {Prices=g.Prices.Select(p=>p.ProductId==profiles[0].BoosterCaseProductId ? p with {MarketPrice=quote,MidPrice=999m}:p).ToArray()}).ToArray()};
+    var caseReport=Calculation.Evaluate(profiles[0],caseCatalog);
+    Check(caseReport.CaseMarketPrice==(quote>=0 ? quote:null) && caseReport.Complete && caseReport.KnownEv==reports[0].KnownEv && caseReport.KnownMaster==reports[0].KnownMaster,"Case accepts zero market price; missing/negative quotes never use Mid or alter cards");
+}
+var noCaseCatalog=catalog with {Data=catalog.Data.Select(g=>g with {Products=g.Products.Where(p=>p.ProductId!=profiles[0].BoosterCaseProductId).ToArray()}).ToArray()};
+var noCase=Calculation.Evaluate(profiles[0],noCaseCatalog);
+Check(noCase.CaseMarketPrice is null && noCase.Complete,"Missing sealed case listing does not invalidate contents");
 var noBoxPrice = catalog with { Data = catalog.Data.Select(g => g with { Prices = g.Prices.Where(p => p.ProductId != profiles[0].BoosterBoxProductId).ToArray() }).ToArray() };
 var withoutBoxPrice = Calculation.Evaluate(profiles[0], noBoxPrice);
 Check(withoutBoxPrice.BoxMarketPrice is null && withoutBoxPrice.Complete && withoutBoxPrice.KnownEv == reports[0].KnownEv && withoutBoxPrice.KnownMaster == reports[0].KnownMaster, "Missing box MP does not alter card EV or master set");
@@ -57,16 +70,22 @@ var before=reports[0];
 var after=before with {Cards=before.Cards.Select(c=>c with {Price=c.Price*2}).ToArray()};
 Check(Calculation.Movers(after,before,new()).Length==10,"Mover cap");
 var legacyDestination=System.Text.Json.JsonSerializer.Deserialize<Destination>("""{"id":"legacy"}""",JsonFiles.Options)!;
-Check(legacyDestination.IncludeMarketData && legacyDestination.IncludeCardList,"Existing destinations default to full reports");
+Check(legacyDestination.IncludeBoosterBoxData && legacyDestination.IncludeCaseData && legacyDestination.IncludeMarketData && legacyDestination.IncludeCardList,"Existing destinations default to full reports");
 foreach(var market in new[]{false,true})
 foreach(var cards in new[]{false,true})
+foreach(var boxes in new[]{false,true})
+foreach(var cases in new[]{false,true})
 {
     var destination=System.Text.Json.JsonSerializer.Deserialize<Destination>(
-        $$"""{"id":"custom","includeMarketData":{{market.ToString().ToLowerInvariant()}},"includeCardList":{{cards.ToString().ToLowerInvariant()}}}""",JsonFiles.Options)!;
-    var customized=Reporting.Render(after,before,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new(),destination.IncludeMarketData,destination.IncludeCardList);
+        $$"""{"id":"custom","sets":["OP-08"],"includeMarketData":{{market.ToString().ToLowerInvariant()}},"includeCardList":{{cards.ToString().ToLowerInvariant()}},"includeBoosterBoxData":{{boxes.ToString().ToLowerInvariant()}},"includeCaseData":{{cases.ToString().ToLowerInvariant()}}}""",JsonFiles.Options)!;
+    var customized=Reporting.Render(after,before,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new(),destination.IncludeMarketData,destination.IncludeCardList,destination.IncludeBoosterBoxData,destination.IncludeCaseData);
+    Check(destination.Sets.SequenceEqual(new[]{"OP-08"}),"Display switches preserve set selection");
     Check(customized.Contains("Market Data:")==market && customized.Contains("| Master set")==market && customized.Contains("Trend:")==market,"Market table toggle includes its total and legend");
-    Check(customized.Contains(" bx) [")==cards,"Card list toggle independent of market table");
-    Check(customized.Contains("Booster Box:") && customized.Contains("Copies") && customized.Contains(Reporting.Warning) && customized.Contains("accompanying Markdown file"),"Destination toggles retain box table and assumptions");
+    Check(customized.Contains(" bx) [")==cards,"Card list toggle independent of other sections");
+    Check(customized.Contains("Booster Box:")==boxes && customized.Contains($"  MP: {Reporting.Money(after.BoxMarketPrice!.Value)}")==boxes,"Box switch controls heading and sealed price");
+    Check(customized.Contains("Booster Case:")==cases && customized.Contains($"  MP: {Reporting.Money(after.CaseMarketPrice!.Value)}")==cases,"Case switch controls heading and sealed price");
+    Check(customized.Split('\n').Count(l=>l.Split('|').Any(cell=>cell.Trim()=="Copies"))==(boxes?1:0)+(cases?1:0),"Only selected contents tables rendered");
+    Check(customized.Contains(Reporting.Warning) && customized.Contains("accompanying Markdown file"),"Display switches retain warnings and assumptions");
 }
 var compactMissing=Reporting.Render(missingReport,null,catalog.SourceUpdatedAt,null,new(),false,false);
 Check(compactMissing.Contains("INCOMPLETE") && compactMissing.Contains("Missing price:"),"Hidden optional sections retain missing-price disclosure");
@@ -175,8 +194,10 @@ var tableFixture = before with { Cards = [
     new CardValue("uncommon", "Uncommon", "Base", "base-uc", 10, 1m)] };
 var tableText=Reporting.Render(tableFixture,null,catalog.SourceUpdatedAt,null,new());
 var baseRows=tableText.Split('\n').Where(line=>line.StartsWith("| Base ")).ToArray();
-var boxCells=baseRows[0].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
-var marketCells=baseRows[1].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+var caseCells=baseRows[0].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+Check(caseCells.SequenceEqual(new[]{"Base","1320","$0.18","$240.00"}),"Case scales copies and EV while retaining weighted average");
+var boxCells=baseRows[1].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+var marketCells=baseRows[2].Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
 Check(boxCells.SequenceEqual(new[]{"Base","110","$0.18","$20.00"}),"Box table AVG uses expected-copy weighting, not unweighted card mean");
 Check(marketCells.SequenceEqual(new[]{"Base","2","$0.55","$1.10","–"}),"Market AVG is unweighted distinct-card mean; first observation has no trend");
 string[] MarketRow(SetReport now, SetReport? old, string label) => Reporting.Render(now,old,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new())
@@ -192,8 +213,15 @@ var unknown=tableFixture with {Cards=tableFixture.Cards.Select((c,i)=>i==0 ? c w
 Check(MarketRow(unknown,tableFixture,"Base")[2]=="--" && MarketRow(unknown,tableFixture,"Base")[4]=="–","Missing price leaves AVG and trend unavailable");
 Check(!tableText.Contains('%') && tableText.IndexOf("| Master set",StringComparison.Ordinal)>tableText.IndexOf("Market Data:",StringComparison.Ordinal),"Percentages removed; master set in market table");
 var tableMissing=Reporting.Render(tableFixture with {Cards=tableFixture.Cards.Select((c,i)=>i==0 ? c with {Price=null}:c).ToArray()},null,catalog.SourceUpdatedAt,null,new());
-var missingCells=tableMissing.Split('\n').First(line=>line.StartsWith("| Base ")).Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+var missingCells=tableMissing.Split("Booster Box:")[1].Split('\n').First(line=>line.StartsWith("| Base ")).Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
 Check(missingCells[2]=="--" && missingCells[3]=="$10.00*","Missing card cannot become a misleading averaged price");
+string[] CaseRow(SetReport now, SetReport? old) => Reporting.Render(now,old,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new())
+    .Split('\n').First(line=>line.StartsWith("| Base ")).Split('|',StringSplitOptions.RemoveEmptyEntries).Select(c=>c.Trim()).ToArray();
+Check(CaseRow(tableFixture with {BoxesPerCase=10},null).SequenceEqual(new[]{"Base","1100","$0.18","$200.00"}),"Ten-box case table scales without changing average");
+Check(CaseRow(higher,tableFixture)[3]=="$1560.00 (+$1320.00)","Comparable case delta scales full-precision box delta");
+Check(CaseRow(changedSource,tableFixture)[3]=="$1560.00","Case delta suppressed on pricing source change");
+Check(CaseRow(higher,tableFixture with {BoxesPerCase=0})[3]=="$1560.00","Legacy history without case size cannot produce false case delta");
+Check(CaseRow(unknown,tableFixture)[2]=="--" && CaseRow(unknown,tableFixture)[3]=="$120.00*","Missing prices retain scaled case subtotal with unavailable average and no delta");
 foreach(var profile in allProfiles)
 {
     var rendered=Reporting.Render(Calculation.Evaluate(profile,expandedCatalog),null,catalog.SourceUpdatedAt,null,new());
@@ -231,6 +259,26 @@ Check(Reporting.RenderSummary([missingReport],null).Contains("EV: INCOMPLETE —
 var allSummary = Reporting.RenderSummary(allProfiles.Select(p=>Calculation.Evaluate(p,expandedCatalog)),null);
 Check(allSummary.EndsWith(Reporting.Warning) && !allSummary.Contains("Markdown") && !allSummary.Contains("notes"),"Summary standard warning without notes reference");
 Check(Reporting.Split(allSummary,1700).Length==1,"All 22 sets fit one final summary message");
+var caseSummaryUp=Reporting.RenderSummary([after with {CaseMarketPrice=before.CaseMarketPrice+1}],summaryBefore,true);
+Check(caseSummaryUp.StartsWith("**Booster Case Summary**") && caseSummaryUp.Contains($"  EV: {Reporting.Money(after.KnownCaseEv)} 🟢") && caseSummaryUp.Contains($"  MP: {Reporting.Money(before.CaseMarketPrice!.Value+1)} 🟢"),"Case summary uses case EV and actual case MP with trends");
+Check(Reporting.RenderSummary([before],summaryBefore with {Sets=[after with {CaseMarketPrice=before.CaseMarketPrice+1}]},true).Split("🔴").Length==3,"Case summary falling trends");
+Check(Reporting.RenderSummary([before],summaryBefore,true).Split("🟡").Length==3,"Case summary unchanged trends");
+Check(Reporting.RenderSummary([before],null,true).Split(" –").Length==3,"First case summary has no trends");
+Check(Reporting.RenderSummary([switched],summaryBefore,true).Contains($"EV: {Reporting.Money(switched.KnownCaseEv)} –"),"Case summary suppresses source-switch EV trend");
+Check(Reporting.RenderSummary([before with {ModelHash="changed"}],summaryBefore,true).Split(" –").Length==3,"Case summary suppresses changed-model trends");
+Check(Reporting.RenderSummary([noCase],summaryBefore,true).Contains("MP: Unavailable –"),"Case summary missing sealed MP");
+Check(Reporting.RenderSummary([missingReport],null,true).Contains($"EV: INCOMPLETE — priced subtotal: {Reporting.Money(missingReport.KnownCaseEv)}"),"Case summary labels scaled incomplete EV");
+Check(Reporting.RenderSummary([before],summaryBefore with {Sets=[before with {BoxesPerCase=0,CaseMarketPrice=null}]},true).Split(" –").Length==3,"Legacy case history cannot produce false trends");
+foreach(var boxes in new[]{false,true})
+foreach(var cases in new[]{false,true})
+{
+    var summaries=Reporting.RenderSummaries([before],summaryBefore,boxes,cases);
+    Check(summaries.Select(s=>s.Key).SequenceEqual((cases?new[]{"case-summary"}:Array.Empty<string>()).Concat(boxes?new[]{"summary"}:Array.Empty<string>())),"Summary selection and order follow independent display switches");
+    Check(summaries.All(s=>s.Content.Contains(before.Code+": "+before.Name) && !s.Content.Contains("PRB-01:")),"Summaries retain supplied set selection");
+}
+Check(Reporting.RenderSummaries([],null).Length==0,"No summaries when no eligible reports");
+var allCaseSummary=Reporting.RenderSummary(allProfiles.Select(p=>Calculation.Evaluate(p,expandedCatalog)),null,true);
+Check(allCaseSummary.EndsWith(Reporting.Warning) && !allCaseSummary.Contains("Markdown") && Reporting.Split(allCaseSummary).All(p=>p.Length<=1900),"Case summary warning and Discord limits");
 var summaryCalls=0;
 using var summaryHttp=new HttpClient(new FakeHandler(request=>
 {
@@ -242,6 +290,9 @@ var summaryLedger=Path.Combine(temp,"summary.json");
 await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:summary",endpoint,allSummary);
 await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:summary",endpoint,"Changed summary");
 Check(summaryCalls==1 && JsonFiles.Read<DeliveryLedger>(summaryLedger).Parts.Values.Single().Attachment is null,"Summary delivery is frozen and deduplicated without notes");
+await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:case-summary",endpoint,allCaseSummary);
+await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:case-summary",endpoint,"Changed case summary");
+Check(summaryCalls==2 && JsonFiles.Read<DeliveryLedger>(summaryLedger).Parts.Values.All(p=>p.Attachment is null),"Case and box summaries have independent frozen delivery keys and no attachments");
 Console.WriteLine($"PASS: {checks} checks; no real Discord requests.");
 
 sealed class FakeHandler(Func<HttpRequestMessage,HttpResponseMessage> respond):HttpMessageHandler

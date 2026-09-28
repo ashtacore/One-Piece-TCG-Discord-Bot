@@ -1,6 +1,7 @@
 """Build the initial editable application profiles from the audited allowlists."""
 import json
 from pathlib import Path
+from sealed_cases import CASE_PRODUCTS
 
 ROOT = Path(__file__).resolve().parents[1]
 read = lambda path: json.loads((ROOT / path).read_text(encoding="utf-8"))
@@ -49,8 +50,8 @@ for code,name,gid,box,date,packs,cards,case,rates,assumptions in specs:
         if item["sourceGroupId"] != gid: variant["pricingNote"] = "Explicit shared original-listing price proxy; see profile assumptions."
         variants.append(variant)
     rates = {k:round(v,12) for k,v in rates.items()}
-    profiles.append(dict(code=code,name=name,version="2026-09-27.1",confidence="Community estimates; chase frequencies and collation assumptions unverified",
-                         enabled=True,groupId=gid,boosterBoxProductId=box,releaseDate=date,packsPerBox=packs,cardsPerPack=cards,boxesPerCase=case,
+    profiles.append(dict(code=code,name=name,version="2026-09-27.2",confidence="Community estimates; chase frequencies and collation assumptions unverified",
+                         enabled=True,groupId=gid,boosterBoxProductId=box,boosterCaseProductId=CASE_PRODUCTS[code],releaseDate=date,packsPerBox=packs,cardsPerPack=cards,boxesPerCase=case,
                          bonusCardsPerBox=0,sources=[f"https://en.onepiece-cardgame.com/products/boosters/{code.lower().replace('-','')}.php",guide,primer],
                          assumptions=assumptions,pools=[dict(id=k,expectedCopiesPerBox=v) for k,v in rates.items()],variants=variants,exclusions=exclusions))
 (ROOT/"config").mkdir(exist_ok=True)

@@ -1,4 +1,4 @@
-# One Piece booster-box EV reporter
+# One Piece booster-box and case EV reporter
 
 A .NET 10 console application that runs once, reads English/USD TCGplayer market prices through TCGCSV, writes reports, and optionally delivers them to Discord webhooks. No external NuGet packages are required. Schedule the executable externally for daily execution.
 
@@ -43,7 +43,14 @@ Use one destination object with a unique `id` per channel, including channels on
 
 The application sends outbound HTTPS requests to Discord's webhook URL. You do not need to host a server or configure an endpoint to receive webhook events.
 
-Each destination also accepts `includeMarketData` and `includeCardList`, both defaulting to `true` when omitted. Set `includeMarketData: false` to hide the Market Data table (including its Master set row and trend legend), or `includeCardList: false` to hide the card price movers list. These switches are independent. Booster-box details, pricing-source and missing-price disclosures, warnings, assumption attachments, and the final summary remain included. Console and `out/latest.md` previews always show the full report. For example:
+Each destination accepts four independent Boolean display options, all defaulting to `true` when omitted:
+
+- `includeBoosterBoxData`: show the booster-box EV/MP section, rarity table, and final Booster Box Summary.
+- `includeCaseData`: show the case EV/MP section, rarity table, and Booster Case Summary.
+- `includeMarketData`: show the Market Data table, including its Master set row and trend legend.
+- `includeCardList`: show card price movers. Movers retain their per-box impact units independently of the box section switch.
+
+`sets` continues to select which sets are reported; these switches only control displayed sections. Pricing-source and missing-price disclosures, warnings, and assumption attachments remain included even when all four switches are false. Console and `out/latest.md` previews always show the full report. For example:
 
 ```json
 {
@@ -51,6 +58,8 @@ Each destination also accepts `includeMarketData` and `includeCardList`, both de
   "enabled": true,
   "webhookEnvironmentVariable": "ONEPIECE_DISCORD_WEBHOOK",
   "sets": ["OP-08"],
+  "includeBoosterBoxData": true,
+  "includeCaseData": false,
   "includeMarketData": false,
   "includeCardList": true
 }
@@ -66,7 +75,7 @@ TCGCSV requests use a custom User-Agent and at least 100 ms spacing. Every onlin
 
 For each pool, expected copies of card *i* equal `pool expected copies × card weight / sum of pool weights`. Box EV is the sum of `expected copies × selected price` across all eligible variants. Current weights are equal within each pool; this is a modeling assumption, not proof that collation is uniform. Prices are decimal USD values for the exact product ID and `Normal`/`Foil` subtype. Prefer TCGplayer `marketPrice`; if absent or negative, fall back to a nonnegative `midPrice`. Zero is a valid supplied price, not a missing value. No fees, shipping, box cost, or liquidity adjustment is subtracted.
 
-Market reflects completed sales; Mid is the median listing price and can exceed realizable sale value. Reports disclose how many listing-based estimates they include and list each affected card and price. Normalized cards and history persist `priceSource` as `Market`, `Mid`, or `Missing`. Historical reports without this field default to Market because the previous implementation used Market exclusively. This fallback applies to card valuation; the sealed-box `MP` line remains Market-only. No graded sales or secondary-source prices are mixed into card EV. See [TCGCSV field definitions](https://tcgcsv.com/docs).
+Market reflects completed sales; Mid is the median listing price and can exceed realizable sale value. Reports disclose how many listing-based estimates they include and list each affected card and price. Normalized cards and history persist `priceSource` as `Market`, `Mid`, or `Missing`. Historical reports without this field default to Market because the previous implementation used Market exclusively. This fallback applies to card valuation; the sealed-box and sealed-case `MP` lines remain Market-only. No graded sales or secondary-source prices are mixed into card EV. See [TCGCSV field definitions](https://tcgcsv.com/docs).
 
 The first online run after this upgrade refreshes old caches that omitted Mid, even if the provider timestamp has not changed. Offline mode asks for an online `--dry-run` when an old cache cannot supply those fields. Existing report history and delivery records are preserved; previously sent reports are not reposted by this upgrade.
 
@@ -74,7 +83,9 @@ A chase appearing once per 36 boxes contributes `average chase price / 36`. A $3
 
 Expected pool counts must sum to `packsPerBox × cardsPerPack + bonusCardsPerBox`, within decimal rounding tolerance. Replacement hits reduce the displaced pool. Packaged bonuses are modeled as additional pools and physical bonus counts, with duplicate card identities consolidated and their expected counts combined. OP-01 and OP-02 include one packaged topper: 289 cards total. Other OP/EB profiles total 288; PRB profiles total 200. Purchase-campaign Dash Packs and Double Pack bonuses are excluded. Cases use 12 boxes for OP/EB and 10 for PRB.
 
-Reports begin with `Booster Box:` and indented `EV` (expected contents value) and `MP` (sealed-box market price). MP uses the profile's exact `boosterBoxProductId` and its `Normal` market-price listing; an absent or null price displays `Unavailable` and does not affect card EV or master-set completeness. The sealed box is not included in the master-set total. Two manually aligned tables follow inside code fences so Discord preserves column spacing. An extra blank line separates set reports; Discord's final message part includes an invisible spacing character to retain that line.
+Reports begin with `Booster Case:` followed by `Booster Box:`, each with indented `EV` (expected contents value), `MP` (sealed market price), and a rarity table. Case EV, expected copies, category totals and comparable EV changes equal the box values multiplied by `boxesPerCase`: 12 for OP/EB, 10 for PRB-01/02. Pull-weighted AVG stays the same. These are linear expectations, not guaranteed case contents or a distribution of returns. MP uses the profile's exact `boosterCaseProductId` or `boosterBoxProductId` and its `Normal` market-price listing; no Mid fallback or box-price multiplication is used for case MP. Missing, null or negative case MP displays `Unavailable` without affecting card EV or master-set completeness. Sealed products are excluded from the master set. OP-01 uses the Wave 2 White case to match its box. Adding case mappings changes profile hashes, so comparisons restart on the next snapshot.
+
+Three manually aligned tables (case, box, market) use code fences so Discord preserves column spacing. Case and box tables have their own destination switches, independent of market/card-list switches. An extra blank line separates set reports; Discord's final message part includes an invisible spacing character to retain that line.
 
 The box table has `Rarity`, `Copies`, `AVG` and `Total`. Copies is the expected number of cards from that category per box, including duplicates. AVG is the pull-weighted average price per card: `category EV / expected copies`. Total is the category's contribution to box EV. Weighting matters when a category combines pools with different frequencies, such as R/SR/SEC under Foils. Copies display up to six decimal places and money displays cents; calculations retain full precision, so multiplying rounded values can differ slightly from Total. For example:
 
@@ -101,7 +112,7 @@ Trend compares each market total with the previous comparable report: `↑` up, 
 
 Treatment takes precedence over printed rarity. A Manga SEC is counted only as Manga, not again under Foils. DON Normal, Foil and Gold variants are distinct master-set entries. A printed number alone cannot identify an artwork or determine which booster contains a reprint.
 
-If neither Market nor Mid is usable, the price is **unknown, not zero**. Known contributions may be shown as an explicitly INCOMPLETE subtotal, with missing variants named; no market deltas are shown for that set. An affected category shows `--` for AVG and `*` on its priced Total in both tables; Copies and Count still include missing cards. The master-set subtotal is also marked `*`. A disclosed Mid fallback counts as priced, so it does not by itself trigger `postIncompleteReports: false`. Unknown catalog cards/finishes also flag a profile for review. No missing-card probability is redistributed to the remaining priced cards.
+If neither Market nor Mid is usable, the price is **unknown, not zero**. Known contributions may be shown as an explicitly INCOMPLETE subtotal, with missing variants named; no market deltas are shown for that set. An affected category shows `--` for AVG and `*` on its priced Total in all three tables; Copies and Count still include missing cards. The master-set subtotal is also marked `*`. A disclosed Mid fallback counts as priced, so it does not by itself trigger `postIncompleteReports: false`. Unknown catalog cards/finishes also flag a profile for review. No missing-card probability is redistributed to the remaining priced cards.
 
 ## Adopted initial estimates
 
@@ -129,7 +140,9 @@ Discord delivery failures print the exception message, set code, and destination
 
 Every set report ends with a concise warning about its weaker assumptions. The final Discord message part carries a downloadable `<set>-pull-rate-assumptions.md` file, generated directly from the same profile used for EV. It includes the expected-cards-per-box table AFTER all replacements and special-pack adjustments, physical contents, profile version/hash, weighting, assumptions and source links. Dry runs also write these files alongside `out/latest.md`. Markdown is uploaded as a file, not hosted as a webpage; Discord clients may offer a preview or download rather than render it as a formatted document.
 
-After the individual reports, a final summary headed **Booster Box Summary** lists each set identifier and name (for example, `OP-01: Romance Dawn`) with indented `EV` and `MP` lines and green/up, red/down, yellow/unchanged, or `–`/unavailable trend indicators. It ends with the standard pull-rate warning and has no notes attachment. EV uses the existing comparison safeguards; sealed-box MP compares available prices from the same profile independently of card-price completeness. Incomplete EV remains labeled as a priced subtotal. Each destination's summary includes only its selected, eligible reports in release order and uses the same frozen delivery tracking and force-post behavior as individual reports. Console and `out/latest.md` previews also end with a summary. The current 22-set summary fits one Discord message; longer future summaries use normal message splitting.
+After the individual reports, **Booster Case Summary** appears before **Booster Box Summary**. Each lists set identifiers and names (for example, `OP-01: Romance Dawn`) with indented `EV` and `MP` lines and green/up, red/down, yellow/unchanged, or `–`/unavailable trend indicators. Case EV scales the box model by the configured case size; case MP uses the actual sealed-case Market quote. Both summaries end with the standard pull-rate warning and have no notes attachment. EV uses the existing comparison safeguards, including suppression for case history without a matching case size; sealed MP compares available prices from the same profile independently of card-price completeness. Incomplete EV remains labeled as a priced subtotal.
+
+`includeCaseData` controls the case summary and `includeBoosterBoxData` controls the box summary. Each destination's summaries include only its selected, eligible reports in release order. They use separate frozen delivery keys and the existing retry/force-post behavior; previously delivered box summaries are not resent merely to add a case summary. Console and `out/latest.md` previews end with both summaries. Summaries use normal Discord message splitting when needed.
 
 Files use Discord's multipart webhook upload (`payload_json` plus `files[0]`). Their contents are frozen in the delivery ledger with the report, so retrying cannot substitute changed assumptions into an earlier report. Previously delivered batches are not resent merely to add attachments. See [Discord webhook upload documentation](https://docs.discord.com/developers/resources/webhook#execute-webhook).
 

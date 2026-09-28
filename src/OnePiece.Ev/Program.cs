@@ -205,7 +205,7 @@ public static class Program
             File.WriteAllText(Path.Combine(settings.ReportDirectory, attachment.FileName), attachment.Content);
         }
 
-        var output = string.Join("\n\n\n", texts.Values.Append(Reporting.RenderSummary(current.Sets, previous)));
+        var output = string.Join("\n\n\n", texts.Values.Concat(Reporting.RenderSummaries(current.Sets, previous).Select(s => s.Content)));
         File.WriteAllText(Path.Combine(settings.ReportDirectory, "latest.md"), output + "\n\n");
         JsonFiles.Write(Path.Combine(settings.ReportDirectory, "latest.json"), current);
         Console.WriteLine(output + "\n");
@@ -241,7 +241,7 @@ public static class Program
                         endpoint,
                         Reporting.Render(report, previous?.Sets.FirstOrDefault(p => p.Code == report.Code),
                             current.SourceUpdatedAt, previous?.SourceUpdatedAt, settings.Movers,
-                            d.IncludeMarketData, d.IncludeCardList),
+                            d.IncludeMarketData, d.IncludeCardList, d.IncludeBoosterBoxData, d.IncludeCaseData),
                         attachments[report.Code],
                         forcePost);
                     sent += result.Sent;
@@ -254,9 +254,9 @@ public static class Program
                     return 1;
                 }
             }
-            if (summaryReports.Count > 0)
+            foreach (var summary in Reporting.RenderSummaries(summaryReports, previous, d.IncludeBoosterBoxData, d.IncludeCaseData))
             {
-                var key = $"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:summary";
+                var key = $"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:{summary.Key}";
                 try
                 {
                     var result = await DiscordDelivery.Send(
@@ -264,7 +264,7 @@ public static class Program
                         Path.Combine(settings.StateDirectory, "deliveries.json"),
                         key,
                         endpoint,
-                        Reporting.RenderSummary(summaryReports, previous),
+                        summary.Content,
                         forcePost: forcePost);
                     sent += result.Sent;
                     alreadyDelivered += result.AlreadyDelivered;

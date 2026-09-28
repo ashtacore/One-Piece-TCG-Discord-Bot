@@ -59,6 +59,8 @@ public sealed record Destination
     public string? WebhookUrl { get; init; }
     public string? WebhookEnvironmentVariable { get; init; }
     public string[] Sets { get; init; } = [];
+    public bool IncludeBoosterBoxData { get; init; } = true;
+    public bool IncludeCaseData { get; init; } = true;
     public bool IncludeMarketData { get; init; } = true;
     public bool IncludeCardList { get; init; } = true;
     public string? ThreadId { get; init; }
@@ -83,6 +85,7 @@ public sealed record SetProfile
     public bool Enabled { get; init; } = true;
     public int GroupId { get; init; }
     public int BoosterBoxProductId { get; init; }
+    public int BoosterCaseProductId { get; init; }
     public DateOnly ReleaseDate { get; init; }
     public int PacksPerBox { get; init; }
     public int CardsPerPack { get; init; }
@@ -143,6 +146,9 @@ public sealed record CardValue(string Key, string Name, string Category, string 
 public sealed record SetReport(string Code, string Name, string ModelHash, string Confidence, CardValue[] Cards, string[] Issues)
 {
     public decimal? BoxMarketPrice { get; init; }
+    public decimal? CaseMarketPrice { get; init; }
+    public int BoxesPerCase { get; init; }
+    [JsonIgnore] public decimal KnownCaseEv => KnownEv * BoxesPerCase;
     [JsonIgnore] public bool Complete => Issues.Length == 0 && Cards.All(c => c.Price is not null);
     [JsonIgnore] public decimal KnownEv => Cards.Sum(c => c.Ev ?? 0);
     [JsonIgnore] public decimal KnownMaster => Cards.Sum(c => c.Price ?? 0);

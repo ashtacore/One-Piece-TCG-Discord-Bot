@@ -17,7 +17,7 @@ Preserve unrelated profiles, credentials, destination filters and delivery/histo
 
 ## Verify the product and roster
 
-1. Confirm the English name, release date, TCGCSV category/group ID and exact sealed-box product ID. Preserve combined English products such as OP14-EB04; catalog abbreviations and printed card-number prefixes can differ from product membership. Choose the intended box printing, not a collectible first-wave listing by accident.
+1. Confirm the English name, release date, TCGCSV category/group ID and exact `boosterBoxProductId` and `boosterCaseProductId`. Preserve combined English products such as OP14-EB04; catalog abbreviations and printed card-number prefixes can differ from product membership. Match box and case printings: OP-01 uses the White box and Wave 2 White case, not the collectible first-wave Blue listings. Exclude Double Pack display cases and other sealed products from case mapping.
 2. Verify packs per box, cards per pack, case size and packaged bonus contents. Include bonuses inside the sealed box; exclude separate Double Pack products, store-purchase Dash Packs and tournament promos. Do not generalize either a 12-box case or bonus availability across products.
 3. Retrieve products, prices and the publisher checklist. Reuse dated caches where suitable. Preserve source URLs, retrieval/snapshot dates and hashes. Fetch new prices into a separate snapshot if the provider date differs; never append new-day prices to a frozen fixture or relabel its timestamp. Check provider timestamps before and after collection.
 4. Build an explicit allowlist keyed by product ID and price subtype, with number, name, category, pool and weight. Printed rarity alone does not identify AA, Manga, SP, special Event art, premium DON or reprints. Classification precedence matters: exceptional chase treatments before ordinary AA/printed rarity. Review each new treatment rather than automatically putting it in AA.
@@ -32,6 +32,7 @@ Repository examples worth consulting: OP01/02 packaged toppers; PRB01 shared ori
 - Reconcile pool counts to packs times cards plus packaged bonuses. This is an accounting invariant, not evidence that the assumed distribution is correct. Preserve decimal precision and avoid negative counts.
 - Keep one master-set entry per distinct artwork/finish, even when obtainable through several mechanisms. Combine its expected counts, using a separate pool when necessary rather than duplicating its identity. Document equal-weight assumptions or justified unequal weights.
 - Retain Market-to-Mid fallback, source tracking and unknown-price behavior from the README. Pricing uncertainty and pull-rate uncertainty are separate. Do not add graded or secondary prices as part of set coverage unless requested.
+- Case expected copies and EV use the existing per-box model multiplied by `boxesPerCase`; pull-weighted AVG stays unchanged. Current OP/EB sets use 12 boxes, PRB-01/02 use 10; verify future products individually. Do not add case guarantees or new collation assumptions merely to scale linear EV. Sealed box/case MP uses only the exact product's `Normal` Market price, never Mid or a multiplied box quote. Missing or negative case MP displays `Unavailable` without making card EV or master-set coverage incomplete; zero is valid. Sealed products stay outside card pools and the master set.
 - Add sources, specific assumptions, confidence and a new profile version. If introducing a pool, update its readable label and relevant warning in `AssumptionDocument.cs`; verify report category and calculation behavior.
 - Sort profiles by English release date. Keep incomplete future catalogs in `plannedSets`; a date passing is insufficient for activation. When activating, remove the planned entry only after the profile is complete and verified. Release filtering checks both current and source dates.
 - Update `enabledSets` where the task calls for activation, preserving destination filters. Empty enabled/destination set lists mean all eligible sets; explain any expanded next-run posting scope.
@@ -39,6 +40,8 @@ Repository examples worth consulting: OP01/02 packaged toppers; PRB01 shared ori
 ## Maintain reproducibility
 
 Inspect generators before running them. `scripts/build_profiles.py` owns the original three profiles. `scripts/build_expanded_profiles.py` rebuilds a fixed set list and reconstructs planned entries: update its roster/date/source logic and retention behavior before adding a new set, or it can drop a manually added profile. Keep generator inputs and generated configuration consistent; inspect the diff for unrelated changes.
+
+Both generators import explicit case IDs from `scripts/sealed_cases.py`. Update that mapping alongside `boosterCaseProductId` in `config/pullrates.json`; runtime reporting must not guess case IDs from product names. Case mapping changes affect profile hashes and reset comparisons under the existing model-change safeguards.
 
 `research/set-registry.json` and original audit artifacts describe a historical snapshot; preserve that provenance when adding new evidence. The fetch/checklist helpers contain fixed group lists, series IDs and cache locations. Adapt them to the target release and snapshot instead of assuming they are universal discovery tools. Publisher URL shapes also vary.
 
@@ -60,11 +63,12 @@ The catalog path is an example: use the correct dated fixture and align test loa
 Verify meaningful behavior:
 
 - Every eligible catalog identity is mapped or explicitly excluded; no duplicate master-set entries or zero-probability eligible variants.
-- Publisher roster correspondence, exact box listing, physical totals, packaged bonuses and replacement arithmetic.
+- Publisher roster correspondence, exact matching box/case listings, physical totals, packaged bonuses and replacement arithmetic. Preserve dated evidence for case IDs and missing quotes in the coverage audit/verification JSON.
 - Special-pack marginal counts and combined-source variants; newly introduced treatment precedence.
 - Missing Market uses labeled Mid; neither price stays unknown; unverified finishes do not receive another finish's price.
 - Release ordering, future-date exclusion and requested set filtering.
 - Generated report and per-set Markdown attachment use the same profile/hash and adjusted counts. Inspect warnings, incomplete totals and multipart message boundaries. Run simulated webhook tests if delivery/attachments change.
+- The case section appears above the box section with EV, actual case MP, and the same `Rarity`, `Copies`, `AVG`, `Total` columns. Verify 12/10-box scaling at full precision, unchanged AVG, scaled category deltas, missing-price subtotals, and source/model-change suppression. History without a case size must not produce a case delta. Destination `includeBoosterBoxData` and `includeCaseData` independently control these sections and their corresponding summaries (default true). Booster Case Summary precedes Booster Box Summary. These switches do not change `sets` filtering or the independent market/card-list switches. Additional tables must retain balanced fences within Discord message limits.
 - Existing representative profiles still pass; version/source changes cannot become false price movers.
 
 Do not clear delivery records to force a repost. Preview mode must not advance history or send messages. If a live test is authorized, use the existing delivery/reconciliation rules and stop on an ambiguous delivery outcome rather than automatically retrying it.

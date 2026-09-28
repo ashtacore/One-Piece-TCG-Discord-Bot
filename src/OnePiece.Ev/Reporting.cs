@@ -13,20 +13,38 @@ public static class Reporting
         _ => "🟡"
     };
 
-    public static string RenderSummary(IEnumerable<SetReport> reports, ReportSnapshot? previous)
+    public static (string Key, string Content)[] RenderSummaries(IEnumerable<SetReport> reports, ReportSnapshot? previous,
+        bool includeBoosterBoxData = true, bool includeCaseData = true)
+    {
+        var sets = reports.ToArray();
+        if (sets.Length == 0) return [];
+        var summaries = new List<(string Key, string Content)>();
+        if (includeCaseData) summaries.Add(("case-summary", RenderSummary(sets, previous, caseSummary: true)));
+        // Preserve the existing box summary ledger key for frozen deliveries.
+        if (includeBoosterBoxData) summaries.Add(("summary", RenderSummary(sets, previous)));
+        return summaries.ToArray();
+    }
+
+    public static string RenderSummary(IEnumerable<SetReport> reports, ReportSnapshot? previous, bool caseSummary = false)
     {
         var b = new StringBuilder();
-        b.AppendLine("**Booster Box Summary**");
+        b.AppendLine(caseSummary ? "**Booster Case Summary**" : "**Booster Box Summary**");
         b.AppendLine();
         foreach (var report in reports)
         {
             var old = previous?.Sets.FirstOrDefault(s => s.Code == report.Code);
             b.AppendLine($"{Safe(report.Code)}: {Safe(report.Name)}");
-            var ev = report.Complete ? Money(report.KnownEv) : $"INCOMPLETE — priced subtotal: {Money(report.KnownEv)}";
-            b.AppendLine($"  EV: {ev} {Trend(report.KnownEv, old?.KnownEv ?? 0, Calculation.Comparable(report, old))}");
-            // Sealed prices are independent of card coverage, but a changed profile may select a different box.
-            var mpComparable = report.BoxMarketPrice is not null && old?.BoxMarketPrice is not null && report.ModelHash == old.ModelHash;
-            b.AppendLine($"  MP: {(report.BoxMarketPrice is decimal mp ? Money(mp) : "Unavailable")} {Trend(report.BoxMarketPrice ?? 0, old?.BoxMarketPrice ?? 0, mpComparable)}");
+            var value = caseSummary ? report.KnownCaseEv : report.KnownEv;
+            var oldValue = caseSummary ? old?.KnownCaseEv : old?.KnownEv;
+            var evComparable = Calculation.Comparable(report, old)
+                && (!caseSummary || report.BoxesPerCase == old?.BoxesPerCase);
+            var ev = report.Complete ? Money(value) : $"INCOMPLETE — priced subtotal: {Money(value)}";
+            b.AppendLine($"  EV: {ev} {Trend(value, oldValue ?? 0, evComparable)}");
+            // Sealed prices are independent of card coverage, but a changed profile may select a different product.
+            var marketPrice = caseSummary ? report.CaseMarketPrice : report.BoxMarketPrice;
+            var oldMarketPrice = caseSummary ? old?.CaseMarketPrice : old?.BoxMarketPrice;
+            var mpComparable = marketPrice is not null && oldMarketPrice is not null && report.ModelHash == old?.ModelHash;
+            b.AppendLine($"  MP: {(marketPrice is decimal mp ? Money(mp) : "Unavailable")} {Trend(marketPrice ?? 0, oldMarketPrice ?? 0, mpComparable)}");
             b.AppendLine();
         }
         b.Append(Warning);
@@ -37,7 +55,8 @@ public static class Reporting
     public static string Signed(decimal value) => (Math.Round(value, 2) >= 0 ? "+" : "-") + Money(Math.Abs(value));
     public static string Safe(string text) => text.Replace("@", "＠").Replace("`", "'").Replace("*", "").Replace("_", " ").Replace("\r", " ").Replace("\n", " ");
     public static string Render(SetReport report, SetReport? previous, DateTimeOffset stamp, DateTimeOffset? previousStamp, MoverSettings settings,
-        bool includeMarketData = true, bool includeCardList = true)
+        bool includeMarketData = true, bool includeCardList = true,
+        bool includeBoosterBoxData = true, bool includeCaseData = true)
     {
         var compare = Calculation.Comparable(report, previous);
         var compatible = Calculation.Compatible(report, previous);
@@ -47,11 +66,9 @@ public static class Reporting
         var b = new StringBuilder();
         b.AppendLine($"**{Safe(report.Name)} ({report.Code})**");
         b.AppendLine($"Source: {stamp:yyyy-MM-dd HH:mm} UTC · estimated odds");
-        b.AppendLine("Booster Box:");
-        b.AppendLine(report.Complete ? $"  EV: **{Money(report.KnownEv)}**{Delta(report.KnownEv, previous?.KnownEv ?? 0)}" : $"  EV: **INCOMPLETE — priced subtotal: {Money(report.KnownEv)}**");
-        b.AppendLine($"  MP: {(report.BoxMarketPrice is decimal mp ? Money(mp) : "Unavailable")}");
         if (estimates.Length > 0) b.AppendLine($"Includes {estimates.Length} listing-based estimate{(estimates.Length == 1 ? "" : "s")} (TCGplayer Mid; details below).");
         b.AppendLine();
+        var caseRows = new List<string[]>();
         var boxRows = new List<string[]>();
         var marketRows = new List<string[]>();
         string TableDelta(decimal value, decimal before, bool allowed) => allowed ? $" ({Signed(value-before)})" : "";
@@ -74,14 +91,35 @@ public static class Reporting
             boxRows.Add([label, copies.ToString("0.######", CultureInfo.InvariantCulture),
                 missing || copies == 0 ? "--" : Money(ev / copies),
                 Money(ev) + (missing ? "*" : "") + TableDelta(ev, oldEv, compatible && !sourceChanges.Any(c => c.Category == category))]);
+            caseRows.Add([label, (copies * report.BoxesPerCase).ToString("0.######", CultureInfo.InvariantCulture),
+                missing || copies == 0 ? "--" : Money(ev / copies),
+                Money(ev * report.BoxesPerCase) + (missing ? "*" : "")
+                    + TableDelta(ev * report.BoxesPerCase, oldEv * (previous?.BoxesPerCase ?? 0),
+                        compatible && report.BoxesPerCase == previous?.BoxesPerCase && !sourceChanges.Any(c => c.Category == category))]);
             var total = cards.Sum(c => c.Price ?? 0);
             var oldTotal = previous?.Cards.Where(c => c.Category == category).Sum(c => c.Price ?? 0) ?? 0;
             marketRows.Add([label, cards.Length.ToString(CultureInfo.InvariantCulture),
                 missing ? "--" : Money(total / cards.Length), Money(total) + (missing ? "*" : ""),
                 Trend(total, oldTotal, compatible && !sourceChanges.Any(c => c.Category == category))]);
         }
-        b.AppendLine(Table(["Rarity", "Copies", "AVG", "Total"], boxRows));
-        b.AppendLine();
+        if (includeCaseData)
+        {
+            b.AppendLine($"Booster Case: ({report.BoxesPerCase} boxes)");
+            b.AppendLine(report.Complete ? $"  EV: **{Money(report.KnownCaseEv)}**{Delta(report.KnownCaseEv, previous?.KnownCaseEv ?? 0, compare && report.BoxesPerCase == previous?.BoxesPerCase)}" : $"  EV: **INCOMPLETE — priced subtotal: {Money(report.KnownCaseEv)}**");
+            b.AppendLine($"  MP: {(report.CaseMarketPrice is decimal caseMp ? Money(caseMp) : "Unavailable")}");
+            b.AppendLine();
+            b.AppendLine(Table(["Rarity", "Copies", "AVG", "Total"], caseRows));
+            b.AppendLine();
+        }
+        if (includeBoosterBoxData)
+        {
+            b.AppendLine("Booster Box:");
+            b.AppendLine(report.Complete ? $"  EV: **{Money(report.KnownEv)}**{Delta(report.KnownEv, previous?.KnownEv ?? 0)}" : $"  EV: **INCOMPLETE — priced subtotal: {Money(report.KnownEv)}**");
+            b.AppendLine($"  MP: {(report.BoxMarketPrice is decimal mp ? Money(mp) : "Unavailable")}");
+            b.AppendLine();
+            b.AppendLine(Table(["Rarity", "Copies", "AVG", "Total"], boxRows));
+            b.AppendLine();
+        }
         if (includeMarketData)
         {
             b.AppendLine("Market Data:");
