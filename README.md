@@ -43,6 +43,21 @@ Use one destination object with a unique `id` per channel, including channels on
 
 The application sends outbound HTTPS requests to Discord's webhook URL. You do not need to host a server or configure an endpoint to receive webhook events.
 
+Each destination also accepts `includeMarketData` and `includeCardList`, both defaulting to `true` when omitted. Set `includeMarketData: false` to hide the Market Data table (including its Master set row and trend legend), or `includeCardList: false` to hide the card price movers list. These switches are independent. Booster-box details, pricing-source and missing-price disclosures, warnings, assumption attachments, and the final summary remain included. Console and `out/latest.md` previews always show the full report. For example:
+
+```json
+{
+  "id": "daily-channel",
+  "enabled": true,
+  "webhookEnvironmentVariable": "ONEPIECE_DISCORD_WEBHOOK",
+  "sets": ["OP-08"],
+  "includeMarketData": false,
+  "includeCardList": true
+}
+```
+
+Changing these switches applies to new delivery batches. Existing batches retain their frozen content; use `--force-post` to intentionally resend the current snapshot with updated settings.
+
 All configured paths resolve relative to the configuration file. Set a stable working directory when scheduling, or pass an absolute config path. For deployment, `dotnet publish src/OnePiece.Ev -c Release -o out/publish` builds the executable; retain the configuration and `config/pullrates.json` and pass the config's absolute path. The process exits 0 on successful preview/delivery and 1 on a failure. The application does not install a scheduled task.
 
 TCGCSV requests use a custom User-Agent and at least 100 ms spacing. Every online reporting run (including `--dry-run`) checks the provider timestamp and reuses a compatible complete local catalog only when that timestamp is unchanged. A changed timestamp or an incompatible/incomplete cache triggers a fresh download. The legacy `refreshHours` setting is accepted but ignored. An update during download aborts the snapshot. Posting refuses data older than `maxSourceAgeHours` (48 by default). Offline previews make no network requests, may use older data, and always show its timestamp.

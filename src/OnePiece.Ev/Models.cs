@@ -59,6 +59,8 @@ public sealed record Destination
     public string? WebhookUrl { get; init; }
     public string? WebhookEnvironmentVariable { get; init; }
     public string[] Sets { get; init; } = [];
+    public bool IncludeMarketData { get; init; } = true;
+    public bool IncludeCardList { get; init; } = true;
     public string? ThreadId { get; init; }
     public string ResolveUrl() => (!string.IsNullOrWhiteSpace(WebhookEnvironmentVariable)
         ? Environment.GetEnvironmentVariable(WebhookEnvironmentVariable) : WebhookUrl)

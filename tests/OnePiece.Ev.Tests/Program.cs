@@ -56,6 +56,22 @@ Check(reports[2].Cards.Where(c=>c.Pool=="manga-reprint-god-pack").All(c=>Math.Ab
 var before=reports[0];
 var after=before with {Cards=before.Cards.Select(c=>c with {Price=c.Price*2}).ToArray()};
 Check(Calculation.Movers(after,before,new()).Length==10,"Mover cap");
+var legacyDestination=System.Text.Json.JsonSerializer.Deserialize<Destination>("""{"id":"legacy"}""",JsonFiles.Options)!;
+Check(legacyDestination.IncludeMarketData && legacyDestination.IncludeCardList,"Existing destinations default to full reports");
+foreach(var market in new[]{false,true})
+foreach(var cards in new[]{false,true})
+{
+    var destination=System.Text.Json.JsonSerializer.Deserialize<Destination>(
+        $$"""{"id":"custom","includeMarketData":{{market.ToString().ToLowerInvariant()}},"includeCardList":{{cards.ToString().ToLowerInvariant()}}}""",JsonFiles.Options)!;
+    var customized=Reporting.Render(after,before,catalog.SourceUpdatedAt.AddDays(1),catalog.SourceUpdatedAt,new(),destination.IncludeMarketData,destination.IncludeCardList);
+    Check(customized.Contains("Market Data:")==market && customized.Contains("| Master set")==market && customized.Contains("Trend:")==market,"Market table toggle includes its total and legend");
+    Check(customized.Contains(" bx) [")==cards,"Card list toggle independent of market table");
+    Check(customized.Contains("Booster Box:") && customized.Contains("Copies") && customized.Contains(Reporting.Warning) && customized.Contains("accompanying Markdown file"),"Destination toggles retain box table and assumptions");
+}
+var compactMissing=Reporting.Render(missingReport,null,catalog.SourceUpdatedAt,null,new(),false,false);
+Check(compactMissing.Contains("INCOMPLETE") && compactMissing.Contains("Missing price:"),"Hidden optional sections retain missing-price disclosure");
+var compactMid=Reporting.Render(reports[2],null,catalog.SourceUpdatedAt,null,new(),false,false);
+Check(compactMid.Contains("Mid estimate:") && compactMid.Contains("listing-based estimate"),"Hidden optional sections retain Mid disclosure");
 Check(Calculation.Movers(after,before,new()).Zip(Calculation.Movers(after,before,new()).Skip(1)).All(pair=>Math.Abs(pair.First.BoxImpact)>=Math.Abs(pair.Second.BoxImpact)),"Mover ordering");
 Check(!Calculation.Comparable(after with {ModelHash="changed"},before),"Changed model resets comparison");
 Check(!Calculation.Comparable(missingReport,missingReport),"Incomplete comparison suppressed");

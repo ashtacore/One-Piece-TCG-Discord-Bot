@@ -239,7 +239,9 @@ public static class Program
                         Path.Combine(settings.StateDirectory, "deliveries.json"),
                         key,
                         endpoint,
-                        texts[report.Code],
+                        Reporting.Render(report, previous?.Sets.FirstOrDefault(p => p.Code == report.Code),
+                            current.SourceUpdatedAt, previous?.SourceUpdatedAt, settings.Movers,
+                            d.IncludeMarketData, d.IncludeCardList),
                         attachments[report.Code],
                         forcePost);
                     sent += result.Sent;

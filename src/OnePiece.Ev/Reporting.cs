@@ -36,7 +36,8 @@ public static class Reporting
     public static string Money(decimal value) => "$" + Math.Round(value, 2).ToString("0.00", CultureInfo.InvariantCulture);
     public static string Signed(decimal value) => (Math.Round(value, 2) >= 0 ? "+" : "-") + Money(Math.Abs(value));
     public static string Safe(string text) => text.Replace("@", "＠").Replace("`", "'").Replace("*", "").Replace("_", " ").Replace("\r", " ").Replace("\n", " ");
-    public static string Render(SetReport report, SetReport? previous, DateTimeOffset stamp, DateTimeOffset? previousStamp, MoverSettings settings)
+    public static string Render(SetReport report, SetReport? previous, DateTimeOffset stamp, DateTimeOffset? previousStamp, MoverSettings settings,
+        bool includeMarketData = true, bool includeCardList = true)
     {
         var compare = Calculation.Comparable(report, previous);
         var compatible = Calculation.Compatible(report, previous);
@@ -81,20 +82,26 @@ public static class Reporting
         }
         b.AppendLine(Table(["Rarity", "Copies", "AVG", "Total"], boxRows));
         b.AppendLine();
-        b.AppendLine("Market Data:");
-        marketRows.Add(["Master set", report.Cards.Length.ToString(CultureInfo.InvariantCulture),
-            report.Complete && report.Cards.Length > 0 ? Money(report.KnownMaster / report.Cards.Length) : "--",
-            Money(report.KnownMaster) + (report.Complete ? TableDelta(report.KnownMaster, previous?.KnownMaster ?? 0, compare) : "*"),
-            Trend(report.KnownMaster, previous?.KnownMaster ?? 0, compare)]);
-        b.AppendLine(Table(["Rarity", "Count", "AVG", "Total", "Trend"], marketRows));
-        b.AppendLine("Trend: 🟢 up · 🔴 down · 🟡 unchanged · – no comparable data");
+        if (includeMarketData)
+        {
+            b.AppendLine("Market Data:");
+            marketRows.Add(["Master set", report.Cards.Length.ToString(CultureInfo.InvariantCulture),
+                report.Complete && report.Cards.Length > 0 ? Money(report.KnownMaster / report.Cards.Length) : "--",
+                Money(report.KnownMaster) + (report.Complete ? TableDelta(report.KnownMaster, previous?.KnownMaster ?? 0, compare) : "*"),
+                Trend(report.KnownMaster, previous?.KnownMaster ?? 0, compare)]);
+            b.AppendLine(Table(["Rarity", "Count", "AVG", "Total", "Trend"], marketRows));
+            b.AppendLine("Trend: 🟢 up · 🔴 down · 🟡 unchanged · – no comparable data");
+        }
         if (!report.Complete) b.AppendLine("* Priced subtotal; missing prices or unresolved coverage. AVG is -- when a category has missing prices.");
         if (compatible) b.AppendLine($"Changes vs {previousStamp:yyyy-MM-dd HH:mm} UTC");
         else b.AppendLine("Changes unavailable: first observation, incomplete prices, or changed model/membership.");
         foreach (var card in sourceChanges)
             b.AppendLine($"Pricing source changed: {Safe(card.Name)}; box/master-set and affected category deltas suppressed; card excluded from movers.");
-        foreach (var mover in Calculation.Movers(report, previous, settings))
-            b.AppendLine($"{(mover.PriceChange > 0 ? "🟢" : "🔴")} {Safe(mover.Card.Name)}: {Signed(mover.PriceChange)} ({Signed(mover.BoxImpact)} bx) [{Money(mover.Card.Price!.Value)}]{(mover.Card.PriceSource == "Mid" ? " (Mid estimate)" : "")}");
+        if (includeCardList)
+        {
+            foreach (var mover in Calculation.Movers(report, previous, settings))
+                b.AppendLine($"{(mover.PriceChange > 0 ? "🟢" : "🔴")} {Safe(mover.Card.Name)}: {Signed(mover.PriceChange)} ({Signed(mover.BoxImpact)} bx) [{Money(mover.Card.Price!.Value)}]{(mover.Card.PriceSource == "Mid" ? " (Mid estimate)" : "")}");
+        }
         foreach (var card in estimates) b.AppendLine($"Mid estimate: {Safe(card.Name)} [{card.Key}]: {Money(card.Price!.Value)}");
         foreach (var card in report.Cards.Where(c => c.Price is null)) b.AppendLine($"Missing price: {Safe(card.Name)} [{card.Key}]");
         foreach (var issue in report.Issues) b.AppendLine("Review: " + Safe(issue));
