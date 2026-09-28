@@ -26,16 +26,16 @@ public static class Catalog
         { PricingSchemaVersion = 1 };
     }
 
-    public static async Task<CatalogSnapshot> Load(AppSettings settings, int[] groups, bool offline)
+    public static async Task<CatalogSnapshot> Load(AppSettings settings, int[] groups, bool offline, HttpMessageHandler? handler = null)
     {
         var path = Path.Combine(settings.StateDirectory, "catalog.json");
         var existing = File.Exists(path) ? JsonFiles.Read<CatalogSnapshot>(path) : null;
         bool Covers() => existing is not null && existing.PricingSchemaVersion == 1 && groups.All(id => existing.Data.Any(g => g.GroupId == id));
         if (offline)
             return Covers() ? existing! : throw new InvalidDataException("No compatible complete local catalog exists. Run --dry-run online to refresh pricing fields.");
-        if (Covers() && DateTimeOffset.UtcNow - existing!.RetrievedAt < TimeSpan.FromHours(settings.Source.RefreshHours))
-            return existing;
-        using var http = new HttpClient { BaseAddress = new Uri(settings.Source.BaseUrl), Timeout = TimeSpan.FromSeconds(settings.Source.TimeoutSeconds) };
+        using var http = handler is null ? new HttpClient() : new HttpClient(handler, disposeHandler: false);
+        http.BaseAddress = new Uri(settings.Source.BaseUrl);
+        http.Timeout = TimeSpan.FromSeconds(settings.Source.TimeoutSeconds);
         http.DefaultRequestHeaders.UserAgent.ParseAdd("OnePieceEv/0.1");
         async Task<string> Get(string endpoint)
         {

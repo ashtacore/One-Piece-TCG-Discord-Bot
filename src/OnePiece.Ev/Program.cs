@@ -108,7 +108,6 @@ public static class Program
 
         if (settings.Source.CategoryId != 68
             || settings.Source.RequestDelayMilliseconds < 100
-            || settings.Source.RefreshHours < 24
             || settings.Source.TimeoutSeconds <= 0
             || settings.Source.MaxSourceAgeHours <= 0
             || settings.Movers.MaximumCards is < 0 or > 10

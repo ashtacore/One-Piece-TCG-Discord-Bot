@@ -45,7 +45,7 @@ The application sends outbound HTTPS requests to Discord's webhook URL. You do n
 
 All configured paths resolve relative to the configuration file. Set a stable working directory when scheduling, or pass an absolute config path. For deployment, `dotnet publish src/OnePiece.Ev -c Release -o out/publish` builds the executable; retain the configuration and `config/pullrates.json` and pass the config's absolute path. The process exits 0 on successful preview/delivery and 1 on a failure. The application does not install a scheduled task.
 
-TCGCSV requests use a custom User-Agent and at least 100 ms spacing. A complete local catalog is reused for 24 hours; after that the provider timestamp is checked before downloading again. An update during download aborts the snapshot. Posting refuses data older than `maxSourceAgeHours` (48 by default). Offline previews may use older data and always show its timestamp.
+TCGCSV requests use a custom User-Agent and at least 100 ms spacing. Every online reporting run (including `--dry-run`) checks the provider timestamp and reuses a compatible complete local catalog only when that timestamp is unchanged. A changed timestamp or an incompatible/incomplete cache triggers a fresh download. The legacy `refreshHours` setting is accepted but ignored. An update during download aborts the snapshot. Posting refuses data older than `maxSourceAgeHours` (48 by default). Offline previews make no network requests, may use older data, and always show its timestamp.
 
 ## Calculation rules
 

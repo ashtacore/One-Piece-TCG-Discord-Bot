@@ -42,6 +42,7 @@ public sealed record SourceSettings
     public int CategoryId { get; init; } = 68;
     public int RequestDelayMilliseconds { get; init; } = 150;
     public int TimeoutSeconds { get; init; } = 45;
+    // Accepted for compatibility with existing settings; online runs always check the provider timestamp.
     public int RefreshHours { get; init; } = 24;
     public int MaxSourceAgeHours { get; init; } = 48;
 }

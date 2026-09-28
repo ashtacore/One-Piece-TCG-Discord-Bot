@@ -72,6 +72,34 @@ var stableMid=reports[2] with {Cards=reports[2].Cards.Select(c=>c.PriceSource=="
 Check(Calculation.Comparable(stableMid,reports[2]) && Calculation.Movers(stableMid,reports[2],new()).Single().Card.PriceSource=="Mid","Unchanged Mid source can produce labeled listing movements");
 Check(Reporting.Split(new string('a',1899)+"🟢"+new string('b',3000)).All(s=>s.Length<=1900 && !char.IsHighSurrogate(s[^1])),"Discord UTF16 limits");
 var temp=Path.Combine(Path.GetTempPath(),"onepiece-tests-"+Guid.NewGuid()); Directory.CreateDirectory(temp);
+var cacheSettings = new AppSettings { StateDirectory = Path.Combine(temp,"catalog"), Source = new() { RequestDelayMilliseconds = 0 } };
+var cachePath = Path.Combine(cacheSettings.StateDirectory,"catalog.json");
+var cached = catalog with { RetrievedAt = DateTimeOffset.UtcNow };
+JsonFiles.Write(cachePath,cached);
+var sourceStamp = cached.SourceUpdatedAt;
+var sourceRequests = new List<string>();
+using var sourceHandler = new FakeHandler(request =>
+{
+    var path = request.RequestUri!.AbsolutePath;
+    sourceRequests.Add(path);
+    var content = path == "/last-updated.txt" ? sourceStamp.ToString("O") : "{\"success\":true,\"results\":[]}";
+    return new(HttpStatusCode.OK) { Content = new StringContent(content) };
+});
+var reused = await Catalog.Load(cacheSettings,groups,false,sourceHandler);
+Check(sourceRequests.SequenceEqual(new[]{"/last-updated.txt"}) && reused.Data.Sum(g=>g.Prices.Length)==cached.Data.Sum(g=>g.Prices.Length),"Fresh cache still checks timestamp and reuses unchanged prices");
+sourceRequests.Clear();
+sourceStamp = sourceStamp.AddDays(1);
+var refreshed = await Catalog.Load(cacheSettings,groups,false,sourceHandler);
+Check(refreshed.SourceUpdatedAt==sourceStamp && refreshed.Data.All(g=>g.Prices.Length==0) && sourceRequests.Count==3+2*groups.Length && sourceRequests.First()=="/last-updated.txt" && sourceRequests.Last()=="/last-updated.txt","Changed timestamp refreshes even a newly checked cache and verifies snapshot consistency");
+Check(JsonFiles.Read<CatalogSnapshot>(cachePath).SourceUpdatedAt==sourceStamp,"Refreshed snapshot saved");
+sourceRequests.Clear();
+await Catalog.Load(cacheSettings,groups,true,sourceHandler);
+Check(sourceRequests.Count==0,"Offline cache never checks provider");
+var stampChecks = 0;
+using var changingSource = new FakeHandler(request => new(HttpStatusCode.OK) { Content = new StringContent(
+    request.RequestUri!.AbsolutePath=="/last-updated.txt" ? sourceStamp.AddDays(++stampChecks).ToString("O") : "{\"success\":true,\"results\":[]}") });
+try { await Catalog.Load(cacheSettings,groups,false,changingSource); throw new Exception("Expected changing source failure"); } catch(InvalidDataException) {}
+Check(JsonFiles.Read<CatalogSnapshot>(cachePath).SourceUpdatedAt==sourceStamp,"Update during download preserves previous cache");
 var endpoint=new Uri("https://discord.com/api/webhooks/1/fake?wait=true");
 var calls=0;
 using var http=new HttpClient(new FakeHandler(_=>{calls++;return new(HttpStatusCode.OK){Content=new StringContent("{\"id\":\"123\"}")};}));
