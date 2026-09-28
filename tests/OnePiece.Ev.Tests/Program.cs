@@ -173,6 +173,31 @@ foreach(var profile in allProfiles)
 var longCode="```\n"+string.Join('\n',Enumerable.Repeat(new string('x',65),80))+"\n```";
 var codeParts=Reporting.Split(longCode,200);
 Check(codeParts.Length>1 && codeParts.All(p=>p.Length<=200 && p.StartsWith("```\n") && p.EndsWith("\n```")),"Oversized code block reopens correctly across messages");
+var summaryBefore = new ReportSnapshot(catalog.SourceUpdatedAt, catalog.SourceUpdatedAt, [before]);
+var summaryUp = Reporting.RenderSummary([after with {BoxMarketPrice=before.BoxMarketPrice+1}], summaryBefore);
+Check(summaryUp.StartsWith("**Booster Box Summary**"+Environment.NewLine+Environment.NewLine+before.Code+": "+before.Name+Environment.NewLine) && summaryUp.Contains($"  EV: {Reporting.Money(after.KnownEv)} 🟢") && summaryUp.Contains($"  MP: {Reporting.Money(before.BoxMarketPrice!.Value+1)} 🟢"),"Summary header, identifiers, names, indentation, EV and sealed MP trends");
+var summaryDown = Reporting.RenderSummary([before], summaryBefore with {Sets=[after with {BoxMarketPrice=before.BoxMarketPrice+1}]});
+Check(summaryDown.Split("🔴").Length==3,"Summary falling EV and MP trends");
+Check(Reporting.RenderSummary([before],summaryBefore).Split("🟡").Length==3,"Summary unchanged EV and MP trends");
+Check(Reporting.RenderSummary([before],null).Split(" –").Length==3,"First summary has no trends");
+Check(Reporting.RenderSummary([switched],summaryBefore).Contains($"EV: {Reporting.Money(switched.KnownEv)} –"),"Summary suppresses source-switch EV trend");
+Check(Reporting.RenderSummary([before with {ModelHash="changed"}],summaryBefore).Split(" –").Length==3,"Summary suppresses changed-model trends");
+Check(Reporting.RenderSummary([withoutBoxPrice],summaryBefore).Contains("MP: Unavailable –"),"Summary missing sealed MP");
+Check(Reporting.RenderSummary([missingReport],null).Contains("EV: INCOMPLETE — priced subtotal:"),"Summary labels incomplete EV");
+var allSummary = Reporting.RenderSummary(allProfiles.Select(p=>Calculation.Evaluate(p,expandedCatalog)),null);
+Check(allSummary.EndsWith(Reporting.Warning) && !allSummary.Contains("Markdown") && !allSummary.Contains("notes"),"Summary standard warning without notes reference");
+Check(Reporting.Split(allSummary,1700).Length==1,"All 22 sets fit one final summary message");
+var summaryCalls=0;
+using var summaryHttp=new HttpClient(new FakeHandler(request=>
+{
+    summaryCalls++;
+    Check(request.Content is not MultipartFormDataContent,"Summary sends no attachment");
+    return new(HttpStatusCode.OK){Content=new StringContent("{\"id\":\"summary\"}")};
+}));
+var summaryLedger=Path.Combine(temp,"summary.json");
+await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:summary",endpoint,allSummary);
+await DiscordDelivery.Send(summaryHttp,summaryLedger,"snapshot:summary",endpoint,"Changed summary");
+Check(summaryCalls==1 && JsonFiles.Read<DeliveryLedger>(summaryLedger).Parts.Values.Single().Attachment is null,"Summary delivery is frozen and deduplicated without notes");
 Console.WriteLine($"PASS: {checks} checks; no real Discord requests.");
 
 sealed class FakeHandler(Func<HttpRequestMessage,HttpResponseMessage> respond):HttpMessageHandler

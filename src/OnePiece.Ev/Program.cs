@@ -206,9 +206,10 @@ public static class Program
             File.WriteAllText(Path.Combine(settings.ReportDirectory, attachment.FileName), attachment.Content);
         }
 
-        File.WriteAllText(Path.Combine(settings.ReportDirectory, "latest.md"), string.Join("\n\n\n", texts.Values) + "\n\n");
+        var output = string.Join("\n\n\n", texts.Values.Append(Reporting.RenderSummary(current.Sets, previous)));
+        File.WriteAllText(Path.Combine(settings.ReportDirectory, "latest.md"), output + "\n\n");
         JsonFiles.Write(Path.Combine(settings.ReportDirectory, "latest.json"), current);
-        Console.WriteLine(string.Join("\n\n\n", texts.Values) + "\n");
+        Console.WriteLine(output + "\n");
 
         if (dry || destinations.Length == 0)
         {
@@ -222,6 +223,7 @@ public static class Program
         foreach (var d in destinations)
         {
             var endpoint = DiscordDelivery.Endpoint(d);
+            var summaryReports = new List<SetReport>();
             foreach (var report in current.Sets.Where(s => d.Sets.Length == 0 || d.Sets.Contains(s.Code)))
             {
                 if (!report.Complete && !settings.PostIncompleteReports)
@@ -243,10 +245,32 @@ public static class Program
                         forcePost);
                     sent += result.Sent;
                     alreadyDelivered += result.AlreadyDelivered;
+                    summaryReports.Add(report);
                 }
                 catch (Exception ex)
                 {
                     Console.Error.WriteLine($"Discord delivery failed for {report.Code} to {d.Id}: {ex.Message}");
+                    return 1;
+                }
+            }
+            if (summaryReports.Count > 0)
+            {
+                var key = $"{d.Id}:{Calculation.Hash(endpoint.ToString())[..16]}:{current.SourceUpdatedAt:yyyyMMddHHmmss}:summary";
+                try
+                {
+                    var result = await DiscordDelivery.Send(
+                        http,
+                        Path.Combine(settings.StateDirectory, "deliveries.json"),
+                        key,
+                        endpoint,
+                        Reporting.RenderSummary(summaryReports, previous),
+                        forcePost: forcePost);
+                    sent += result.Sent;
+                    alreadyDelivered += result.AlreadyDelivered;
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"Discord summary delivery failed to {d.Id}: {ex.Message}");
                     return 1;
                 }
             }

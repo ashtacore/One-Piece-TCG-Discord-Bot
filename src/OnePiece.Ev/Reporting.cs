@@ -5,6 +5,34 @@ namespace OnePiece.Ev;
 
 public static class Reporting
 {
+    public const string Warning = "⚠️ Pull rates are community estimates, not guarantees.";
+    private static string Trend(decimal value, decimal before, bool allowed) => !allowed ? "–" : Math.Round(value - before, 2) switch
+    {
+        > 0 => "🟢",
+        < 0 => "🔴",
+        _ => "🟡"
+    };
+
+    public static string RenderSummary(IEnumerable<SetReport> reports, ReportSnapshot? previous)
+    {
+        var b = new StringBuilder();
+        b.AppendLine("**Booster Box Summary**");
+        b.AppendLine();
+        foreach (var report in reports)
+        {
+            var old = previous?.Sets.FirstOrDefault(s => s.Code == report.Code);
+            b.AppendLine($"{Safe(report.Code)}: {Safe(report.Name)}");
+            var ev = report.Complete ? Money(report.KnownEv) : $"INCOMPLETE — priced subtotal: {Money(report.KnownEv)}";
+            b.AppendLine($"  EV: {ev} {Trend(report.KnownEv, old?.KnownEv ?? 0, Calculation.Comparable(report, old))}");
+            // Sealed prices are independent of card coverage, but a changed profile may select a different box.
+            var mpComparable = report.BoxMarketPrice is not null && old?.BoxMarketPrice is not null && report.ModelHash == old.ModelHash;
+            b.AppendLine($"  MP: {(report.BoxMarketPrice is decimal mp ? Money(mp) : "Unavailable")} {Trend(report.BoxMarketPrice ?? 0, old?.BoxMarketPrice ?? 0, mpComparable)}");
+            b.AppendLine();
+        }
+        b.Append(Warning);
+        return b.ToString();
+    }
+
     public static string Money(decimal value) => "$" + Math.Round(value, 2).ToString("0.00", CultureInfo.InvariantCulture);
     public static string Signed(decimal value) => (Math.Round(value, 2) >= 0 ? "+" : "-") + Money(Math.Abs(value));
     public static string Safe(string text) => text.Replace("@", "＠").Replace("`", "'").Replace("*", "").Replace("_", " ").Replace("\r", " ").Replace("\n", " ");
@@ -26,12 +54,6 @@ public static class Reporting
         var boxRows = new List<string[]>();
         var marketRows = new List<string[]>();
         string TableDelta(decimal value, decimal before, bool allowed) => allowed ? $" ({Signed(value-before)})" : "";
-        string Trend(decimal value, decimal before, bool allowed) => !allowed ? "–" : Math.Round(value - before, 2) switch
-        {
-            > 0 => "🟢",
-            < 0 => "🔴",
-            _ => "🟡"
-        };
         foreach (var category in Calculation.Categories)
         {
             var cards = report.Cards.Where(c => c.Category == category).ToArray();
@@ -77,7 +99,7 @@ public static class Reporting
         foreach (var card in report.Cards.Where(c => c.Price is null)) b.AppendLine($"Missing price: {Safe(card.Name)} [{card.Key}]");
         foreach (var issue in report.Issues) b.AppendLine("Review: " + Safe(issue));
         b.AppendLine();
-        b.AppendLine("⚠️ Pull rates are community estimates, not guarantees.");
+        b.AppendLine(Warning);
         b.AppendLine("For assumptions and prediction model notes: see the accompanying Markdown file.");
         return b.ToString().TrimEnd();
     }
